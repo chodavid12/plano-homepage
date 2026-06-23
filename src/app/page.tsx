@@ -26,7 +26,7 @@ export default function HomePage() {
           style={{ animationDelay: "0.15s" }}
         >
           공간을 읽고, 삶의 결을 설계합니다.
-          <br className="hidden sm:block" />
+          <br />
           주거 공간의 설계부터 시공까지, 플라노디자인.
         </p>
 
