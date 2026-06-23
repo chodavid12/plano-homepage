@@ -5,10 +5,10 @@ import Logo from "@/components/Logo";
 export default function HomePage() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
-      {/* 배경: 고정 이미지(public/seed/hero.svg) — 실제 사진으로 교체 가능 */}
+      {/* 배경: public/hero.jpg 가 있으면 그것을, 없으면 시드 SVG로 폴백 */}
       <div
         className="absolute inset-0 animate-zoom-slow bg-sand-200 bg-cover bg-center"
-        style={{ backgroundImage: "url('/seed/hero.svg')" }}
+        style={{ backgroundImage: "url('/hero.jpg'), url('/seed/hero.svg')" }}
         aria-hidden="true"
       />
       <div
