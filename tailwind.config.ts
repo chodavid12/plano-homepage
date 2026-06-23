@@ -5,28 +5,28 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // 플라노 미니멀 톤 — 따뜻한 우드 / 화이트 / 잉크
+        // 플라노 — 따뜻한 페이퍼 / 우드 / 잉크 (미니멀 웜·우드)
         sand: {
-          50: "#FAF7F2",
-          100: "#F3EEE6",
-          200: "#E8DFD2",
-          300: "#D9CCB8",
+          50: "#FAF8F3", // 페이지 배경 (warm paper)
+          100: "#F3EDE3", // 서피스
+          200: "#E8DECF", // 보더 / 옅은 면
+          300: "#D6C8B2", // 진한 보더
         },
         wood: {
-          400: "#C2A782",
-          500: "#A98B63",
-          600: "#8C6F4B",
+          400: "#C3A87F",
+          500: "#9C7C52", // 액센트
+          600: "#7E6340", // 액센트(진함)
         },
         ink: {
-          700: "#3A352F",
-          800: "#262220",
-          900: "#171513",
+          700: "#6E655A", // 뮤트 텍스트
+          800: "#2C2823", // 본문 텍스트
+          900: "#1A1714", // 헤드라인 / 최진함
         },
       },
       fontFamily: {
         sans: [
-          "Pretendard",
           "Pretendard Variable",
+          "Pretendard",
           "-apple-system",
           "BlinkMacSystemFont",
           "system-ui",
@@ -34,13 +34,31 @@ const config: Config = {
           "Roboto",
           "sans-serif",
         ],
-        serif: ["GowunBatang", "Nanum Myeongjo", "serif"],
       },
       letterSpacing: {
-        widelogo: "0.35em",
+        brand: "0.45em",
       },
       maxWidth: {
-        site: "1280px",
+        site: "1320px",
+      },
+      keyframes: {
+        fadeUp: {
+          "0%": { opacity: "0", transform: "translateY(14px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        zoomSlow: {
+          "0%": { transform: "scale(1.08)" },
+          "100%": { transform: "scale(1)" },
+        },
+      },
+      animation: {
+        "fade-up": "fadeUp 0.8s cubic-bezier(0.22,1,0.36,1) both",
+        "fade-in": "fadeIn 1s ease both",
+        "zoom-slow": "zoomSlow 1.4s cubic-bezier(0.22,1,0.36,1) both",
       },
     },
   },

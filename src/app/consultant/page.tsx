@@ -8,14 +8,14 @@ export const metadata: Metadata = {
 
 export default function ConsultantPage() {
   return (
-    <div className="container-site py-16 md:py-24">
-      <div className="mx-auto max-w-2xl">
-        <header className="mb-10 text-center">
-          <p className="text-xs tracking-[0.2em] text-wood-600">CONSULTANT</p>
-          <h1 className="mt-4 text-3xl text-ink-900">상담 신청</h1>
-          <p className="mt-4 text-sm leading-relaxed text-ink-700/70">
+    <div className="container-site py-20 md:py-28">
+      <div className="mx-auto max-w-xl animate-fade-up">
+        <header className="mb-12 text-center">
+          <p className="overline">Consultant</p>
+          <h1 className="mt-4 text-3xl md:text-4xl">상담 신청</h1>
+          <p className="mt-5 font-light leading-relaxed text-ink-700/70">
             아래 정보를 남겨주시면 담당자가 확인 후 연락드립니다.
-            <br />
+            <br className="hidden sm:block" />
             편하게 문의해 주세요.
           </p>
         </header>

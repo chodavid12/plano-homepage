@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
 
         <div className="text-sm text-ink-700/80">
-          <h3 className="mb-3 tracking-[0.15em] text-ink-900">CONTACT</h3>
+          <h3 className="overline mb-4 text-ink-700">CONTACT</h3>
           <p>상담 문의 · 평일 10:00 – 18:00</p>
           <p className="mt-1">
             <Link href="/consultant" className="underline-offset-4 hover:underline">
@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
 
         <div className="text-sm text-ink-700/80">
-          <h3 className="mb-3 tracking-[0.15em] text-ink-900">FOLLOW</h3>
+          <h3 className="overline mb-4 text-ink-700">FOLLOW</h3>
           <a
             href="https://instagram.com/planodesign.kr"
             target="_blank"

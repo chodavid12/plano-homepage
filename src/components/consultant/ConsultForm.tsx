@@ -36,7 +36,7 @@ export default function ConsultForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-sm border border-sand-200 bg-white p-10 text-center">
+      <div className="border border-sand-200 bg-sand-100 p-12 text-center">
         <h2 className="text-xl text-ink-900">상담 신청이 접수되었습니다.</h2>
         <p className="mt-3 text-sm text-ink-700/70">
           빠른 시일 내에 담당자가 연락드리겠습니다. 감사합니다.

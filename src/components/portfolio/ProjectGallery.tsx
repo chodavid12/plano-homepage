@@ -47,10 +47,10 @@ export default function ProjectGallery({ images }: { images: ProjectImage[] }) {
             key={r.room}
             type="button"
             onClick={() => selectRoom(i)}
-            className={`-mb-px shrink-0 border-b-2 pb-3 tracking-wide transition-colors ${
+            className={`-mb-px shrink-0 border-b-2 pb-4 text-xs uppercase tracking-[0.12em] transition-colors ${
               i === roomIdx
-                ? "border-ink-800 text-ink-900"
-                : "border-transparent text-ink-700/50 hover:text-ink-900"
+                ? "border-ink-900 text-ink-900"
+                : "border-transparent text-ink-700/45 hover:text-ink-900"
             }`}
           >
             {r.room}
@@ -59,7 +59,7 @@ export default function ProjectGallery({ images }: { images: ProjectImage[] }) {
       </div>
 
       {/* 메인 이미지 */}
-      <div className="relative mt-6 aspect-[16/10] overflow-hidden rounded-sm bg-sand-200">
+      <div className="relative mt-8 aspect-[16/10] overflow-hidden bg-sand-200">
         <Image
           src={active.imageUrl}
           alt={`${current.room} ${imgIdx + 1}`}
@@ -87,8 +87,8 @@ export default function ProjectGallery({ images }: { images: ProjectImage[] }) {
               key={im.id}
               type="button"
               onClick={() => setImgIdx(i)}
-              className={`relative aspect-[4/3] w-28 shrink-0 overflow-hidden rounded-sm transition-opacity ${
-                i === imgIdx ? "ring-2 ring-ink-800" : "opacity-70 hover:opacity-100"
+              className={`relative aspect-[4/3] w-28 shrink-0 overflow-hidden transition-opacity ${
+                i === imgIdx ? "ring-2 ring-ink-900 ring-offset-2 ring-offset-sand-50" : "opacity-60 hover:opacity-100"
               }`}
             >
               <Image

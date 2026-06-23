@@ -21,25 +21,34 @@ export default async function PortfolioPage({ searchParams }: Props) {
   const isSpace = searchParams.view === "space";
 
   return (
-    <div className="container-site py-12 md:py-16">
-      <header className="mb-10">
-        <h1 className="text-2xl tracking-[0.1em] text-ink-900">PORTFOLIO</h1>
-        <p className="mt-2 text-sm text-ink-700/60">
-          총 {filtered.length}개의 프로젝트
+    <div className="container-site py-16 md:py-24">
+      <header className="mb-12 flex items-end justify-between">
+        <div>
+          <p className="overline">Portfolio</p>
+          <h1 className="mt-3 text-3xl tracking-tight md:text-4xl">프로젝트</h1>
+        </div>
+        <p className="pb-1 text-sm text-ink-700/50">
+          총 <span className="text-ink-900">{filtered.length}</span>개
         </p>
       </header>
 
       <PortfolioControls />
 
-      <div className="mt-10">
+      <div className="mt-12">
         {filtered.length === 0 ? (
-          <p className="py-20 text-center text-ink-700/50">검색 결과가 없습니다.</p>
+          <p className="py-24 text-center text-ink-700/50">검색 결과가 없습니다.</p>
         ) : isSpace ? (
           <SpaceView projects={filtered} />
         ) : (
-          <div className="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2">
-            {filtered.map((p) => (
-              <ProjectCard key={p.no} project={p} />
+          <div className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+            {filtered.map((p, i) => (
+              <div
+                key={p.no}
+                className="animate-fade-up"
+                style={{ animationDelay: `${Math.min(i, 8) * 60}ms` }}
+              >
+                <ProjectCard project={p} />
+              </div>
             ))}
           </div>
         )}
@@ -51,27 +60,31 @@ export default async function PortfolioPage({ searchParams }: Props) {
 function SpaceView({ projects }: { projects: Awaited<ReturnType<typeof getProjects>> }) {
   const groups = groupBySpace(projects);
   return (
-    <div className="space-y-14">
+    <div className="space-y-16">
       {groups.map((g) => (
         <section key={g.room}>
-          <h2 className="mb-5 text-lg tracking-[0.1em] text-ink-900">
+          <h2 className="mb-6 flex items-baseline gap-3 text-xl font-light">
             {g.room}
-            <span className="ml-2 text-sm text-ink-700/40">{g.items.length}</span>
+            <span className="text-sm text-ink-700/40">{g.items.length}</span>
           </h2>
-          <div className="grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-x-5 gap-y-9 md:grid-cols-3 lg:grid-cols-4">
             {g.items.map(({ project, imageUrl }, i) => (
-              <Link key={`${project.no}-${i}`} href={`/portfolio/${project.no}`} className="group block">
-                <div className="relative aspect-square overflow-hidden rounded-sm bg-sand-200">
+              <Link
+                key={`${project.no}-${i}`}
+                href={`/portfolio/${project.no}`}
+                className="group block"
+              >
+                <div className="relative aspect-square overflow-hidden bg-sand-200">
                   <Image
                     src={imageUrl}
                     alt={`${project.title} ${g.room}`}
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                    className="object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.05]"
                   />
                 </div>
-                <p className="mt-2 text-xs tracking-[0.12em] text-wood-600">{formatNo(project.no)}</p>
-                <p className="text-sm text-ink-800">{project.title}</p>
+                <p className="mt-2.5 overline">{formatNo(project.no)}</p>
+                <p className="mt-1 text-sm text-ink-800">{project.title}</p>
               </Link>
             ))}
           </div>

@@ -31,18 +31,23 @@ export default function Header() {
           <Logo />
         </Link>
 
-        <nav className="hidden items-center gap-10 md:flex">
+        <nav className="hidden items-center gap-12 md:flex">
           {NAV.map((n) => {
             const active = pathname.startsWith(n.href);
             return (
               <Link
                 key={n.href}
                 href={n.href}
-                className={`text-sm tracking-[0.15em] transition-colors ${
+                className={`group relative text-xs uppercase tracking-[0.2em] transition-colors ${
                   active ? "text-ink-900" : "text-ink-700/70 hover:text-ink-900"
                 }`}
               >
                 {n.label}
+                <span
+                  className={`absolute -bottom-1.5 left-0 h-px bg-ink-900 transition-all duration-300 ${
+                    active ? "w-full" : "w-0 group-hover:w-full"
+                  }`}
+                />
               </Link>
             );
           })}

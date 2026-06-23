@@ -96,15 +96,15 @@ export default function PortfolioControls() {
 }
 
 function tab(active: boolean) {
-  return `-mb-px border-b-2 pb-3 tracking-wide transition-colors ${
-    active ? "border-ink-800 text-ink-900" : "border-transparent text-ink-700/50 hover:text-ink-900"
+  return `-mb-px border-b-2 pb-4 text-xs uppercase tracking-[0.15em] transition-colors ${
+    active ? "border-ink-900 text-ink-900" : "border-transparent text-ink-700/45 hover:text-ink-900"
   }`;
 }
 
 function chip(active: boolean) {
-  return `rounded-full border px-4 py-1.5 text-sm transition-colors ${
+  return `border px-4 py-1.5 text-xs uppercase tracking-[0.1em] transition-colors ${
     active
-      ? "border-ink-800 bg-ink-800 text-white"
-      : "border-sand-300 text-ink-700/80 hover:border-ink-700"
+      ? "border-ink-900 bg-ink-900 text-white"
+      : "border-sand-300 text-ink-700/75 hover:border-ink-800 hover:text-ink-900"
   }`;
 }

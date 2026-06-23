@@ -6,49 +6,75 @@
 
 @layer base {
   :root {
-    --header-h: 72px;
+    --header-h: 76px;
   }
   html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
   }
   body {
-    @apply bg-sand-50 text-ink-800 antialiased;
+    @apply bg-sand-50 text-ink-800;
     font-feature-settings: "ss01";
   }
   ::selection {
-    @apply bg-wood-400/30;
+    @apply bg-wood-400/25;
+  }
+  /* 얇고 우아한 헤드라인 */
+  h1,
+  h2,
+  h3 {
+    @apply font-light text-ink-900;
+    word-break: keep-all;
   }
 }
 
 @layer components {
   .container-site {
-    @apply mx-auto w-full max-w-site px-5 sm:px-8;
+    @apply mx-auto w-full max-w-site px-5 sm:px-8 lg:px-12;
   }
+
+  /* 라벨/오버라인 */
+  .overline {
+    @apply text-[0.7rem] font-medium uppercase tracking-[0.25em] text-wood-600;
+  }
+
+  /* 버튼 — 직사각형 얇은 보더, 와이드 트래킹 */
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-sm border px-6 py-3 text-sm font-medium tracking-wide transition-colors;
+    @apply inline-flex items-center justify-center gap-2.5 border px-8 py-3.5 text-xs font-medium uppercase tracking-[0.2em] transition-all duration-300;
   }
   .btn-light {
-    @apply border-white/60 text-white hover:bg-white hover:text-ink-900;
+    @apply border-white/45 text-white hover:border-white hover:bg-white hover:text-ink-900;
   }
   .btn-dark {
-    @apply border-ink-800 bg-ink-800 text-white hover:bg-ink-900;
+    @apply border-ink-900 bg-ink-900 text-white hover:bg-transparent hover:text-ink-900;
   }
   .btn-ghost {
-    @apply border-sand-300 text-ink-700 hover:border-ink-700;
+    @apply border-sand-300 text-ink-800 hover:border-ink-800;
   }
+
+  /* 폼 */
   .field-label {
-    @apply mb-1.5 block text-sm text-ink-700;
+    @apply mb-2 block text-xs uppercase tracking-[0.12em] text-ink-700;
   }
   .field {
-    @apply w-full rounded-sm border border-sand-300 bg-white px-4 py-3 text-sm text-ink-800 outline-none transition-colors placeholder:text-ink-700/40 focus:border-wood-500;
+    @apply w-full border border-sand-300 bg-transparent px-4 py-3 text-sm text-ink-900 outline-none transition-colors placeholder:text-ink-700/40 focus:border-ink-800;
+  }
+
+  .hairline {
+    @apply border-sand-200;
   }
 }
 
-/* 가로 스크롤 스냅 (썸네일 스트립) */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  /* 등장 지연 (인라인 style animationDelay와 함께 사용) */
+  .will-fade {
+    opacity: 0;
+  }
 }

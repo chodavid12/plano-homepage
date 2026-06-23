@@ -48,22 +48,26 @@ export default async function ProjectDetailPage({ params }: { params: { no: stri
   ];
 
   return (
-    <article className="container-site py-12 md:py-16">
+    <article className="container-site py-14 md:py-20">
       {/* 타이틀 */}
-      <header className="mb-8">
-        <p className="text-xs tracking-[0.15em] text-wood-600">{formatNo(project.no)}</p>
-        <h1 className="mt-2 text-3xl text-ink-900">{project.title}</h1>
-        {project.subtitle && <p className="mt-2 text-ink-700/70">{project.subtitle}</p>}
+      <header className="mb-10 animate-fade-up">
+        <p className="overline">{formatNo(project.no)}</p>
+        <h1 className="mt-4 text-4xl tracking-tight md:text-5xl">{project.title}</h1>
+        {project.subtitle && (
+          <p className="mt-4 text-base font-light text-ink-700/80">{project.subtitle}</p>
+        )}
       </header>
 
       {/* 메타 테이블 */}
-      <dl className="mb-12 grid grid-cols-2 gap-x-8 gap-y-4 border-y border-sand-200 py-6 text-sm sm:grid-cols-3 lg:grid-cols-5">
+      <dl className="mb-14 grid grid-cols-2 gap-x-8 gap-y-6 border-y border-sand-200 py-7 text-sm sm:grid-cols-3 lg:grid-cols-5">
         {meta
           .filter((m) => m.value)
           .map((m) => (
             <div key={m.label}>
-              <dt className="text-ink-700/50">{m.label}</dt>
-              <dd className="mt-1 text-ink-900">{m.value}</dd>
+              <dt className="text-[0.7rem] uppercase tracking-[0.15em] text-ink-700/45">
+                {m.label}
+              </dt>
+              <dd className="mt-2 text-ink-900">{m.value}</dd>
             </div>
           ))}
       </dl>
@@ -72,13 +76,15 @@ export default async function ProjectDetailPage({ params }: { params: { no: stri
       <ProjectGallery images={project.images} />
 
       {/* 하단 내비게이션 */}
-      <nav className="mt-16 flex items-center justify-between border-t border-sand-200 pt-8">
+      <nav className="mt-20 flex items-center justify-between border-t border-sand-200 pt-10">
         <Link href="/portfolio" className="btn btn-ghost">
           목록보기
         </Link>
         <Link href={`/portfolio/${next.no}`} className="group text-right">
-          <span className="block text-xs tracking-[0.15em] text-ink-700/50">다음 프로젝트</span>
-          <span className="mt-1 block text-ink-900 group-hover:text-wood-600">
+          <span className="block text-[0.7rem] uppercase tracking-[0.18em] text-ink-700/45">
+            Next Project
+          </span>
+          <span className="mt-1.5 block font-light text-ink-900 transition-colors group-hover:text-wood-600">
             {next.title} →
           </span>
         </Link>
