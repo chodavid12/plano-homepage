@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9E2D6"/>
+      <stop offset="0.55" stop-color="#E7DFD1"/>
+      <stop offset="1" stop-color="#DFD3C0"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#CBB089"/>
+      <stop offset="1" stop-color="#B7976D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <!-- 천장 매입등 -->
+  <g fill="#FBF7EF" opacity="0.85">
+    <ellipse cx="430" cy="120" rx="22" ry="10"/>
+    <ellipse cx="800" cy="110" rx="22" ry="10"/>
+    <ellipse cx="1170" cy="120" rx="22" ry="10"/>
+  </g>
+  <!-- 상부장 -->
+  <g fill="url(#wood)">
+    <rect x="250" y="210" width="1100" height="250" rx="4"/>
+  </g>
+  <g stroke="#9C8463" stroke-opacity="0.35" stroke-width="2">
+    <line x1="430" y1="210" x2="430" y2="460"/>
+    <line x1="610" y1="210" x2="610" y2="460"/>
+    <line x1="790" y1="210" x2="790" y2="460"/>
+    <line x1="970" y1="210" x2="970" y2="460"/>
+    <line x1="1150" y1="210" x2="1150" y2="460"/>
+  </g>
+  <!-- 상판/백스플래시 -->
+  <rect x="250" y="470" width="1100" height="110" fill="#F4EFE6"/>
+  <!-- 하부장 -->
+  <rect x="250" y="600" width="1100" height="320" fill="url(#wood)"/>
+  <g stroke="#8C6F4B" stroke-opacity="0.35" stroke-width="2">
+    <line x1="520" y1="600" x2="520" y2="920"/>
+    <line x1="800" y1="600" x2="800" y2="920"/>
+    <line x1="1080" y1="600" x2="1080" y2="920"/>
+  </g>
+  <rect width="1600" height="1000" fill="#1c1916" opacity="0.18"/>
+</svg>

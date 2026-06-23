@@ -1,0 +1,54 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --header-h: 72px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-sand-50 text-ink-800 antialiased;
+    font-feature-settings: "ss01";
+  }
+  ::selection {
+    @apply bg-wood-400/30;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-site px-5 sm:px-8;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border px-6 py-3 text-sm font-medium tracking-wide transition-colors;
+  }
+  .btn-light {
+    @apply border-white/60 text-white hover:bg-white hover:text-ink-900;
+  }
+  .btn-dark {
+    @apply border-ink-800 bg-ink-800 text-white hover:bg-ink-900;
+  }
+  .btn-ghost {
+    @apply border-sand-300 text-ink-700 hover:border-ink-700;
+  }
+  .field-label {
+    @apply mb-1.5 block text-sm text-ink-700;
+  }
+  .field {
+    @apply w-full rounded-sm border border-sand-300 bg-white px-4 py-3 text-sm text-ink-800 outline-none transition-colors placeholder:text-ink-700/40 focus:border-wood-500;
+  }
+}
+
+/* 가로 스크롤 스냅 (썸네일 스트립) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

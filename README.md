@@ -1,9 +1,44 @@
 # PLANO Homepage
 
 플라노디자인(PLANO DESIGN) 공식 홈페이지 — 인테리어 스튜디오의 포트폴리오/상담 사이트.
-포트폴리오 콘텐츠는 **Notion에서 관리 → 사이트가 자동 동기화**되는 구조로 설계한다.
+포트폴리오 콘텐츠는 **Notion에서 관리 → 사이트가 자동 동기화**되는 구조다.
 
-> 현재 단계: **기획 문서(기획안 + 기술서)** 정리. 실제 사이트 구현은 후속 단계.
+Next.js(App Router) + Tailwind + Supabase + Notion 기반으로 구현되어 있으며,
+**Notion/Supabase 미연동 상태에서도 시드 데이터로 전체 UI가 동작**한다.
+
+## 로컬 실행
+
+```bash
+npm install
+npm run dev            # http://localhost:3000 (기본: 시드 데이터)
+```
+
+- 환경변수는 `.env.example`를 복사해 `.env.local`로 설정한다.
+- `DATA_SOURCE`:
+  - `auto`(기본) — Supabase 설정 시 Supabase, 아니면 시드
+  - `seed` — 항상 시드 데이터
+  - `supabase` — 항상 Supabase
+
+## 동기화 (Notion → Supabase)
+
+```bash
+# Supabase 스키마 적용: supabase/migrations/0001_init.sql
+npm run sync           # 노출 ✓ 행을 동기화 (이미지는 Supabase Storage로 캐싱)
+npm run sync -- --force  # 이미지 전체 재업로드
+```
+
+- 운영: `vercel.json`의 Vercel Cron이 30분마다 `/api/sync` 호출
+- 즉시 반영: Notion 자동화/버튼 → `/api/sync?secret=...` 또는 `/api/revalidate?secret=...`
+
+## 디렉터리
+
+```
+src/app/            라우트 (메인·about·portfolio·consultant·api)
+src/components/      UI 컴포넌트 (layout / portfolio / consultant)
+src/lib/            data·supabase·notion·sync·seed·filter·rooms·types
+supabase/migrations 스키마 SQL
+scripts/sync.ts     동기화 CLI
+```
 
 ## 핵심 개념
 
