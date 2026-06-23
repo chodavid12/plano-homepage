@@ -3,7 +3,7 @@ import type { Project } from "./types";
 // 로컬/미연동 상태에서 UI를 완전히 구동하기 위한 시드 데이터.
 // Notion·Supabase 연동 시 동일한 Project 형태를 동기화로 채운다.
 
-const IMG = (n: number) => `/seed/p${((n - 1) % 6) + 1}.svg`;
+const IMG = (n: number) => `/portfolio/r${((n - 1) % 3) + 1}.webp`;
 
 function rooms(no: number, list: string[]) {
   return list.map((room, i) => ({
