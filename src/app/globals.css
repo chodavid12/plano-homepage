@@ -1,4 +1,15 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap");
+
+/* 워드마크 전용 — 학교안심 자연 R */
+@font-face {
+  font-family: "HakgyoansimJayeonR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2508-2@1.0/HakgyoansimJayeonR.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
@@ -19,11 +30,11 @@
   ::selection {
     @apply bg-wood-400/25;
   }
-  /* 얇고 우아한 헤드라인 */
+  /* 헤드라인 — 라틴=Jost / 한글=Gowun Batang(명조) */
   h1,
   h2,
   h3 {
-    @apply font-light text-ink-900;
+    @apply font-display font-normal text-ink-900;
     word-break: keep-all;
   }
 }
@@ -35,7 +46,7 @@
 
   /* 라벨/오버라인 */
   .overline {
-    @apply text-[0.7rem] font-medium uppercase tracking-[0.25em] text-wood-600;
+    @apply font-display text-[0.7rem] font-medium uppercase tracking-[0.25em] text-wood-600;
   }
 
   /* 버튼 — 직사각형 얇은 보더, 와이드 트래킹 */

@@ -34,6 +34,10 @@ const config: Config = {
           "Roboto",
           "sans-serif",
         ],
+        // 디스플레이(헤딩) — 라틴=Jost(지오메트릭), 한글=Gowun Batang(명조 세리프)
+        display: ["Jost", "Gowun Batang", "Pretendard Variable", "Pretendard", "sans-serif"],
+        // 워드마크 전용 — 학교안심 자연 R
+        wordmark: ["HakgyoansimJayeonR", "Jost", "Pretendard Variable", "sans-serif"],
       },
       letterSpacing: {
         brand: "0.45em",
@@ -54,11 +58,16 @@ const config: Config = {
           "0%": { transform: "scale(1.08)" },
           "100%": { transform: "scale(1)" },
         },
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         "fade-up": "fadeUp 0.8s cubic-bezier(0.22,1,0.36,1) both",
         "fade-in": "fadeIn 1s ease both",
         "zoom-slow": "zoomSlow 1.4s cubic-bezier(0.22,1,0.36,1) both",
+        "spin-slow": "spin 26s linear infinite",
       },
     },
   },

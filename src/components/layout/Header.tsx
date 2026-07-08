@@ -38,7 +38,7 @@ export default function Header() {
               <Link
                 key={n.href}
                 href={n.href}
-                className={`group relative text-xs uppercase tracking-[0.2em] transition-colors ${
+                className={`group relative font-display text-xs uppercase tracking-[0.2em] transition-colors ${
                   active ? "text-ink-900" : "text-ink-700/70 hover:text-ink-900"
                 }`}
               >

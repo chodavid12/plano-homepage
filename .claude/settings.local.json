@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(echo \"npm: $\\(npm -v 2>&1\\)\")",
+      "Bash(git --version)",
+      "Bash(echo \"git: $\\(git --version 2>&1\\)\")",
+      "Bash(gh --version)",
+      "Bash(git clone *)",
+      "Bash(set -e)",
+      "Bash(rm -rf /tmp/plano-clone)",
+      "Bash(mv /tmp/plano-clone/.git .)",
+      "Bash(git reset *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -sL --max-time 20 https://planodesign.kr -o /tmp/plano_live.html -w \"HTTP %{http_code} size=%{size_download}\\\\n\")",
+      "Read(//tmp/**)",
+      "Bash(python3 -)"
+    ]
+  }
+}

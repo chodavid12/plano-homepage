@@ -4,12 +4,28 @@ import Image from "next/image";
 import { useMemo, useState } from "react";
 import type { ProjectImage } from "@/lib/types";
 
-export default function ProjectGallery({ images }: { images: ProjectImage[] }) {
+interface MetaItem {
+  label: string;
+  value: string;
+}
+
+interface Props {
+  images: ProjectImage[];
+  title: string;
+  subtitle?: string;
+  meta: MetaItem[];
+}
+
+// 상세 갤러리 — 좌: 제목·정보·썸네일 / 우: 큰 메인 이미지 (LILSQUARE식 2단)
+export default function ProjectGallery({ images, title, subtitle, meta }: Props) {
   // 공간(room) 순서 유지하며 그룹화
   const rooms = useMemo(() => {
+    // '대표'는 목록 카드 커버·호버용 → 상세 갤러리 탭에서는 제외
+    const visible = images.filter((im) => im.room !== "대표");
+    const src = visible.length ? visible : images;
     const order: string[] = [];
     const map = new Map<string, ProjectImage[]>();
-    for (const im of images) {
+    for (const im of src) {
       if (!map.has(im.room)) {
         map.set(im.room, []);
         order.push(im.room);
@@ -26,6 +42,7 @@ export default function ProjectGallery({ images }: { images: ProjectImage[] }) {
     return <p className="py-20 text-center text-ink-700/50">등록된 이미지가 없습니다.</p>;
   }
 
+  const showTabs = rooms.length > 1 && rooms.some((r) => r.room);
   const current = rooms[Math.min(roomIdx, rooms.length - 1)];
   const items = current.items;
   const active = items[Math.min(imgIdx, items.length - 1)];
@@ -39,61 +56,85 @@ export default function ProjectGallery({ images }: { images: ProjectImage[] }) {
   };
 
   return (
-    <div>
-      {/* 공간별 탭 */}
-      <div className="no-scrollbar flex gap-6 overflow-x-auto border-b border-sand-200 text-sm">
-        {rooms.map((r, i) => (
-          <button
-            key={r.room}
-            type="button"
-            onClick={() => selectRoom(i)}
-            className={`-mb-px shrink-0 border-b-2 pb-4 text-xs uppercase tracking-[0.12em] transition-colors ${
-              i === roomIdx
-                ? "border-ink-900 text-ink-900"
-                : "border-transparent text-ink-700/45 hover:text-ink-900"
-            }`}
-          >
-            {r.room}
-          </button>
-        ))}
-      </div>
+    <div className="grid gap-x-8 gap-y-8 lg:grid-cols-[minmax(0,3.5fr)_minmax(0,8.5fr)] lg:items-start">
+      {/* 좌상단 — 제목 / 메타 / 공간탭 */}
+      <div className="animate-fade-up lg:col-start-1 lg:row-start-1">
+        <h1 className="text-3xl tracking-tight text-ink-900 md:text-4xl">{title}</h1>
+        {subtitle && (
+          <p className="mt-3 text-base font-light text-ink-700/80">{subtitle}</p>
+        )}
 
-      {/* 메인 이미지 */}
-      <div className="relative mt-8 aspect-[16/10] overflow-hidden bg-sand-200">
-        <Image
-          src={active.imageUrl}
-          alt={`${current.room} ${imgIdx + 1}`}
-          fill
-          sizes="(max-width: 1024px) 100vw, 960px"
-          className="object-cover"
-          priority
-        />
-        {items.length > 1 && (
-          <>
-            <NavButton dir="prev" onClick={() => move(-1)} />
-            <NavButton dir="next" onClick={() => move(1)} />
-            <div className="absolute bottom-3 right-3 rounded-full bg-ink-900/55 px-3 py-1 text-xs text-white">
-              {imgIdx + 1} / {items.length}
-            </div>
-          </>
+        {meta.length > 0 && (
+          <dl className="mt-8 space-y-2.5 border-t border-sand-200 pt-7 text-sm">
+            {meta.map((m) => (
+              <div key={m.label} className="flex gap-5">
+                <dt className="w-12 shrink-0 text-[0.7rem] uppercase tracking-[0.15em] text-ink-700/45">
+                  {m.label}
+                </dt>
+                <dd className="text-ink-900">{m.value}</dd>
+              </div>
+            ))}
+          </dl>
+        )}
+
+        {showTabs && (
+          <div className="no-scrollbar mt-8 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            {rooms.map((r, i) => (
+              <button
+                key={r.room}
+                type="button"
+                onClick={() => selectRoom(i)}
+                className={`text-xs uppercase tracking-[0.12em] transition-colors ${
+                  i === roomIdx ? "text-ink-900" : "text-ink-700/45 hover:text-ink-900"
+                }`}
+              >
+                {r.room}
+              </button>
+            ))}
+          </div>
         )}
       </div>
 
-      {/* 썸네일 스트립 */}
-      {items.length > 1 && (
-        <div className="no-scrollbar mt-4 flex gap-3 overflow-x-auto pb-1">
+      {/* 우측 — 메인 이미지 (모바일에선 제목 아래) */}
+      <div className="lg:col-start-2 lg:row-span-2 lg:row-start-1">
+        <div className="relative aspect-[3/2] overflow-hidden bg-sand-200">
+          <Image
+            src={active.imageUrl}
+            alt={`${title} ${imgIdx + 1}`}
+            fill
+            sizes="(max-width: 1024px) 100vw, 800px"
+            className="object-cover"
+            priority
+          />
+          {items.length > 1 && (
+            <>
+              <NavButton dir="prev" onClick={() => move(-1)} />
+              <NavButton dir="next" onClick={() => move(1)} />
+              <div className="absolute bottom-3 right-3 rounded-full bg-ink-900/55 px-3 py-1 text-xs text-white">
+                {imgIdx + 1} / {items.length}
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+
+      {/* 좌하단 — 썸네일 그리드 */}
+      <div className="lg:col-start-1 lg:row-start-2">
+        <div className="grid grid-cols-4 gap-2.5">
           {items.map((im, i) => (
             <button
               key={im.id}
               type="button"
               onClick={() => setImgIdx(i)}
-              className={`relative aspect-[4/3] w-28 shrink-0 overflow-hidden transition-opacity ${
-                i === imgIdx ? "ring-2 ring-ink-900 ring-offset-2 ring-offset-sand-50" : "opacity-60 hover:opacity-100"
+              className={`relative aspect-[4/3] overflow-hidden transition-opacity ${
+                i === imgIdx
+                  ? "ring-2 ring-ink-900 ring-offset-2 ring-offset-sand-50"
+                  : "opacity-55 hover:opacity-100"
               }`}
             >
               <Image
                 src={im.imageUrl}
-                alt={`${current.room} 썸네일 ${i + 1}`}
+                alt={`썸네일 ${i + 1}`}
                 fill
                 sizes="120px"
                 className="object-cover"
@@ -101,7 +142,7 @@ export default function ProjectGallery({ images }: { images: ProjectImage[] }) {
             </button>
           ))}
         </div>
-      )}
+      </div>
     </div>
   );
 }

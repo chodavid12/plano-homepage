@@ -4,12 +4,13 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { SIZE_FILTERS } from "@/lib/rooms";
 
-export default function PortfolioControls() {
+export default function PortfolioControls({ rooms }: { rooms: string[] }) {
   const router = useRouter();
   const params = useSearchParams();
 
   const view = params.get("view") === "space" ? "space" : "project";
   const size = params.get("size") || "all";
+  const room = params.get("room") || "all";
   const [q, setQ] = useState(params.get("q") || "");
 
   useEffect(() => {
@@ -35,14 +36,14 @@ export default function PortfolioControls() {
       <div className="flex gap-6 border-b border-sand-200 text-sm">
         <button
           type="button"
-          onClick={() => update({ view: null })}
+          onClick={() => update({ view: null, room: null })}
           className={tab(view === "project")}
         >
           프로젝트별로 보기
         </button>
         <button
           type="button"
-          onClick={() => update({ view: "space" })}
+          onClick={() => update({ view: "space", size: null })}
           className={tab(view === "space")}
         >
           세부 공간별로 보기
@@ -50,19 +51,32 @@ export default function PortfolioControls() {
       </div>
 
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-        {/* 평형 필터 */}
-        <div className="flex flex-wrap gap-2">
-          {SIZE_FILTERS.map((f) => (
-            <button
-              key={f.value}
-              type="button"
-              onClick={() => update({ size: f.value })}
-              className={chip(size === f.value)}
-            >
-              {f.label}
+        {/* 필터 — 프로젝트뷰: 평형 / 공간뷰: 공간 */}
+        {view === "space" ? (
+          <div className="flex flex-wrap gap-2">
+            <button type="button" onClick={() => update({ room: null })} className={chip(room === "all")}>
+              전체
             </button>
-          ))}
-        </div>
+            {rooms.map((r) => (
+              <button key={r} type="button" onClick={() => update({ room: r })} className={chip(room === r)}>
+                {r}
+              </button>
+            ))}
+          </div>
+        ) : (
+          <div className="flex flex-wrap gap-2">
+            {SIZE_FILTERS.map((f) => (
+              <button
+                key={f.value}
+                type="button"
+                onClick={() => update({ size: f.value })}
+                className={chip(size === f.value)}
+              >
+                {f.label}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* 검색 */}
         <form

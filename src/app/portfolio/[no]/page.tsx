@@ -2,7 +2,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getProject, getProjects } from "@/lib/data";
-import { formatNo } from "@/lib/filter";
 import ProjectGallery from "@/components/portfolio/ProjectGallery";
 
 export const dynamicParams = true;
@@ -20,8 +19,8 @@ export async function generateMetadata({
   const project = await getProject(Number(params.no));
   if (!project) return { title: "프로젝트를 찾을 수 없습니다" };
   return {
-    title: `${project.title} (${formatNo(project.no)})`,
-    description: `${project.apartment ?? ""} ${project.areaSupply ?? ""} · 플라노디자인 인테리어`,
+    title: project.title,
+    description: `${project.title} · 플라노디자인 인테리어`,
   };
 }
 
@@ -47,46 +46,25 @@ export default async function ProjectDetailPage({ params }: { params: { no: stri
     { label: "기간", value: project.period },
   ];
 
+  const metaItems = meta.filter((m): m is { label: string; value: string } => Boolean(m.value));
+
   return (
-    <article className="container-site py-14 md:py-20">
-      {/* 타이틀 */}
-      <header className="mb-10 animate-fade-up">
-        <p className="overline">{formatNo(project.no)}</p>
-        <h1 className="mt-4 text-4xl tracking-tight md:text-5xl">{project.title}</h1>
-        {project.subtitle && (
-          <p className="mt-4 text-base font-light text-ink-700/80">{project.subtitle}</p>
-        )}
-      </header>
-
-      {/* 메타 테이블 */}
-      <dl className="mb-14 grid grid-cols-2 gap-x-8 gap-y-6 border-y border-sand-200 py-7 text-sm sm:grid-cols-3 lg:grid-cols-5">
-        {meta
-          .filter((m) => m.value)
-          .map((m) => (
-            <div key={m.label}>
-              <dt className="text-[0.7rem] uppercase tracking-[0.15em] text-ink-700/45">
-                {m.label}
-              </dt>
-              <dd className="mt-2 text-ink-900">{m.value}</dd>
-            </div>
-          ))}
-      </dl>
-
-      {/* 공간별 갤러리 */}
-      <ProjectGallery images={project.images} />
+    <article className="mx-auto w-full max-w-[1600px] px-5 py-14 sm:px-6 md:py-20 lg:px-8">
+      {/* 상세 갤러리 — 좌: 제목·정보·썸네일 / 우: 메인 이미지 */}
+      <ProjectGallery
+        images={project.images}
+        title={project.title}
+        subtitle={project.subtitle}
+        meta={metaItems}
+      />
 
       {/* 하단 내비게이션 */}
-      <nav className="mt-20 flex items-center justify-between border-t border-sand-200 pt-10">
+      <nav className="mt-16 flex items-center justify-between border-t border-sand-200 pt-8">
+        <Link href={`/portfolio/${next.no}`} className="btn btn-ghost" title={next.title}>
+          다음
+        </Link>
         <Link href="/portfolio" className="btn btn-ghost">
           목록보기
-        </Link>
-        <Link href={`/portfolio/${next.no}`} className="group text-right">
-          <span className="block text-[0.7rem] uppercase tracking-[0.18em] text-ink-700/45">
-            Next Project
-          </span>
-          <span className="mt-1.5 block font-light text-ink-900 transition-colors group-hover:text-wood-600">
-            {next.title} →
-          </span>
         </Link>
       </nav>
     </article>
