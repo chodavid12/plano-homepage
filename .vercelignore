@@ -1,0 +1,6 @@
+# 배포 업로드 제외 — 사이트는 public/portfolio/의 webp만 사용
+포트폴리오/
+node_modules
+.next
+.git
+scratchpad
