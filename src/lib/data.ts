@@ -67,21 +67,21 @@ function seedSorted(): Project[] {
   return [...SEED_PROJECTS].sort((a, b) => a.sortOrder - b.sortOrder);
 }
 
-// 'portfolio' 태그로 캐싱 → 동기화 잡이 revalidateTag('portfolio')로 갱신
-const getProjectsCached = unstable_cache(
-  async (): Promise<Project[]> => {
-    if (useSupabase()) {
-      const rows = await fromSupabase();
-      if (rows && rows.length) return rows;
-    }
-    return seedSorted();
-  },
-  ["projects"],
+// Supabase 조회만 캐싱('portfolio' 태그 → revalidateTag로 갱신).
+// seed 는 빌드에 구워진 정적 데이터라 캐시하지 않는다 —
+// unstable_cache 결과가 배포 간에 복원되어 새 seed가 안 보이는 문제 방지.
+const getSupabaseCached = unstable_cache(
+  async (): Promise<Project[] | null> => fromSupabase(),
+  ["projects-supabase"],
   { tags: ["portfolio"], revalidate: 1800 },
 );
 
 export async function getProjects(): Promise<Project[]> {
-  return getProjectsCached();
+  if (useSupabase()) {
+    const rows = await getSupabaseCached();
+    if (rows && rows.length) return rows;
+  }
+  return seedSorted();
 }
 
 export async function getProject(no: number): Promise<Project | null> {
