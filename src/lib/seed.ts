@@ -1284,9 +1284,10 @@ export const SEED_PROJECTS: Project[] = [
   {
     "no": 8,
     "notionPageId": "360b4280-8b58-8051-bb99-f3d1d7570704",
-    "title": "힐스테이트상도프레스티지 201동 1302호",
-    "apartment": "힐스테이트상도프레스티지 201동 1302호",
+    "title": "힐스테이트상도프레스티지 34평형",
+    "apartment": "힐스테이트상도프레스티지 34평형",
     "sizeCategory": "30PY",
+    "areaSupply": "34평형",
     "coverUrl": "/portfolio/p8/01.webp",
     "sortOrder": 8,
     "images": [
@@ -1304,72 +1305,157 @@ export const SEED_PROJECTS: Project[] = [
       },
       {
         "id": "8-3",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p8/03.webp",
         "sortOrder": 2
       },
       {
         "id": "8-4",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p8/04.webp",
         "sortOrder": 3
       },
       {
         "id": "8-5",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p8/05.webp",
         "sortOrder": 4
       },
       {
         "id": "8-6",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p8/06.webp",
         "sortOrder": 5
       },
       {
         "id": "8-7",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p8/07.webp",
         "sortOrder": 6
       },
       {
         "id": "8-8",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p8/08.webp",
         "sortOrder": 7
       },
       {
         "id": "8-9",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p8/09.webp",
         "sortOrder": 8
       },
       {
         "id": "8-10",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p8/10.webp",
         "sortOrder": 9
       },
       {
         "id": "8-11",
-        "room": "대표",
+        "room": "주방",
         "imageUrl": "/portfolio/p8/11.webp",
         "sortOrder": 10
       },
       {
         "id": "8-12",
-        "room": "대표",
+        "room": "주방",
         "imageUrl": "/portfolio/p8/12.webp",
         "sortOrder": 11
+      },
+      {
+        "id": "8-13",
+        "room": "주방",
+        "imageUrl": "/portfolio/p8/13.webp",
+        "sortOrder": 12
+      },
+      {
+        "id": "8-14",
+        "room": "주방",
+        "imageUrl": "/portfolio/p8/14.webp",
+        "sortOrder": 13
+      },
+      {
+        "id": "8-15",
+        "room": "주방",
+        "imageUrl": "/portfolio/p8/15.webp",
+        "sortOrder": 14
+      },
+      {
+        "id": "8-16",
+        "room": "주방",
+        "imageUrl": "/portfolio/p8/16.webp",
+        "sortOrder": 15
+      },
+      {
+        "id": "8-17",
+        "room": "침실",
+        "imageUrl": "/portfolio/p8/17.webp",
+        "sortOrder": 16
+      },
+      {
+        "id": "8-18",
+        "room": "침실",
+        "imageUrl": "/portfolio/p8/18.webp",
+        "sortOrder": 17
+      },
+      {
+        "id": "8-19",
+        "room": "침실",
+        "imageUrl": "/portfolio/p8/19.webp",
+        "sortOrder": 18
+      },
+      {
+        "id": "8-20",
+        "room": "침실",
+        "imageUrl": "/portfolio/p8/20.webp",
+        "sortOrder": 19
+      },
+      {
+        "id": "8-21",
+        "room": "침실",
+        "imageUrl": "/portfolio/p8/21.webp",
+        "sortOrder": 20
+      },
+      {
+        "id": "8-22",
+        "room": "침실",
+        "imageUrl": "/portfolio/p8/22.webp",
+        "sortOrder": 21
+      },
+      {
+        "id": "8-23",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p8/23.webp",
+        "sortOrder": 22
+      },
+      {
+        "id": "8-24",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p8/24.webp",
+        "sortOrder": 23
+      },
+      {
+        "id": "8-25",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p8/25.webp",
+        "sortOrder": 24
+      },
+      {
+        "id": "8-26",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p8/26.webp",
+        "sortOrder": 25
       }
     ]
   },
   {
     "no": 9,
     "notionPageId": "35fb4280-8b58-80b4-b9ea-e1f8c44e5e2e",
-    "title": "신공덕래미안3차 303동 503호",
-    "apartment": "신공덕래미안3차 303동 503호",
-    "sizeCategory": "30PY",
+    "title": "신공덕래미안3차 24평형",
+    "apartment": "신공덕래미안3차 24평형",
+    "sizeCategory": "20PY",
+    "areaSupply": "24평형",
     "coverUrl": "/portfolio/p9/01.webp",
     "sortOrder": 9,
     "images": [
@@ -1387,63 +1473,153 @@ export const SEED_PROJECTS: Project[] = [
       },
       {
         "id": "9-3",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p9/03.webp",
         "sortOrder": 2
       },
       {
         "id": "9-4",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p9/04.webp",
         "sortOrder": 3
       },
       {
         "id": "9-5",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p9/05.webp",
         "sortOrder": 4
       },
       {
         "id": "9-6",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p9/06.webp",
         "sortOrder": 5
       },
       {
         "id": "9-7",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p9/07.webp",
         "sortOrder": 6
       },
       {
         "id": "9-8",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p9/08.webp",
         "sortOrder": 7
       },
       {
         "id": "9-9",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p9/09.webp",
         "sortOrder": 8
       },
       {
         "id": "9-10",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p9/10.webp",
         "sortOrder": 9
       },
       {
         "id": "9-11",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p9/11.webp",
         "sortOrder": 10
       },
       {
         "id": "9-12",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p9/12.webp",
         "sortOrder": 11
+      },
+      {
+        "id": "9-13",
+        "room": "복도",
+        "imageUrl": "/portfolio/p9/13.webp",
+        "sortOrder": 12
+      },
+      {
+        "id": "9-14",
+        "room": "주방",
+        "imageUrl": "/portfolio/p9/14.webp",
+        "sortOrder": 13
+      },
+      {
+        "id": "9-15",
+        "room": "주방",
+        "imageUrl": "/portfolio/p9/15.webp",
+        "sortOrder": 14
+      },
+      {
+        "id": "9-16",
+        "room": "주방",
+        "imageUrl": "/portfolio/p9/16.webp",
+        "sortOrder": 15
+      },
+      {
+        "id": "9-17",
+        "room": "주방",
+        "imageUrl": "/portfolio/p9/17.webp",
+        "sortOrder": 16
+      },
+      {
+        "id": "9-18",
+        "room": "주방",
+        "imageUrl": "/portfolio/p9/18.webp",
+        "sortOrder": 17
+      },
+      {
+        "id": "9-19",
+        "room": "주방",
+        "imageUrl": "/portfolio/p9/19.webp",
+        "sortOrder": 18
+      },
+      {
+        "id": "9-20",
+        "room": "침실",
+        "imageUrl": "/portfolio/p9/20.webp",
+        "sortOrder": 19
+      },
+      {
+        "id": "9-21",
+        "room": "침실",
+        "imageUrl": "/portfolio/p9/21.webp",
+        "sortOrder": 20
+      },
+      {
+        "id": "9-22",
+        "room": "침실",
+        "imageUrl": "/portfolio/p9/22.webp",
+        "sortOrder": 21
+      },
+      {
+        "id": "9-23",
+        "room": "침실",
+        "imageUrl": "/portfolio/p9/23.webp",
+        "sortOrder": 22
+      },
+      {
+        "id": "9-24",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p9/24.webp",
+        "sortOrder": 23
+      },
+      {
+        "id": "9-25",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p9/25.webp",
+        "sortOrder": 24
+      },
+      {
+        "id": "9-26",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p9/26.webp",
+        "sortOrder": 25
+      },
+      {
+        "id": "9-27",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p9/27.webp",
+        "sortOrder": 26
       }
     ]
   },
@@ -1612,9 +1788,10 @@ export const SEED_PROJECTS: Project[] = [
   {
     "no": 11,
     "notionPageId": "33cb4280-8b58-80f6-8c03-ecd236d091b2",
-    "title": "영등포 삼환 102동 504호",
-    "apartment": "영등포 삼환 102동 504호",
+    "title": "영등포 삼환 32평형",
+    "apartment": "영등포 삼환 32평형",
     "sizeCategory": "30PY",
+    "areaSupply": "32평형",
     "coverUrl": "/portfolio/p11/01.webp",
     "sortOrder": 11,
     "images": [
@@ -1632,72 +1809,97 @@ export const SEED_PROJECTS: Project[] = [
       },
       {
         "id": "11-3",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p11/03.webp",
         "sortOrder": 2
       },
       {
         "id": "11-4",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p11/04.webp",
         "sortOrder": 3
       },
       {
         "id": "11-5",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p11/05.webp",
         "sortOrder": 4
       },
       {
         "id": "11-6",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p11/06.webp",
         "sortOrder": 5
       },
       {
         "id": "11-7",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p11/07.webp",
         "sortOrder": 6
       },
       {
         "id": "11-8",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p11/08.webp",
         "sortOrder": 7
       },
       {
         "id": "11-9",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p11/09.webp",
         "sortOrder": 8
       },
       {
         "id": "11-10",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p11/10.webp",
         "sortOrder": 9
       },
       {
         "id": "11-11",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p11/11.webp",
         "sortOrder": 10
       },
       {
         "id": "11-12",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p11/12.webp",
         "sortOrder": 11
+      },
+      {
+        "id": "11-13",
+        "room": "주방",
+        "imageUrl": "/portfolio/p11/13.webp",
+        "sortOrder": 12
+      },
+      {
+        "id": "11-14",
+        "room": "주방",
+        "imageUrl": "/portfolio/p11/14.webp",
+        "sortOrder": 13
+      },
+      {
+        "id": "11-15",
+        "room": "주방",
+        "imageUrl": "/portfolio/p11/15.webp",
+        "sortOrder": 14
+      },
+      {
+        "id": "11-16",
+        "room": "주방",
+        "imageUrl": "/portfolio/p11/16.webp",
+        "sortOrder": 15
       }
     ]
   },
   {
     "no": 12,
     "notionPageId": "334b4280-8b58-80b6-aa1e-cacd8bc9da8c",
-    "title": "정릉힐스테이트(현대홈타운) 105동 2301호",
-    "apartment": "정릉힐스테이트(현대홈타운) 105동 2301호",
+    "title": "정릉힐스테이트(현대홈타운) 34평형",
+    "apartment": "정릉힐스테이트(현대홈타운) 34평형",
     "sizeCategory": "30PY",
+    "areaSupply": "34평형",
     "coverUrl": "/portfolio/p12/01.webp",
     "sortOrder": 12,
     "images": [
@@ -1715,72 +1917,157 @@ export const SEED_PROJECTS: Project[] = [
       },
       {
         "id": "12-3",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p12/03.webp",
         "sortOrder": 2
       },
       {
         "id": "12-4",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p12/04.webp",
         "sortOrder": 3
       },
       {
         "id": "12-5",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p12/05.webp",
         "sortOrder": 4
       },
       {
         "id": "12-6",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p12/06.webp",
         "sortOrder": 5
       },
       {
         "id": "12-7",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p12/07.webp",
         "sortOrder": 6
       },
       {
         "id": "12-8",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p12/08.webp",
         "sortOrder": 7
       },
       {
         "id": "12-9",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p12/09.webp",
         "sortOrder": 8
       },
       {
         "id": "12-10",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p12/10.webp",
         "sortOrder": 9
       },
       {
         "id": "12-11",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p12/11.webp",
         "sortOrder": 10
       },
       {
         "id": "12-12",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p12/12.webp",
         "sortOrder": 11
+      },
+      {
+        "id": "12-13",
+        "room": "거실",
+        "imageUrl": "/portfolio/p12/13.webp",
+        "sortOrder": 12
+      },
+      {
+        "id": "12-14",
+        "room": "복도",
+        "imageUrl": "/portfolio/p12/14.webp",
+        "sortOrder": 13
+      },
+      {
+        "id": "12-15",
+        "room": "복도",
+        "imageUrl": "/portfolio/p12/15.webp",
+        "sortOrder": 14
+      },
+      {
+        "id": "12-16",
+        "room": "주방",
+        "imageUrl": "/portfolio/p12/16.webp",
+        "sortOrder": 15
+      },
+      {
+        "id": "12-17",
+        "room": "주방",
+        "imageUrl": "/portfolio/p12/17.webp",
+        "sortOrder": 16
+      },
+      {
+        "id": "12-18",
+        "room": "주방",
+        "imageUrl": "/portfolio/p12/18.webp",
+        "sortOrder": 17
+      },
+      {
+        "id": "12-19",
+        "room": "주방",
+        "imageUrl": "/portfolio/p12/19.webp",
+        "sortOrder": 18
+      },
+      {
+        "id": "12-20",
+        "room": "주방",
+        "imageUrl": "/portfolio/p12/20.webp",
+        "sortOrder": 19
+      },
+      {
+        "id": "12-21",
+        "room": "주방",
+        "imageUrl": "/portfolio/p12/21.webp",
+        "sortOrder": 20
+      },
+      {
+        "id": "12-22",
+        "room": "침실",
+        "imageUrl": "/portfolio/p12/22.webp",
+        "sortOrder": 21
+      },
+      {
+        "id": "12-23",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p12/23.webp",
+        "sortOrder": 22
+      },
+      {
+        "id": "12-24",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p12/24.webp",
+        "sortOrder": 23
+      },
+      {
+        "id": "12-25",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p12/25.webp",
+        "sortOrder": 24
+      },
+      {
+        "id": "12-26",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p12/26.webp",
+        "sortOrder": 25
       }
     ]
   },
   {
     "no": 13,
     "notionPageId": "334b4280-8b58-8031-b65b-cc1282b3a7a2",
-    "title": "흑석한강푸르지오 110동 902호",
-    "apartment": "흑석한강푸르지오 110동 902호",
+    "title": "흑석한강푸르지오 32평형",
+    "apartment": "흑석한강푸르지오 32평형",
     "sizeCategory": "30PY",
+    "areaSupply": "32평형",
     "coverUrl": "/portfolio/p13/01.webp",
     "sortOrder": 13,
     "images": [
@@ -1798,72 +2085,169 @@ export const SEED_PROJECTS: Project[] = [
       },
       {
         "id": "13-3",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p13/03.webp",
         "sortOrder": 2
       },
       {
         "id": "13-4",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p13/04.webp",
         "sortOrder": 3
       },
       {
         "id": "13-5",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p13/05.webp",
         "sortOrder": 4
       },
       {
         "id": "13-6",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p13/06.webp",
         "sortOrder": 5
       },
       {
         "id": "13-7",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p13/07.webp",
         "sortOrder": 6
       },
       {
         "id": "13-8",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p13/08.webp",
         "sortOrder": 7
       },
       {
         "id": "13-9",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p13/09.webp",
         "sortOrder": 8
       },
       {
         "id": "13-10",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p13/10.webp",
         "sortOrder": 9
       },
       {
         "id": "13-11",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p13/11.webp",
         "sortOrder": 10
       },
       {
         "id": "13-12",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p13/12.webp",
         "sortOrder": 11
+      },
+      {
+        "id": "13-13",
+        "room": "복도",
+        "imageUrl": "/portfolio/p13/13.webp",
+        "sortOrder": 12
+      },
+      {
+        "id": "13-14",
+        "room": "복도",
+        "imageUrl": "/portfolio/p13/14.webp",
+        "sortOrder": 13
+      },
+      {
+        "id": "13-15",
+        "room": "주방",
+        "imageUrl": "/portfolio/p13/15.webp",
+        "sortOrder": 14
+      },
+      {
+        "id": "13-16",
+        "room": "주방",
+        "imageUrl": "/portfolio/p13/16.webp",
+        "sortOrder": 15
+      },
+      {
+        "id": "13-17",
+        "room": "주방",
+        "imageUrl": "/portfolio/p13/17.webp",
+        "sortOrder": 16
+      },
+      {
+        "id": "13-18",
+        "room": "주방",
+        "imageUrl": "/portfolio/p13/18.webp",
+        "sortOrder": 17
+      },
+      {
+        "id": "13-19",
+        "room": "주방",
+        "imageUrl": "/portfolio/p13/19.webp",
+        "sortOrder": 18
+      },
+      {
+        "id": "13-20",
+        "room": "주방",
+        "imageUrl": "/portfolio/p13/20.webp",
+        "sortOrder": 19
+      },
+      {
+        "id": "13-21",
+        "room": "침실",
+        "imageUrl": "/portfolio/p13/21.webp",
+        "sortOrder": 20
+      },
+      {
+        "id": "13-22",
+        "room": "침실",
+        "imageUrl": "/portfolio/p13/22.webp",
+        "sortOrder": 21
+      },
+      {
+        "id": "13-23",
+        "room": "침실",
+        "imageUrl": "/portfolio/p13/23.webp",
+        "sortOrder": 22
+      },
+      {
+        "id": "13-24",
+        "room": "침실",
+        "imageUrl": "/portfolio/p13/24.webp",
+        "sortOrder": 23
+      },
+      {
+        "id": "13-25",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p13/25.webp",
+        "sortOrder": 24
+      },
+      {
+        "id": "13-26",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p13/26.webp",
+        "sortOrder": 25
+      },
+      {
+        "id": "13-27",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p13/27.webp",
+        "sortOrder": 26
+      },
+      {
+        "id": "13-28",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p13/28.webp",
+        "sortOrder": 27
       }
     ]
   },
   {
     "no": 14,
     "notionPageId": "334b4280-8b58-80a1-b394-f9517909d19f",
-    "title": "흑석한강푸르지오 110동 302호",
-    "apartment": "흑석한강푸르지오 110동 302호",
+    "title": "흑석한강푸르지오 32평형",
+    "apartment": "흑석한강푸르지오 32평형",
     "sizeCategory": "30PY",
+    "areaSupply": "32평형",
     "coverUrl": "/portfolio/p14/01.webp",
     "sortOrder": 14,
     "images": [
@@ -1881,72 +2265,121 @@ export const SEED_PROJECTS: Project[] = [
       },
       {
         "id": "14-3",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p14/03.webp",
         "sortOrder": 2
       },
       {
         "id": "14-4",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p14/04.webp",
         "sortOrder": 3
       },
       {
         "id": "14-5",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p14/05.webp",
         "sortOrder": 4
       },
       {
         "id": "14-6",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p14/06.webp",
         "sortOrder": 5
       },
       {
         "id": "14-7",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p14/07.webp",
         "sortOrder": 6
       },
       {
         "id": "14-8",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p14/08.webp",
         "sortOrder": 7
       },
       {
         "id": "14-9",
-        "room": "대표",
+        "room": "복도",
         "imageUrl": "/portfolio/p14/09.webp",
         "sortOrder": 8
       },
       {
         "id": "14-10",
-        "room": "대표",
+        "room": "복도",
         "imageUrl": "/portfolio/p14/10.webp",
         "sortOrder": 9
       },
       {
         "id": "14-11",
-        "room": "대표",
+        "room": "주방",
         "imageUrl": "/portfolio/p14/11.webp",
         "sortOrder": 10
       },
       {
         "id": "14-12",
-        "room": "대표",
+        "room": "주방",
         "imageUrl": "/portfolio/p14/12.webp",
         "sortOrder": 11
+      },
+      {
+        "id": "14-13",
+        "room": "주방",
+        "imageUrl": "/portfolio/p14/13.webp",
+        "sortOrder": 12
+      },
+      {
+        "id": "14-14",
+        "room": "주방",
+        "imageUrl": "/portfolio/p14/14.webp",
+        "sortOrder": 13
+      },
+      {
+        "id": "14-15",
+        "room": "주방",
+        "imageUrl": "/portfolio/p14/15.webp",
+        "sortOrder": 14
+      },
+      {
+        "id": "14-16",
+        "room": "주방",
+        "imageUrl": "/portfolio/p14/16.webp",
+        "sortOrder": 15
+      },
+      {
+        "id": "14-17",
+        "room": "침실",
+        "imageUrl": "/portfolio/p14/17.webp",
+        "sortOrder": 16
+      },
+      {
+        "id": "14-18",
+        "room": "침실",
+        "imageUrl": "/portfolio/p14/18.webp",
+        "sortOrder": 17
+      },
+      {
+        "id": "14-19",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p14/19.webp",
+        "sortOrder": 18
+      },
+      {
+        "id": "14-20",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p14/20.webp",
+        "sortOrder": 19
       }
     ]
   },
   {
     "no": 15,
     "notionPageId": "30eb4280-8b58-808b-bc64-cdc77c4e59b2",
-    "title": "상도중앙하이츠빌 108동 1201호",
-    "apartment": "상도중앙하이츠빌 108동 1201호",
+    "title": "상도중앙하이츠빌 32평형",
+    "apartment": "상도중앙하이츠빌 32평형",
     "sizeCategory": "30PY",
+    "areaSupply": "32평형",
     "coverUrl": "/portfolio/p15/01.webp",
     "sortOrder": 15,
     "images": [
@@ -1964,72 +2397,163 @@ export const SEED_PROJECTS: Project[] = [
       },
       {
         "id": "15-3",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p15/03.webp",
         "sortOrder": 2
       },
       {
         "id": "15-4",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p15/04.webp",
         "sortOrder": 3
       },
       {
         "id": "15-5",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p15/05.webp",
         "sortOrder": 4
       },
       {
         "id": "15-6",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p15/06.webp",
         "sortOrder": 5
       },
       {
         "id": "15-7",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p15/07.webp",
         "sortOrder": 6
       },
       {
         "id": "15-8",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p15/08.webp",
         "sortOrder": 7
       },
       {
         "id": "15-9",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p15/09.webp",
         "sortOrder": 8
       },
       {
         "id": "15-10",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p15/10.webp",
         "sortOrder": 9
       },
       {
         "id": "15-11",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p15/11.webp",
         "sortOrder": 10
       },
       {
         "id": "15-12",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p15/12.webp",
         "sortOrder": 11
+      },
+      {
+        "id": "15-13",
+        "room": "복도",
+        "imageUrl": "/portfolio/p15/13.webp",
+        "sortOrder": 12
+      },
+      {
+        "id": "15-14",
+        "room": "주방",
+        "imageUrl": "/portfolio/p15/14.webp",
+        "sortOrder": 13
+      },
+      {
+        "id": "15-15",
+        "room": "주방",
+        "imageUrl": "/portfolio/p15/15.webp",
+        "sortOrder": 14
+      },
+      {
+        "id": "15-16",
+        "room": "주방",
+        "imageUrl": "/portfolio/p15/16.webp",
+        "sortOrder": 15
+      },
+      {
+        "id": "15-17",
+        "room": "주방",
+        "imageUrl": "/portfolio/p15/17.webp",
+        "sortOrder": 16
+      },
+      {
+        "id": "15-18",
+        "room": "주방",
+        "imageUrl": "/portfolio/p15/18.webp",
+        "sortOrder": 17
+      },
+      {
+        "id": "15-19",
+        "room": "주방",
+        "imageUrl": "/portfolio/p15/19.webp",
+        "sortOrder": 18
+      },
+      {
+        "id": "15-20",
+        "room": "침실",
+        "imageUrl": "/portfolio/p15/20.webp",
+        "sortOrder": 19
+      },
+      {
+        "id": "15-21",
+        "room": "침실",
+        "imageUrl": "/portfolio/p15/21.webp",
+        "sortOrder": 20
+      },
+      {
+        "id": "15-22",
+        "room": "침실",
+        "imageUrl": "/portfolio/p15/22.webp",
+        "sortOrder": 21
+      },
+      {
+        "id": "15-23",
+        "room": "침실",
+        "imageUrl": "/portfolio/p15/23.webp",
+        "sortOrder": 22
+      },
+      {
+        "id": "15-24",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p15/24.webp",
+        "sortOrder": 23
+      },
+      {
+        "id": "15-25",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p15/25.webp",
+        "sortOrder": 24
+      },
+      {
+        "id": "15-26",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p15/26.webp",
+        "sortOrder": 25
+      },
+      {
+        "id": "15-27",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p15/27.webp",
+        "sortOrder": 26
       }
     ]
   },
   {
     "no": 16,
     "notionPageId": "30eb4280-8b58-80bc-b8c8-cdd23f652bdd",
-    "title": "대림강변타운 102동 804호",
-    "apartment": "대림강변타운 102동 804호",
-    "sizeCategory": "30PY",
+    "title": "대림강변타운 24평형",
+    "apartment": "대림강변타운 24평형",
+    "sizeCategory": "20PY",
+    "areaSupply": "24평형",
     "coverUrl": "/portfolio/p16/01.webp",
     "sortOrder": 16,
     "images": [
@@ -2047,45 +2571,57 @@ export const SEED_PROJECTS: Project[] = [
       },
       {
         "id": "16-3",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p16/03.webp",
         "sortOrder": 2
       },
       {
         "id": "16-4",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p16/04.webp",
         "sortOrder": 3
       },
       {
         "id": "16-5",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p16/05.webp",
         "sortOrder": 4
       },
       {
         "id": "16-6",
-        "room": "대표",
+        "room": "현관",
         "imageUrl": "/portfolio/p16/06.webp",
         "sortOrder": 5
       },
       {
         "id": "16-7",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p16/07.webp",
         "sortOrder": 6
       },
       {
         "id": "16-8",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p16/08.webp",
         "sortOrder": 7
       },
       {
         "id": "16-9",
-        "room": "대표",
+        "room": "거실",
         "imageUrl": "/portfolio/p16/09.webp",
         "sortOrder": 8
+      },
+      {
+        "id": "16-10",
+        "room": "주방",
+        "imageUrl": "/portfolio/p16/10.webp",
+        "sortOrder": 9
+      },
+      {
+        "id": "16-11",
+        "room": "주방",
+        "imageUrl": "/portfolio/p16/11.webp",
+        "sortOrder": 10
       }
     ]
   },

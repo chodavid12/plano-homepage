@@ -97,7 +97,7 @@ async function main() {
     for (let i = 0; i < seq.length; i++) {
       const name = String(i + 1).padStart(2, "0") + ".webp";
       try {
-        const res = await fetch(seq[i].url);
+        const res = await fetch(seq[i].url, { signal: AbortSignal.timeout(20000) });
         if (!res.ok) continue;
         await sharp(Buffer.from(await res.arrayBuffer())).rotate().resize({ width: MAXW, withoutEnlargement: true }).webp({ quality: Q }).toFile(path.join(dir, name));
         images.push({ id: `${no}-${i + 1}`, room: seq[i].room, imageUrl: `/portfolio/p${no}/${name}`, sortOrder: i });
