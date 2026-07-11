@@ -34,8 +34,8 @@ const config: Config = {
           "Roboto",
           "sans-serif",
         ],
-        // 디스플레이(헤딩) — 라틴=Jost(지오메트릭), 한글=Gowun Batang(명조 세리프)
-        display: ["Jost", "Gowun Batang", "Pretendard Variable", "Pretendard", "sans-serif"],
+        // 디스플레이(헤딩) — 라틴=Jost(지오메트릭), 한글=SUIT(모던 고딕). 히어로 워드마크는 font-wordmark로 별도.
+        display: ["Jost", "SUIT Variable", "Pretendard Variable", "Pretendard", "sans-serif"],
         // 워드마크 전용 — 학교안심 자연 R
         wordmark: ["HakgyoansimJayeonR", "Jost", "Pretendard Variable", "sans-serif"],
       },

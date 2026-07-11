@@ -32,7 +32,12 @@ export default function ProjectGallery({ images, title, subtitle, meta }: Props)
       }
       map.get(im.room)!.push(im);
     }
-    return order.map((room) => ({ room, items: map.get(room)! }));
+    const grouped = order.map((room) => ({ room, items: map.get(room)! }));
+    // 공간이 2개 이상이면 '전체'(모든 사진) 탭을 맨 앞에 두고 기본 선택
+    if (grouped.length > 1) {
+      return [{ room: "전체", items: src }, ...grouped];
+    }
+    return grouped;
   }, [images]);
 
   const [roomIdx, setRoomIdx] = useState(0);

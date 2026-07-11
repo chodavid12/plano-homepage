@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import ConsultForm from "@/components/consultant/ConsultForm";
 import ProcessStepper from "@/components/consultant/ProcessStepper";
+
+const CONSULT_FORM_URL =
+  "https://copper-curtain-f8f.notion.site/1f2b42808b588041a20de7f53366e88d?pvs=105";
 
 export const metadata: Metadata = {
   title: "CONSULTANT",
@@ -25,16 +27,26 @@ export default function ConsultantPage() {
         <ProcessStepper />
       </section>
 
-      {/* 상담 폼 */}
-      <section className="mx-auto mt-20 max-w-xl border-t border-sand-200 pt-16 md:mt-24 md:pt-20">
-        <div className="mb-10 text-center">
-          <p className="overline">Get in touch</p>
-          <h2 className="mt-3 text-2xl md:text-3xl">지금 상담 신청하기</h2>
-          <p className="mt-4 text-sm font-light leading-relaxed text-ink-700/70">
-            정보를 남겨주시면 담당자가 확인 후 연락드립니다.
-          </p>
-        </div>
-        <ConsultForm />
+      {/* 상담 신청 — 노션 폼으로 연결 */}
+      <section className="mx-auto mt-20 max-w-xl border-t border-sand-200 pt-16 text-center md:mt-24 md:pt-20">
+        <p className="overline">Get in touch</p>
+        <h2 className="mt-3 text-2xl md:text-3xl">지금 상담 신청하기</h2>
+        <p className="mt-4 text-sm font-light leading-relaxed text-ink-700/70">
+          아래 버튼을 눌러 상담 신청서를 작성해 주세요.
+          <br className="hidden sm:block" />
+          담당자가 확인 후 연락드립니다.
+        </p>
+        <a
+          href={CONSULT_FORM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-dark mt-9 min-w-[240px]"
+        >
+          상담 신청하기
+          <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={1.6}>
+            <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </a>
       </section>
     </div>
   );
