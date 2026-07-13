@@ -12,8 +12,11 @@ const OUT = path.join(ROOT, "public", "portfolio");
 const notion = new Client({ auth: process.env.NOTION_TOKEN });
 const PF = "1f5b42808b5880b984c1e85f8c71317a";
 const MAXW = 1600, Q = 72;
-// 공간별 상한 — 대표(갤러리/커버) 넉넉히, 나머지 공간 6장 → 총량 억제 + 공간 다양성 유지
-const ROOM_CAP = (r) => (r === "대표" ? 12 : 6);
+// 공간별 상한. 대표컷은:
+//  - 방 헤딩이 있는(조직화된) 현장 → 카드 커버·호버 2장만 쓰이므로 3장이면 충분
+//  - 평면 현장(대표만) → 대표가 곧 갤러리 전체 → 12장
+// 그 외 공간은 6장.
+const roomCap = (r, hasRooms) => (r === "대표" ? (hasRooms ? 3 : 12) : 6);
 const DRY = process.argv.includes("--dry");
 
 const ROOMS = ["대표", "거실", "주방", "현관", "욕실", "침실", "드레스룸", "발코니", "서재", "복도", "기타"];
@@ -53,6 +56,7 @@ async function blocksOf(id) {
 }
 // 순서대로 (room,url), 공간별 상한 적용
 function collect(blocks) {
+  const hasRooms = blocks.some((b) => { const m = marker(b); return m && m !== "대표"; });
   const out = []; const cnt = {}; let room = "대표";
   for (const b of blocks) {
     const m = marker(b);
@@ -61,7 +65,7 @@ function collect(blocks) {
     const u = b.image?.file?.url || b.image?.external?.url;
     if (!u) continue;
     cnt[room] = cnt[room] || 0;
-    if (cnt[room] >= ROOM_CAP(room)) continue;
+    if (cnt[room] >= roomCap(room, hasRooms)) continue;
     cnt[room]++;
     out.push({ room, url: u });
   }
