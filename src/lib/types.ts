@@ -1,4 +1,4 @@
-// 포트폴리오 도메인 타입 — Supabase / Notion / seed 공통
+// 포트폴리오 도메인 타입 — scripts/notion-sync.mjs 가 굽는 seed.ts 의 형태
 
 export type SizeCategory = "10PY" | "20PY" | "30PY" | "40PY" | "50PY~";
 
@@ -29,15 +29,4 @@ export interface Project {
   coverUrl: string;
   sortOrder: number;
   images: ProjectImage[];
-}
-
-export interface ConsultInput {
-  name: string;
-  phone: string;
-  sizeCategory?: string;
-  region?: string;
-  budget?: string;
-  message?: string;
-  // 봇 차단용 허니팟 (사람은 비워둠)
-  company?: string;
 }

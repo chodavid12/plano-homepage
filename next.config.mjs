@@ -1,18 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [
-      // Supabase Storage (동기화된 포트폴리오 이미지)
-      { protocol: "https", hostname: "*.supabase.co" },
-      // Notion 파일(동기화 전 임시 표시용; 운영에선 Supabase URL 사용)
-      { protocol: "https", hostname: "*.notion.so" },
-      { protocol: "https", hostname: "*.amazonaws.com" },
-    ],
-    // 시드 플레이스홀더가 SVG라 허용 (운영 이미지는 webp/jpg)
-    dangerouslyAllowSVG: true,
-    contentDispositionType: "attachment",
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-  },
+  // 포트폴리오 이미지는 scripts/notion-sync.mjs 가 webp 로 변환해 public/ 에 넣는다.
+  // 원격 이미지는 쓰지 않으므로 remotePatterns 를 두지 않는다 — 열어두면 이미지 최적화기가
+  // 외부 URL 프록시로 악용될 수 있다(GHSA-9g9p-9gw9-jx7f).
 };
 
 export default nextConfig;
