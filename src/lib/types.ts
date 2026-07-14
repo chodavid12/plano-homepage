@@ -10,10 +10,12 @@ export interface ProjectImage {
 }
 
 export interface Project {
-  /** 프로젝트 넘버 — URL(`/portfolio/[no]`)과 NO.### 표시에 사용 */
+  /** 프로젝트 넘버 — URL(`/portfolio/[no]`). Notion page 에 고정되어 재동기화해도 바뀌지 않는다. */
   no: number;
-  /** Notion page id (동기화 식별자) */
+  /** Notion page id (동기화 식별자 · no 고정 키) */
   notionPageId: string;
+  /** Notion page 최종 수정시각 — 증분 동기화(변경 없으면 재다운로드 스킵) 판단용 */
+  notionLastEditedAt?: string;
   title: string;
   subtitle?: string;
   apartment?: string;

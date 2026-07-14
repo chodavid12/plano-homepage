@@ -18,6 +18,7 @@ const MAXW = 1600, Q = 72;
 // 그 외 공간은 6장.
 const roomCap = (r, hasRooms) => (r === "대표" ? (hasRooms ? 3 : 12) : 6);
 const DRY = process.argv.includes("--dry");
+const FORCE = process.argv.includes("--force"); // 증분 무시하고 전체 재다운로드
 
 const ROOMS = ["대표", "거실", "주방", "현관", "욕실", "침실", "드레스룸", "발코니", "서재", "복도", "기타"];
 const btext = (b) => { const v = b[b.type]; return (v?.rich_text?.map((r) => r.plain_text).join("") || "").trim(); };
@@ -42,6 +43,20 @@ function sizeFromTitle(title) {
   const n = parseFloat(m[1]);
   const cat = n < 20 ? "10PY" : n < 30 ? "20PY" : n < 40 ? "30PY" : n < 50 ? "40PY" : "50PY~";
   return { sizeCategory: cat, areaSupply: `${m[1]}평형` };
+}
+
+// 동시 실행 제한 풀 — 이미지 다운로드/변환은 I/O 대기가 대부분이라 병렬이 크게 빠름
+const CONCURRENCY = 10;
+async function mapLimit(items, limit, fn) {
+  const out = new Array(items.length);
+  let cursor = 0;
+  const workers = Array.from({ length: Math.min(limit, items.length) }, async () => {
+    for (let i = cursor++; i < items.length; i = cursor++) {
+      out[i] = await fn(items[i], i);
+    }
+  });
+  await Promise.all(workers);
+  return out;
 }
 
 async function queryAll() {
@@ -72,59 +87,106 @@ function collect(blocks) {
   return out;
 }
 
+// 이전 seed 읽기 — no 고정(URL 안정) + 증분 판단용
+function readPrevSeed() {
+  const p = path.join(ROOT, "src", "lib", "seed.ts");
+  if (!fs.existsSync(p)) return new Map();
+  try {
+    const body = fs.readFileSync(p, "utf8").split("export const SEED_PROJECTS: Project[] = ")[1];
+    if (!body) return new Map();
+    const arr = JSON.parse(body.trim().replace(/;\s*$/, ""));
+    return new Map(arr.map((x) => [x.notionPageId, x]));
+  } catch {
+    return new Map();
+  }
+}
+
 async function main() {
   let rows = await queryAll();
   rows = rows
     .map((pg) => ({ pg, title: titleOf(pg), created: createdAt(pg) }))
     .filter((r) => r.title)
-    .sort((a, b) => new Date(b.created) - new Date(a.created)); // 생성일시 내림차순
-  console.log(`포트폴리오 DB ${rows.length}행 (생성일시 내림차순)\n`);
-
-  if (!DRY) {
-    // 기존 p* 정리 (시드 r1~r3 보존)
-    if (fs.existsSync(OUT)) for (const d of fs.readdirSync(OUT)) if (/^p\d+$/.test(d)) fs.rmSync(path.join(OUT, d), { recursive: true, force: true });
-  }
+    .sort((a, b) => new Date(b.created) - new Date(a.created)); // 생성일시 내림차순 = 표시 순서
+  const prev = readPrevSeed();
+  let maxNo = Math.max(0, ...[...prev.values()].map((p) => p.no || 0));
+  console.log(`포트폴리오 DB ${rows.length}행 · 이전 seed ${prev.size}개${FORCE ? " (--force: 전체 재다운로드)" : ""}\n`);
 
   const projects = [];
-  let no = 0;
+  let reused = 0;
+  let fetched = 0;
+
   for (const { pg, title, created } of rows) {
+    const old = prev.get(pg.id);
+    const lastEdited = pg.last_edited_time;
+    // no 는 노션 page 에 고정 — 재동기화해도 URL 안 바뀜
+    const no = old?.no ?? maxNo + 1;
+    const dir = path.join(OUT, `p${no}`);
+
+    // 증분 — 노션에서 수정 안 됐고 이미지가 그대로면 통째로 재사용 (다운로드 0)
+    if (!FORCE && old?.notionLastEditedAt === lastEdited && old.images?.length && fs.existsSync(dir)) {
+      projects.push({ ...old, sortOrder: projects.length });
+      reused++;
+      continue;
+    }
+
     const seq = collect(await blocksOf(pg.id));
     if (seq.length === 0) { console.log(`skip(0장)  ${title.slice(0, 40)}`); continue; }
-    no += 1;
+    if (!old) maxNo = no; // 신규 현장 번호 확정
     const rooms = [...new Set(seq.map((s) => s.room))].join(",");
     console.log(`p${no}  ${String(created).slice(0, 10)}  ${seq.length}장 [${rooms}]  ${title.slice(0, 38)}`);
     if (DRY) continue;
 
-    const dir = path.join(OUT, `p${no}`);
+    fs.rmSync(dir, { recursive: true, force: true }); // 변경분은 기존 이미지 비우고 새로
     fs.mkdirSync(dir, { recursive: true });
-    const images = [];
-    for (let i = 0; i < seq.length; i++) {
+    // 다운로드+변환을 동시 실행 (I/O 대기 병렬화 → 순차 대비 ~10배)
+    const settled = await mapLimit(seq, CONCURRENCY, async (s, i) => {
       const name = String(i + 1).padStart(2, "0") + ".webp";
       try {
-        const res = await fetch(seq[i].url, { signal: AbortSignal.timeout(20000) });
-        if (!res.ok) continue;
-        await sharp(Buffer.from(await res.arrayBuffer())).rotate().resize({ width: MAXW, withoutEnlargement: true }).webp({ quality: Q }).toFile(path.join(dir, name));
-        images.push({ id: `${no}-${i + 1}`, room: seq[i].room, imageUrl: `/portfolio/p${no}/${name}`, sortOrder: i });
-      } catch { /* skip */ }
-    }
-    if (!images.length) { fs.rmSync(dir, { recursive: true, force: true }); no -= 1; continue; }
+        const res = await fetch(s.url, { signal: AbortSignal.timeout(20000) });
+        if (!res.ok) return null;
+        await sharp(Buffer.from(await res.arrayBuffer()))
+          .rotate()
+          .resize({ width: MAXW, withoutEnlargement: true })
+          .webp({ quality: Q })
+          .toFile(path.join(dir, name));
+        return { id: `${no}-${i + 1}`, room: s.room, imageUrl: `/portfolio/p${no}/${name}`, sortOrder: i };
+      } catch {
+        return null; // 실패분은 건너뜀 (순서/이름은 원래 인덱스 유지)
+      }
+    });
+    const images = settled.filter(Boolean);
+    if (!images.length) { fs.rmSync(dir, { recursive: true, force: true }); continue; }
+    fetched++;
     projects.push({
       no,
       notionPageId: pg.id,
+      notionLastEditedAt: lastEdited,
       title,
       apartment: title,
       ...sizeFromTitle(title),
       coverUrl: images[0].imageUrl,
-      sortOrder: no, // 생성일시 내림차순 = no 오름차순
+      sortOrder: projects.length, // 생성일시 내림차순 표시 순서 (no 와 분리)
       images,
     });
   }
 
-  if (DRY) { console.log(`\n[DRY] ${no}개 현장. 실제 동기화하려면 --dry 없이 실행.`); return; }
+  if (DRY) { console.log(`\n[DRY] 재사용 ${reused} · 다운로드 대상 ${rows.length - reused}개.`); return; }
 
-  const header = `import type { Project } from "./types";\n\n// ⚠️ AUTO-GENERATED — scripts/notion-sync.mjs (노션 포트폴리오 DB, 생성일시 내림차순). 직접 수정 금지.\n\nexport const SEED_PROJECTS: Project[] = `;
+  // 노션에서 사라진 현장 디렉토리 정리
+  const keep = new Set(projects.map((p) => `p${p.no}`));
+  let pruned = 0;
+  if (fs.existsSync(OUT)) {
+    for (const d of fs.readdirSync(OUT)) {
+      if (/^p\d+$/.test(d) && !keep.has(d)) {
+        fs.rmSync(path.join(OUT, d), { recursive: true, force: true });
+        pruned++;
+      }
+    }
+  }
+
+  const header = `import type { Project } from "./types";\n\n// ⚠️ AUTO-GENERATED — scripts/notion-sync.mjs (노션 포트폴리오 DB). 직접 수정 금지.\n// no = 노션 page 고정 id(URL 안정) · sortOrder = 생성일시 내림차순 표시순서\n\nexport const SEED_PROJECTS: Project[] = `;
   fs.writeFileSync(path.join(ROOT, "src", "lib", "seed.ts"), header + JSON.stringify(projects, null, 2) + ";\n", "utf8");
-  console.log(`\n✓ ${projects.length}개 현장 → public/portfolio/, src/lib/seed.ts (생성일시 내림차순)`);
+  console.log(`\n✓ ${projects.length}개 현장 (재사용 ${reused} · 새로받음 ${fetched} · 정리 ${pruned}) → src/lib/seed.ts`);
 }
 
 main().catch((e) => { console.error("✗", e.message); process.exit(1); });
