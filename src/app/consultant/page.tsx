@@ -22,7 +22,7 @@ export default function ConsultantPage() {
         <p className="overline">Consultant</p>
         <h1 className="mt-4 text-3xl md:text-4xl">상담 신청</h1>
         <p className="mt-5 font-light leading-relaxed text-ink-700/70">
-          상담부터 준공, 사후관리까지 —
+          상담부터 준공, 사후관리까지 —{" "}
           <br className="hidden sm:block" />
           플라노디자인은 아래 4단계로 함께합니다.
         </p>

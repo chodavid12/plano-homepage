@@ -56,7 +56,8 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-sand-200">
-        <div className="container-site flex flex-col gap-2 py-5 text-xs text-ink-700/50 sm:flex-row sm:items-center sm:justify-between">
+        {/* 모바일은 우하단 플로팅 '1:1 문의' 버튼이 저작권 줄을 가리므로 하단 여백 확보 */}
+        <div className="container-site flex flex-col gap-2 pt-5 pb-24 text-xs text-ink-700/50 sm:flex-row sm:items-center sm:justify-between sm:py-5">
           <span>© {new Date().getFullYear()} PLANO DESIGN. All rights reserved.</span>
           <span>플라노디자인 · 사업자정보 기재 예정</span>
         </div>

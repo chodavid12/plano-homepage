@@ -11,7 +11,7 @@ export default function FloatingInquiry() {
   return (
     <Link
       href="/consultant"
-      className="fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full bg-ink-800 px-5 py-3 text-sm text-white shadow-lg transition-colors hover:bg-ink-900"
+      className="fixed bottom-5 right-4 z-40 flex items-center gap-2 rounded-full bg-ink-800 px-4 py-2.5 text-[0.8rem] text-white shadow-lg transition-colors hover:bg-ink-900 sm:bottom-6 sm:right-6 sm:px-5 sm:py-3 sm:text-sm"
     >
       <svg viewBox="0 0 20 20" className="h-4 w-4" fill="currentColor" aria-hidden="true">
         <path d="M2 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H7l-4 4V4z" />

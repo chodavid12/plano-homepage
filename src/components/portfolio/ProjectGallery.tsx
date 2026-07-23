@@ -87,57 +87,21 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
   };
 
   return (
-    <div className="grid gap-x-8 gap-y-8 lg:grid-cols-[minmax(0,3.5fr)_minmax(0,8.5fr)] lg:items-start">
-      {/* 좌상단 — 제목 / 메타 / 공간탭 */}
-      <div className="animate-fade-up lg:col-start-1 lg:row-start-1">
-        <h1 className="text-3xl tracking-tight text-ink-900 md:text-4xl">{title}</h1>
+    // 모바일은 순서(order)로, 데스크톱(lg)은 DOM 순서 그대로 2단 배치.
+    // 모바일 순서: 제목 → 큰 사진 → 공간탭 → 썸네일 → 사양(스펙)
+    //   고객은 사진을 보러 들어오므로, 스펙표가 사진을 밀어내지 않게 사진을 위로 올린다.
+    // 데스크톱: 좌열(제목·사양·탭·썸네일) + 우열(메인 이미지, 전체 높이 span)
+    <div className="grid gap-x-8 gap-y-7 lg:grid-cols-[minmax(0,3.5fr)_minmax(0,8.5fr)] lg:items-start lg:gap-y-8">
+      {/* 제목 */}
+      <div className="order-1 animate-fade-up lg:order-none lg:col-start-1">
+        <h1 className="text-2xl tracking-tight text-ink-900 sm:text-3xl md:text-4xl">{title}</h1>
         {subtitle && (
           <p className="mt-3 text-base font-light text-ink-700/80">{subtitle}</p>
         )}
-
-        {/* 사양 — 면적/마감재를 한 덩어리로. 라벨은 또렷하게, 값은 넉넉한 행간으로 */}
-        {(meta.length > 0 || orderedMaterials.length > 0) && (
-          <dl className="mt-8 divide-y divide-sand-200/80 border-y border-sand-200">
-            {meta.map((m) => (
-              <SpecRow key={m.label} label={m.label}>
-                <span className="font-medium text-ink-900">{m.value}</span>
-              </SpecRow>
-            ))}
-
-            {orderedMaterials.map(([cat, names]) => (
-              <SpecRow key={cat} label={cat}>
-                {/* 자재는 줄바꿈으로 흘려 넣는다 — 한 줄씩 쌓으면 갤러리 탭이 화면 밖으로 밀린다 */}
-                {names.map((n, i) => (
-                  <span key={n}>
-                    {i > 0 && <span className="text-ink-700/45">, </span>}
-                    <MaterialName name={n} />
-                  </span>
-                ))}
-              </SpecRow>
-            ))}
-          </dl>
-        )}
-
-        {showTabs && (
-          <div className="no-scrollbar mt-8 flex flex-wrap gap-x-5 gap-y-2 text-sm">
-            {rooms.map((r, i) => (
-              <button
-                key={r.room}
-                type="button"
-                onClick={() => selectRoom(i)}
-                className={`text-xs uppercase tracking-[0.12em] transition-colors ${
-                  i === roomIdx ? "text-ink-900" : "text-ink-700/45 hover:text-ink-900"
-                }`}
-              >
-                {r.room}
-              </button>
-            ))}
-          </div>
-        )}
       </div>
 
-      {/* 우측 — 메인 이미지 (모바일에선 제목 아래) */}
-      <div className="lg:col-start-2 lg:row-span-2 lg:row-start-1">
+      {/* 메인 이미지 — 모바일에선 제목 바로 아래 */}
+      <div className="order-2 lg:order-none lg:col-start-2 lg:row-span-full">
         {/* 프레임을 이미지 비율에 맞춘다(세로컷 잘림 방지).
             세로 사진이 화면을 다 잡아먹지 않도록 높이 상한(MAX_H)을 두고,
             그만큼 폭을 줄여 비율은 그대로 유지한다. */}
@@ -168,9 +132,50 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
         </div>
       </div>
 
-      {/* 좌하단 — 썸네일 그리드 */}
-      <div className="lg:col-start-1 lg:row-start-2">
-        <div className="grid grid-cols-4 gap-2.5">
+      {/* 사양 — 면적/마감재. 데스크톱은 제목 아래, 모바일은 맨 끝 */}
+      {(meta.length > 0 || orderedMaterials.length > 0) && (
+        <dl className="order-5 divide-y divide-sand-200/80 border-y border-sand-200 lg:order-none lg:col-start-1">
+          {meta.map((m) => (
+            <SpecRow key={m.label} label={m.label}>
+              <span className="font-medium text-ink-900">{m.value}</span>
+            </SpecRow>
+          ))}
+
+          {orderedMaterials.map(([cat, names]) => (
+            <SpecRow key={cat} label={cat}>
+              {/* 자재는 줄바꿈으로 흘려 넣는다 — 한 줄씩 쌓으면 세로가 너무 길어진다 */}
+              {names.map((n, i) => (
+                <span key={n}>
+                  {i > 0 && <span className="text-ink-700/45">, </span>}
+                  <MaterialName name={n} />
+                </span>
+              ))}
+            </SpecRow>
+          ))}
+        </dl>
+      )}
+
+      {/* 공간탭 */}
+      {showTabs && (
+        <div className="no-scrollbar order-3 -mx-5 flex gap-x-5 gap-y-2 overflow-x-auto px-5 text-sm sm:mx-0 sm:flex-wrap sm:px-0 lg:order-none lg:col-start-1">
+          {rooms.map((r, i) => (
+            <button
+              key={r.room}
+              type="button"
+              onClick={() => selectRoom(i)}
+              className={`shrink-0 py-1 text-xs uppercase tracking-[0.12em] transition-colors ${
+                i === roomIdx ? "text-ink-900" : "text-ink-700/45 hover:text-ink-900"
+              }`}
+            >
+              {r.room}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* 썸네일 그리드 */}
+      <div className="order-4 lg:order-none lg:col-start-1">
+        <div className="grid grid-cols-5 gap-2 sm:grid-cols-4 sm:gap-2.5">
           {items.map((im, i) => (
             <button
               key={im.id}
