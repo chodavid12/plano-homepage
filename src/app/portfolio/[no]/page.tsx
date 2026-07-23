@@ -56,6 +56,7 @@ export default async function ProjectDetailPage({ params }: { params: { no: stri
         title={project.title}
         subtitle={project.subtitle}
         meta={metaItems}
+        materials={project.materials}
       />
 
       {/* 하단 내비게이션 */}

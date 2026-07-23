@@ -14,10 +14,15 @@ interface Props {
   title: string;
   subtitle?: string;
   meta: MetaItem[];
+  /** 마감재 — { 마루: ["브랜드 | 제품명", …], 타일: […] } */
+  materials?: Record<string, string[]>;
 }
 
+// 마감재 표시 순서 (노션 속성 순서와 무관하게 고정)
+const MATERIAL_ORDER = ["마루", "타일", "도배", "필름", "가구재"];
+
 // 상세 갤러리 — 좌: 제목·정보·썸네일 / 우: 큰 메인 이미지 (LILSQUARE식 2단)
-export default function ProjectGallery({ images, title, subtitle, meta }: Props) {
+export default function ProjectGallery({ images, title, subtitle, meta, materials }: Props) {
   // 공간(room) 순서 유지하며 그룹화
   const rooms = useMemo(() => {
     // '대표'는 목록 카드 커버·호버용 → 상세 갤러리 탭에서는 제외
@@ -39,6 +44,18 @@ export default function ProjectGallery({ images, title, subtitle, meta }: Props)
     }
     return grouped;
   }, [images]);
+
+  // 마감재 — 고정 순서로 정렬(노션에 없는 카테고리는 제외)
+  const orderedMaterials = useMemo(() => {
+    const src = materials || {};
+    const known = MATERIAL_ORDER.filter((c) => src[c]?.length).map(
+      (c) => [c, src[c]] as [string, string[]],
+    );
+    const rest = Object.entries(src).filter(
+      ([c, v]) => !MATERIAL_ORDER.includes(c) && v?.length,
+    );
+    return [...known, ...rest];
+  }, [materials]);
 
   const [roomIdx, setRoomIdx] = useState(0);
   const [imgIdx, setImgIdx] = useState(0);
@@ -80,6 +97,28 @@ export default function ProjectGallery({ images, title, subtitle, meta }: Props)
               </div>
             ))}
           </dl>
+        )}
+
+        {orderedMaterials.length > 0 && (
+          <section className="mt-7 border-t border-sand-200 pt-7">
+            <h2 className="text-[0.7rem] uppercase tracking-[0.15em] text-ink-700/45">마감재</h2>
+            <dl className="mt-4 space-y-3 text-sm">
+              {orderedMaterials.map(([cat, names]) => (
+                <div key={cat} className="flex gap-5">
+                  <dt className="w-12 shrink-0 pt-px text-[0.78rem] text-ink-700/60">{cat}</dt>
+                  {/* 자재는 줄바꿈으로 흘려 넣는다 — 한 줄씩 쌓으면 갤러리 탭이 화면 밖으로 밀린다 */}
+                  <dd className="min-w-0 flex-1 text-[0.83rem] leading-relaxed text-ink-800">
+                    {names.map((n, i) => (
+                      <span key={n}>
+                        {i > 0 && <span className="text-ink-700/35">, </span>}
+                        <MaterialName name={n} />
+                      </span>
+                    ))}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </section>
         )}
 
         {showTabs && (
@@ -149,6 +188,23 @@ export default function ProjectGallery({ images, title, subtitle, meta }: Props)
         </div>
       </div>
     </div>
+  );
+}
+
+// 자재명은 노션에서 "브랜드 |품번| 제품명" 형태로 적힌다.
+// 브랜드를 앞세우고 나머지는 눌러서 목록이 한눈에 훑히도록 한다.
+function MaterialName({ name }: { name: string }) {
+  const parts = name
+    .split("|")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  if (parts.length <= 1) return <>{name}</>;
+  const [brand, ...rest] = parts;
+  return (
+    <>
+      <span className="text-ink-900">{brand}</span>
+      <span className="text-ink-700/60"> · {rest.join(" · ")}</span>
+    </>
   );
 }
 

@@ -26,6 +26,8 @@ export interface Project {
   completionYear?: number;
   region?: string;
   period?: string;
+  /** 마감재 — 노션 포트폴리오 DB의 자재 rollup. { 마루: ["브랜드 | 제품명", …], 타일: […] } */
+  materials?: Record<string, string[]>;
   coverUrl: string;
   sortOrder: number;
   images: ProjectImage[];

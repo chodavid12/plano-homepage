@@ -3,7 +3,7 @@ import { roomRank } from "./rooms";
 
 export interface PortfolioQuery {
   size?: string; // 'all' | SizeCategory
-  q?: string; // 검색어 (아파트/지역/제목/넘버)
+  q?: string; // 검색어 (아파트/지역/제목/넘버/마감재)
 }
 
 export function filterProjects(projects: Project[], query: PortfolioQuery): Project[] {
@@ -24,6 +24,8 @@ export function filterProjects(projects: Project[], query: PortfolioQuery): Proj
         p.type,
         `no.${p.no}`,
         String(p.no),
+        // 마감재 — 카테고리명(타일/도배…)과 자재명(브랜드·제품명) 모두 검색 대상
+        ...Object.entries(p.materials || {}).flatMap(([cat, names]) => [cat, ...names]),
       ]
         .filter(Boolean)
         .join(" ")

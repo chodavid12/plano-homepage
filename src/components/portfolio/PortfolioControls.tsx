@@ -89,7 +89,7 @@ export default function PortfolioControls({ rooms }: { rooms: string[] }) {
           <input
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="아파트명(지역) 또는 넘버 검색"
+            placeholder="현장명 · 마감재(한솔, 타일 등) 검색"
             className="field pr-10"
             aria-label="포트폴리오 검색"
           />

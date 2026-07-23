@@ -5,6 +5,207 @@ import type { Project } from "./types";
 
 export const SEED_PROJECTS: Project[] = [
   {
+    "no": 53,
+    "notionPageId": "3a4b4280-8b58-807c-8666-cc3b9c834603",
+    "notionLastEditedAt": "2026-07-21T05:32:00.000Z",
+    "title": "사당롯데캐슬 32평형",
+    "apartment": "사당롯데캐슬 32평형",
+    "sizeCategory": "30PY",
+    "areaSupply": "32평형",
+    "materials": {
+      "마루": [
+        "올고다마루 |로카(기본사이즈)| 아르망 화이트"
+      ],
+      "타일": [
+        "DOT 04",
+        "66114",
+        "RFG60H920",
+        "KD 273M",
+        "KD 3315",
+        "33003"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스트 |82601-05| 디아 회벽 크림화이트"
+      ],
+      "필름": [
+        "보닥 |S216|",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "한솔 | 도브화이트",
+        "한솔 | 조슈아라이트",
+        "LX 하이막스 | 캔디 화이트"
+      ]
+    },
+    "coverUrl": "/portfolio/p53/01.webp",
+    "sortOrder": 0,
+    "images": [
+      {
+        "id": "53-1",
+        "room": "대표",
+        "imageUrl": "/portfolio/p53/01.webp",
+        "sortOrder": 0
+      },
+      {
+        "id": "53-2",
+        "room": "대표",
+        "imageUrl": "/portfolio/p53/02.webp",
+        "sortOrder": 1
+      },
+      {
+        "id": "53-3",
+        "room": "현관",
+        "imageUrl": "/portfolio/p53/03.webp",
+        "sortOrder": 2
+      },
+      {
+        "id": "53-4",
+        "room": "현관",
+        "imageUrl": "/portfolio/p53/04.webp",
+        "sortOrder": 3
+      },
+      {
+        "id": "53-5",
+        "room": "현관",
+        "imageUrl": "/portfolio/p53/05.webp",
+        "sortOrder": 4
+      },
+      {
+        "id": "53-6",
+        "room": "거실",
+        "imageUrl": "/portfolio/p53/06.webp",
+        "sortOrder": 5
+      },
+      {
+        "id": "53-7",
+        "room": "거실",
+        "imageUrl": "/portfolio/p53/07.webp",
+        "sortOrder": 6
+      },
+      {
+        "id": "53-8",
+        "room": "거실",
+        "imageUrl": "/portfolio/p53/08.webp",
+        "sortOrder": 7
+      },
+      {
+        "id": "53-9",
+        "room": "거실",
+        "imageUrl": "/portfolio/p53/09.webp",
+        "sortOrder": 8
+      },
+      {
+        "id": "53-10",
+        "room": "거실",
+        "imageUrl": "/portfolio/p53/10.webp",
+        "sortOrder": 9
+      },
+      {
+        "id": "53-11",
+        "room": "거실",
+        "imageUrl": "/portfolio/p53/11.webp",
+        "sortOrder": 10
+      },
+      {
+        "id": "53-12",
+        "room": "복도",
+        "imageUrl": "/portfolio/p53/12.webp",
+        "sortOrder": 11
+      },
+      {
+        "id": "53-13",
+        "room": "주방",
+        "imageUrl": "/portfolio/p53/13.webp",
+        "sortOrder": 12
+      },
+      {
+        "id": "53-14",
+        "room": "주방",
+        "imageUrl": "/portfolio/p53/14.webp",
+        "sortOrder": 13
+      },
+      {
+        "id": "53-15",
+        "room": "주방",
+        "imageUrl": "/portfolio/p53/15.webp",
+        "sortOrder": 14
+      },
+      {
+        "id": "53-16",
+        "room": "주방",
+        "imageUrl": "/portfolio/p53/16.webp",
+        "sortOrder": 15
+      },
+      {
+        "id": "53-17",
+        "room": "주방",
+        "imageUrl": "/portfolio/p53/17.webp",
+        "sortOrder": 16
+      },
+      {
+        "id": "53-18",
+        "room": "주방",
+        "imageUrl": "/portfolio/p53/18.webp",
+        "sortOrder": 17
+      },
+      {
+        "id": "53-19",
+        "room": "침실",
+        "imageUrl": "/portfolio/p53/19.webp",
+        "sortOrder": 18
+      },
+      {
+        "id": "53-20",
+        "room": "침실",
+        "imageUrl": "/portfolio/p53/20.webp",
+        "sortOrder": 19
+      },
+      {
+        "id": "53-21",
+        "room": "침실",
+        "imageUrl": "/portfolio/p53/21.webp",
+        "sortOrder": 20
+      },
+      {
+        "id": "53-22",
+        "room": "침실",
+        "imageUrl": "/portfolio/p53/22.webp",
+        "sortOrder": 21
+      },
+      {
+        "id": "53-23",
+        "room": "침실",
+        "imageUrl": "/portfolio/p53/23.webp",
+        "sortOrder": 22
+      },
+      {
+        "id": "53-24",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p53/24.webp",
+        "sortOrder": 23
+      },
+      {
+        "id": "53-25",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p53/25.webp",
+        "sortOrder": 24
+      },
+      {
+        "id": "53-26",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p53/26.webp",
+        "sortOrder": 25
+      },
+      {
+        "id": "53-27",
+        "room": "욕실",
+        "imageUrl": "/portfolio/p53/27.webp",
+        "sortOrder": 26
+      }
+    ]
+  },
+  {
     "no": 1,
     "notionPageId": "391b4280-8b58-80cb-a191-fb38ee8b85ed",
     "title": "흑석동양 24평형",
@@ -12,7 +213,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "24평형",
     "coverUrl": "/portfolio/p1/01.webp",
-    "sortOrder": 0,
+    "sortOrder": 1,
     "images": [
       {
         "id": "1-1",
@@ -159,7 +360,31 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 24
       }
     ],
-    "notionLastEditedAt": "2026-07-02T16:16:00.000Z"
+    "notionLastEditedAt": "2026-07-02T16:16:00.000Z",
+    "materials": {
+      "마루": [
+        "올고다마루 |로카(기본사이즈)| 세인트 베이지"
+      ],
+      "타일": [
+        "K60-8040",
+        "DOT 04",
+        "8001",
+        "707"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트"
+      ],
+      "필름": [
+        "영림 | PW961",
+        "영림 |PX451| 화이트스톤",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "한솔 | 조슈아라이트",
+        "한솔 | 크림화이트",
+        "LX 하이막스 | 캔디 화이트"
+      ]
+    }
   },
   {
     "no": 2,
@@ -169,7 +394,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "24평형",
     "coverUrl": "/portfolio/p2/01.webp",
-    "sortOrder": 1,
+    "sortOrder": 2,
     "images": [
       {
         "id": "2-1",
@@ -334,7 +559,35 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 27
       }
     ],
-    "notionLastEditedAt": "2026-07-02T16:29:00.000Z"
+    "notionLastEditedAt": "2026-07-02T16:29:00.000Z",
+    "materials": {
+      "마루": [
+        "이건마루 |그린 165| 마일드 오크"
+      ],
+      "타일": [
+        "글램스톤 60IV",
+        "88511",
+        "STONE EVO 60B",
+        "33005",
+        "G98-Ivory",
+        "36D-972",
+        "3072"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스트 |82601-05| 디아 회벽 크림화이트"
+      ],
+      "필름": [
+        "영림 |PS035|",
+        "영림 |PS170| 회벽백색",
+        "영림 |PS010| 중백색",
+        "영림 | PW968"
+      ],
+      "가구재": [
+        "한솔 | 크림화이트",
+        "한솔 | 조슈아라이트"
+      ]
+    }
   },
   {
     "no": 3,
@@ -344,7 +597,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "34평형",
     "coverUrl": "/portfolio/p3/01.webp",
-    "sortOrder": 2,
+    "sortOrder": 3,
     "images": [
       {
         "id": "3-1",
@@ -509,17 +762,69 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 27
       }
     ],
-    "notionLastEditedAt": "2026-07-02T16:21:00.000Z"
+    "notionLastEditedAt": "2026-07-02T16:21:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 그랜드 오크 뉴 165"
+      ],
+      "타일": [
+        "K60-8040",
+        "DS17",
+        "DOT 03",
+        "3040",
+        "8010M-1",
+        "33003"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스트 |82601-05| 디아 회벽 크림화이트"
+      ],
+      "필름": [
+        "영림 |PX450| 발렌무디크림",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "예림 | 매트화이트",
+        "LX 오로라 | 오로라 웜블랑"
+      ]
+    }
   },
   {
     "no": 4,
     "notionPageId": "38bb4280-8b58-80c4-8cc7-d159872d6ece",
+    "notionLastEditedAt": "2026-07-15T01:16:00.000Z",
     "title": "흑석한강현대 30평형",
     "apartment": "흑석한강현대 30평형",
     "sizeCategory": "30PY",
     "areaSupply": "30평형",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 본 오크"
+      ],
+      "타일": [
+        "7001",
+        "33003",
+        "SERENA 60IV",
+        "KOG 60062"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스트 |82601-05| 디아 회벽 크림화이트"
+      ],
+      "필름": [
+        "영림 |PX451| 화이트스톤",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "한솔 | 크림화이트",
+        "LX 하이막스 | 크리스탈 베이지",
+        "한솔 | 조슈아라이트",
+        "한솔 | 포그그레이",
+        "한솔 | 도브화이트"
+      ]
+    },
     "coverUrl": "/portfolio/p4/01.webp",
-    "sortOrder": 3,
+    "sortOrder": 4,
     "images": [
       {
         "id": "4-1",
@@ -544,12 +849,6 @@ export const SEED_PROJECTS: Project[] = [
         "room": "현관",
         "imageUrl": "/portfolio/p4/04.webp",
         "sortOrder": 3
-      },
-      {
-        "id": "4-5",
-        "room": "현관",
-        "imageUrl": "/portfolio/p4/05.webp",
-        "sortOrder": 4
       },
       {
         "id": "4-6",
@@ -677,8 +976,7 @@ export const SEED_PROJECTS: Project[] = [
         "imageUrl": "/portfolio/p4/26.webp",
         "sortOrder": 25
       }
-    ],
-    "notionLastEditedAt": "2026-07-14T14:17:00.000Z"
+    ]
   },
   {
     "no": 5,
@@ -688,7 +986,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p5/01.webp",
-    "sortOrder": 4,
+    "sortOrder": 5,
     "images": [
       {
         "id": "5-1",
@@ -835,7 +1133,36 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 25
       }
     ],
-    "notionLastEditedAt": "2026-07-02T16:25:00.000Z"
+    "notionLastEditedAt": "2026-07-02T16:25:00.000Z",
+    "materials": {
+      "마루": [
+        "이건마루 |그린 165| 마일드 오크"
+      ],
+      "타일": [
+        "8001",
+        "K60-8040",
+        "33003",
+        "2692",
+        "30302",
+        "SERENA 60IV"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스트 |82601-05| 디아 회벽 크림화이트"
+      ],
+      "필름": [
+        "영림 |PX451| 화이트스톤",
+        "영림 |PS170| 회벽백색",
+        "영림 |PS190|"
+      ],
+      "가구재": [
+        "한솔 | 안도크림",
+        "LX 하이막스 | 그라빌라 크림",
+        "한솔 | 포그그레이",
+        "한솔 | 크림화이트",
+        "한솔 | 도브화이트"
+      ]
+    }
   },
   {
     "no": 6,
@@ -845,7 +1172,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "29평형",
     "coverUrl": "/portfolio/p6/01.webp",
-    "sortOrder": 5,
+    "sortOrder": 6,
     "images": [
       {
         "id": "6-1",
@@ -1016,7 +1343,32 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 27
       }
     ],
-    "notionLastEditedAt": "2026-07-02T16:33:00.000Z"
+    "notionLastEditedAt": "2026-07-02T16:33:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |마뷸러스 젠| 젠틀판타지"
+      ],
+      "타일": [
+        "블랙스톤 60 IV",
+        "ALPHA 602",
+        "36D-972",
+        "3072",
+        "33003"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스트 |82601-02| 디아 회벽 블랑그레이",
+        "LX베스트 |82601-01| 디아 회벽 퓨어화이트"
+      ],
+      "필름": [
+        "영림 |PX449| 발렌블랑",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "한솔 | 도브화이트",
+        "LX 하이막스 | 그라빌라 크림"
+      ]
+    }
   },
   {
     "no": 7,
@@ -1026,7 +1378,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p7/01.webp",
-    "sortOrder": 6,
+    "sortOrder": 7,
     "images": [
       {
         "id": "7-1",
@@ -1197,7 +1549,32 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 27
       }
     ],
-    "notionLastEditedAt": "2026-07-02T16:38:00.000Z"
+    "notionLastEditedAt": "2026-07-02T16:38:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 브라이트 오크"
+      ],
+      "타일": [
+        "K60-8040",
+        "BTM33IV",
+        "1074",
+        "G98-White-M",
+        "BTM36LV",
+        "볼티모어 66IV"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스트 |82601-05| 디아 회벽 크림화이트"
+      ],
+      "필름": [
+        "현대 |S216|",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "한솔 | 크림화이트",
+        "한솔 | 조슈아라이트"
+      ]
+    }
   },
   {
     "no": 8,
@@ -1207,7 +1584,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "34평형",
     "coverUrl": "/portfolio/p8/01.webp",
-    "sortOrder": 7,
+    "sortOrder": 8,
     "images": [
       {
         "id": "8-1",
@@ -1408,7 +1785,34 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 35
       }
     ],
-    "notionLastEditedAt": "2026-07-02T16:53:00.000Z"
+    "notionLastEditedAt": "2026-07-02T16:53:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |마뷸러스 젠| 젠틀판타지"
+      ],
+      "타일": [
+        "K60-8040",
+        "8001",
+        "KD 6230",
+        "2692",
+        "30302",
+        "33005"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트"
+      ],
+      "필름": [
+        "현대 |S126|",
+        "영림 |PS170| 회벽백색",
+        "영림 |PW961|"
+      ],
+      "가구재": [
+        "한솔 | 크림화이트",
+        "한솔 | 조슈아라이트",
+        "LX 하이막스 | 스노우 콘크리트",
+        "한솔 | 도브화이트"
+      ]
+    }
   },
   {
     "no": 9,
@@ -1418,7 +1822,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "34평형",
     "coverUrl": "/portfolio/p9/01.webp",
-    "sortOrder": 8,
+    "sortOrder": 9,
     "images": [
       {
         "id": "9-1",
@@ -1577,7 +1981,32 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 25
       }
     ],
-    "notionLastEditedAt": "2026-07-08T15:19:00.000Z"
+    "notionLastEditedAt": "2026-07-08T15:19:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 본 오크"
+      ],
+      "타일": [
+        "TP 02",
+        "8001",
+        "K60-8040",
+        "36D-719",
+        "3719"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스트 |82601-05| 디아 회벽 크림화이트"
+      ],
+      "필름": [
+        "영림 |PS035|",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "한솔 | 조슈아라이트",
+        "LX 하이막스 | 스노우 콘크리트"
+      ]
+    }
   },
   {
     "no": 10,
@@ -1587,7 +2016,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "24평형",
     "coverUrl": "/portfolio/p10/01.webp",
-    "sortOrder": 9,
+    "sortOrder": 10,
     "images": [
       {
         "id": "10-1",
@@ -1746,7 +2175,30 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 26
       }
     ],
-    "notionLastEditedAt": "2026-07-08T15:25:00.000Z"
+    "notionLastEditedAt": "2026-07-08T15:25:00.000Z",
+    "materials": {
+      "마루": [
+        "이건마루 |세라 플렉스 S| 허밍오크"
+      ],
+      "타일": [
+        "DS17",
+        "K60-8040",
+        "8001",
+        "33001"
+      ],
+      "도배": [
+        "LX디아망 |PR002-10| 회벽 퓨어화이트",
+        "LX베스트 |82601-01| 디아 회벽 퓨어화이트"
+      ],
+      "필름": [
+        "영림 |PS028|",
+        "영림 |PS155| 순백색"
+      ],
+      "가구재": [
+        "한솔 | 도브화이트",
+        "LX 하이막스 | 스노우 콘크리트"
+      ]
+    }
   },
   {
     "no": 11,
@@ -1756,7 +2208,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "25평형",
     "coverUrl": "/portfolio/p11/01.webp",
-    "sortOrder": 10,
+    "sortOrder": 11,
     "images": [
       {
         "id": "11-1",
@@ -1909,7 +2361,31 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 24
       }
     ],
-    "notionLastEditedAt": "2026-06-25T16:25:00.000Z"
+    "notionLastEditedAt": "2026-06-25T16:25:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 스테디"
+      ],
+      "타일": [
+        "TP 02",
+        "8001",
+        "MASSA IV",
+        "33003"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스트 |82601-05| 디아 회벽 크림화이트"
+      ],
+      "필름": [
+        "보닥 |S216|",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "한솔 | 도브화이트",
+        "한솔 | 조슈아라이트",
+        "LX 하이막스 | 스노우 콘크리트"
+      ]
+    }
   },
   {
     "no": 12,
@@ -1919,7 +2395,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p12/01.webp",
-    "sortOrder": 11,
+    "sortOrder": 12,
     "images": [
       {
         "id": "12-1",
@@ -2006,7 +2482,33 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 15
       }
     ],
-    "notionLastEditedAt": "2026-07-08T15:27:00.000Z"
+    "notionLastEditedAt": "2026-07-08T15:27:00.000Z",
+    "materials": {
+      "마루": [
+        "올고다마루 |로카(기본사이즈)| 세인트 베이지"
+      ],
+      "타일": [
+        "K60-8040",
+        "8001",
+        "MASSA IV",
+        "33006",
+        "36006M",
+        "3711"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스트 |82601-05| 디아 회벽 크림화이트"
+      ],
+      "필름": [
+        "보닥 |S179|",
+        "영림 |PS170| 회벽백색",
+        "영림 |PW961-1|"
+      ],
+      "가구재": [
+        "한솔 | 도브화이트",
+        "LX 하이막스 | 스노우 콘크리트"
+      ]
+    }
   },
   {
     "no": 13,
@@ -2016,7 +2518,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "34평형",
     "coverUrl": "/portfolio/p13/01.webp",
-    "sortOrder": 12,
+    "sortOrder": 13,
     "images": [
       {
         "id": "13-1",
@@ -2175,7 +2677,32 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 25
       }
     ],
-    "notionLastEditedAt": "2026-07-08T15:31:00.000Z"
+    "notionLastEditedAt": "2026-07-08T15:31:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |마뷸러스 젠| 모로칸크림"
+      ],
+      "타일": [
+        "HOG60060",
+        "33003",
+        "K60-8040",
+        "8001"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트"
+      ],
+      "필름": [
+        "영림 |PS170| 회벽백색",
+        "현대 |S216|",
+        "한솔 | 클레이크림",
+        "영림 | PW961"
+      ],
+      "가구재": [
+        "한솔 | 조슈아라이트",
+        "LX 하이막스 | 크리스탈 베이지",
+        "한솔 | 도브화이트"
+      ]
+    }
   },
   {
     "no": 14,
@@ -2185,7 +2712,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p14/01.webp",
-    "sortOrder": 13,
+    "sortOrder": 14,
     "images": [
       {
         "id": "14-1",
@@ -2344,7 +2871,29 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 27
       }
     ],
-    "notionLastEditedAt": "2026-07-08T15:35:00.000Z"
+    "notionLastEditedAt": "2026-07-08T15:35:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 본 오크"
+      ],
+      "타일": [
+        "K60-8040",
+        "8001"
+      ],
+      "도배": [
+        "LX베스띠 |82601-06| 디아 회벽 화이트",
+        "LX디아망 |PR002-01| 회벽 화이트"
+      ],
+      "필름": [
+        "영림 |PS035|",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "LX 하이막스 | 오로라 파비아",
+        "한솔 | 포그그레이",
+        "한솔 | 도브화이트"
+      ]
+    }
   },
   {
     "no": 15,
@@ -2354,7 +2903,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p15/01.webp",
-    "sortOrder": 14,
+    "sortOrder": 15,
     "images": [
       {
         "id": "15-1",
@@ -2459,7 +3008,29 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 19
       }
     ],
-    "notionLastEditedAt": "2026-07-08T15:38:00.000Z"
+    "notionLastEditedAt": "2026-07-08T15:38:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |마뷸러스 리브| 모로칸 크림"
+      ],
+      "타일": [
+        "STONE EVO 60B",
+        "MASSA 60W"
+      ],
+      "도배": [
+        "LX디아망 |PR034-02| 리얼회벽 샌드 아이보리",
+        "LX베스띠 |82575-02| 라임 플라스터 샌드 아이보리"
+      ],
+      "필름": [
+        "영림 |PS170| 회벽백색",
+        "영림 |PX450| 발렌무디크림"
+      ],
+      "가구재": [
+        "한솔 | 크림화이트",
+        "LX 하이막스 | 오로라 리넨크림",
+        "한솔 | 베르겐오크"
+      ]
+    }
   },
   {
     "no": 16,
@@ -2469,7 +3040,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p16/01.webp",
-    "sortOrder": 15,
+    "sortOrder": 16,
     "images": [
       {
         "id": "16-1",
@@ -2634,7 +3205,27 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 26
       }
     ],
-    "notionLastEditedAt": "2026-07-08T15:43:00.000Z"
+    "notionLastEditedAt": "2026-07-08T15:43:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 본 오크"
+      ],
+      "타일": [
+        "8001",
+        "WT R06",
+        "R06",
+        "33005",
+        "K60-8040"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스트 |82601-05| 디아 회벽 크림화이트"
+      ],
+      "필름": [
+        "영림 |PS170| 회벽백색",
+        "영림 |PS035|"
+      ]
+    }
   },
   {
     "no": 17,
@@ -2644,7 +3235,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "24평형",
     "coverUrl": "/portfolio/p17/01.webp",
-    "sortOrder": 16,
+    "sortOrder": 17,
     "images": [
       {
         "id": "17-1",
@@ -2713,7 +3304,31 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 10
       }
     ],
-    "notionLastEditedAt": "2026-07-08T15:46:00.000Z"
+    "notionLastEditedAt": "2026-07-08T15:46:00.000Z",
+    "materials": {
+      "마루": [
+        "올고다마루 |로카(기본사이즈)| 시에나 크림"
+      ],
+      "타일": [
+        "K60-8040",
+        "HOG60060",
+        "66114"
+      ],
+      "도배": [
+        "LX디아망 |PR002-01| 회벽 화이트",
+        "LX베스띠 |82579-03| 내추럴 스타코 더스트 그레이"
+      ],
+      "필름": [
+        "영림 |PW963|",
+        "영림 |PS170| 회벽백색",
+        "영림 |PS035|"
+      ],
+      "가구재": [
+        "LX 하이막스 | 캔디 화이트",
+        "한솔 | 도브화이트",
+        "한솔 | 조슈아라이트"
+      ]
+    }
   },
   {
     "no": 18,
@@ -2723,7 +3338,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "40PY",
     "areaSupply": "45평형",
     "coverUrl": "/portfolio/p18/01.webp",
-    "sortOrder": 17,
+    "sortOrder": 18,
     "images": [
       {
         "id": "18-1",
@@ -2798,7 +3413,32 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 11
       }
     ],
-    "notionLastEditedAt": "2026-07-09T03:14:00.000Z"
+    "notionLastEditedAt": "2026-07-09T03:14:00.000Z",
+    "materials": {
+      "마루": [
+        "올고다마루 |로카(기본사이즈)| 세인트 베이지"
+      ],
+      "타일": [
+        "TP 02",
+        "ALPHA 602",
+        "60CM02",
+        "36D-719",
+        "3719"
+      ],
+      "도배": [
+        "LX베스트 |82601-05| 디아 회벽 크림화이트",
+        "LX디아망 |PR002-12| 회벽 크림 화이트"
+      ],
+      "필름": [
+        "보닥 | S128",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "LX 하이막스 | 스노우 콘크리트",
+        "한솔 | 포그그레이",
+        "한솔 | 도브화이트"
+      ]
+    }
   },
   {
     "no": 19,
@@ -2808,7 +3448,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p19/01.webp",
-    "sortOrder": 18,
+    "sortOrder": 19,
     "images": [
       {
         "id": "19-1",
@@ -2871,7 +3511,32 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 10
       }
     ],
-    "notionLastEditedAt": "2026-07-09T03:15:00.000Z"
+    "notionLastEditedAt": "2026-07-09T03:15:00.000Z",
+    "materials": {
+      "마루": [
+        "KCC |숲도담 3.2T| NR32-4901 파라디소 화이트"
+      ],
+      "타일": [
+        "DOT 04",
+        "RFG60H922",
+        "36D-722C",
+        "3722",
+        "66114",
+        "33003"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스트 |82601-05| 디아 회벽 크림화이트"
+      ],
+      "필름": [
+        "영림 |PX449-2| 발렌포그",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "한솔 | 도브화이트",
+        "LX 하이막스 | 스노우 콘크리트"
+      ]
+    }
   },
   {
     "no": 20,
@@ -2881,7 +3546,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "40PY",
     "areaSupply": "43평형",
     "coverUrl": "/portfolio/p20/01.webp",
-    "sortOrder": 19,
+    "sortOrder": 20,
     "images": [
       {
         "id": "20-1",
@@ -3004,7 +3669,31 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 20
       }
     ],
-    "notionLastEditedAt": "2026-06-25T16:27:00.000Z"
+    "notionLastEditedAt": "2026-06-25T16:27:00.000Z",
+    "materials": {
+      "마루": [
+        "LX |에디톤| 라임 베이지"
+      ],
+      "타일": [
+        "K60-8040",
+        "8001",
+        "STONE EVO 60B",
+        "MASSA IV",
+        "33003"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트"
+      ],
+      "필름": [
+        "영림 |PX450| 발렌무디크림",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "LX 하이막스 | 오로라 블랑",
+        "한솔 | 도브화이트"
+      ]
+    }
   },
   {
     "no": 21,
@@ -3014,7 +3703,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p21/03.webp",
-    "sortOrder": 20,
+    "sortOrder": 21,
     "images": [
       {
         "id": "21-3",
@@ -3113,7 +3802,30 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 19
       }
     ],
-    "notionLastEditedAt": "2026-07-10T07:33:00.000Z"
+    "notionLastEditedAt": "2026-07-10T07:33:00.000Z",
+    "materials": {
+      "마루": [
+        "동화마루 |듀오텍스처| 모데나 오크"
+      ],
+      "타일": [
+        "K60-8040",
+        "8001",
+        "33003"
+      ],
+      "도배": [
+        "LX디아망 |PR002-01| 회벽 화이트",
+        "LX베스띠 |82601-06| 디아 회벽 화이트"
+      ],
+      "필름": [
+        "영림 |PS035|",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "한솔 | 시에라오크",
+        "칸스톤 | 루나화이트"
+      ]
+    }
   },
   {
     "no": 22,
@@ -3123,7 +3835,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "34평형",
     "coverUrl": "/portfolio/p22/01.webp",
-    "sortOrder": 21,
+    "sortOrder": 22,
     "images": [
       {
         "id": "22-1",
@@ -3186,7 +3898,33 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 10
       }
     ],
-    "notionLastEditedAt": "2026-07-09T03:18:00.000Z"
+    "notionLastEditedAt": "2026-07-09T03:18:00.000Z",
+    "materials": {
+      "마루": [
+        "KCC |숲도담 2.7T| NJ27-4911 크레마아이보리"
+      ],
+      "타일": [
+        "SK-BE",
+        "DS17",
+        "WT 3672",
+        "WT3670",
+        "3342",
+        "3341",
+        "33003"
+      ],
+      "도배": [
+        "LX디아망 |PR002-13| 회벽 블랑그레이",
+        "LX베스띠 |82576-03| 프레스코 회벽 웜 미스트 그레이"
+      ],
+      "필름": [
+        "영림 |PS141|",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "한솔 | 도브화이트",
+        "LX 하이막스 | 스노우 콘크리트"
+      ]
+    }
   },
   {
     "no": 23,
@@ -3196,7 +3934,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "24평형",
     "coverUrl": "/portfolio/p23/01.webp",
-    "sortOrder": 22,
+    "sortOrder": 23,
     "images": [
       {
         "id": "23-1",
@@ -3259,7 +3997,30 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 9
       }
     ],
-    "notionLastEditedAt": "2026-07-09T03:18:00.000Z"
+    "notionLastEditedAt": "2026-07-09T03:18:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 본 오크"
+      ],
+      "타일": [
+        "K60-8040",
+        "33003",
+        "8001"
+      ],
+      "도배": [
+        "LX베스띠 |82579-02| 내추럴 스타코 데저트 크림",
+        "LX디아망 |PR002-12| 회벽 크림 화이트"
+      ],
+      "필름": [
+        "영림 |PS170| 회벽백색",
+        "영림 |PW961|"
+      ],
+      "가구재": [
+        "LX 하이막스 | 캔디 화이트",
+        "한솔 | 포그그레이",
+        "한솔 | 조슈아라이트"
+      ]
+    }
   },
   {
     "no": 24,
@@ -3269,7 +4030,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p24/01.webp",
-    "sortOrder": 23,
+    "sortOrder": 24,
     "images": [
       {
         "id": "24-1",
@@ -3422,7 +4183,31 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 24
       }
     ],
-    "notionLastEditedAt": "2026-07-10T04:47:00.000Z"
+    "notionLastEditedAt": "2026-07-10T04:47:00.000Z",
+    "materials": {
+      "마루": [
+        "이건마루 |그린 165| 마일드 오크"
+      ],
+      "타일": [
+        "K60-8040",
+        "DOT 04",
+        "7001"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스띠 |82576-04| 프레스코 회벽 내추럴 크림"
+      ],
+      "필름": [
+        "영림 |PS170| 회벽백색",
+        "한솔 | 도브화이트",
+        "영림 |PX451| 화이트스톤"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "한솔 | 도브화이트",
+        "LX 하이막스 | 오로라 리넨크림"
+      ]
+    }
   },
   {
     "no": 25,
@@ -3432,7 +4217,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "29평형",
     "coverUrl": "/portfolio/p25/01.webp",
-    "sortOrder": 24,
+    "sortOrder": 25,
     "images": [
       {
         "id": "25-1",
@@ -3585,7 +4370,33 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 24
       }
     ],
-    "notionLastEditedAt": "2026-07-10T04:35:00.000Z"
+    "notionLastEditedAt": "2026-07-10T04:35:00.000Z",
+    "materials": {
+      "마루": [
+        "한솔 |SB 리얼텍스쳐(와이드)| 플레이오크(8027)"
+      ],
+      "타일": [
+        "EPIC 6602",
+        "36005M",
+        "33005",
+        "STONE EVO 60B",
+        "ALPHA 602",
+        "707"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트"
+      ],
+      "필름": [
+        "영림 |PS170| 회벽백색",
+        "영림 |PS010| 중백색",
+        "현대 |S216|"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "한솔 | 도브화이트",
+        "LX 하이막스 | 캔디 화이트"
+      ]
+    }
   },
   {
     "no": 26,
@@ -3595,7 +4406,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "23평형",
     "coverUrl": "/portfolio/p26/01.webp",
-    "sortOrder": 25,
+    "sortOrder": 26,
     "images": [
       {
         "id": "26-1",
@@ -3724,7 +4535,30 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 20
       }
     ],
-    "notionLastEditedAt": "2026-07-10T04:57:00.000Z"
+    "notionLastEditedAt": "2026-07-10T04:57:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 그랜드 오크 뉴 165"
+      ],
+      "타일": [
+        "TP 02",
+        "66114",
+        "DOT 04",
+        "33006"
+      ],
+      "도배": [
+        "LX디아망 |PR031-02| 내추럴회벽 크림화이트",
+        "LX베스띠 |82577-02| 딥페인팅 에쉬크림"
+      ],
+      "필름": [
+        "영림 |PS035|",
+        "영림 |PS098|"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "LX 하이막스 | 캔디 화이트"
+      ]
+    }
   },
   {
     "no": 27,
@@ -3734,7 +4568,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p27/01.webp",
-    "sortOrder": 26,
+    "sortOrder": 27,
     "images": [
       {
         "id": "27-1",
@@ -3911,7 +4745,32 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 30
       }
     ],
-    "notionLastEditedAt": "2026-07-10T05:38:00.000Z"
+    "notionLastEditedAt": "2026-07-10T05:38:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |마뷸러스 젠| 젠틀판타지"
+      ],
+      "타일": [
+        "K60-8040",
+        "8001",
+        "K60-6184",
+        "M01",
+        "36D-719",
+        "3719"
+      ],
+      "도배": [
+        "LX디아망 |PR002-01| 회벽 화이트"
+      ],
+      "필름": [
+        "보닥 | NS122",
+        "영림 |PS170| 회벽백색",
+        "영림 |PS010| 중백색"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "한솔 | 테네시오크"
+      ]
+    }
   },
   {
     "no": 28,
@@ -3921,7 +4780,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p28/01.webp",
-    "sortOrder": 27,
+    "sortOrder": 28,
     "images": [
       {
         "id": "28-1",
@@ -4014,7 +4873,32 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 20
       }
     ],
-    "notionLastEditedAt": "2026-07-10T05:44:00.000Z"
+    "notionLastEditedAt": "2026-07-10T05:44:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |강마루| 블론테"
+      ],
+      "타일": [
+        "66115",
+        "33001",
+        "K60-8040",
+        "RFG60H922",
+        "6904"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트",
+        "LX베스띠 |82579-03| 내추럴 스타코 더스트 그레이"
+      ],
+      "필름": [
+        "현대 |S216|",
+        "영림 |PS120| 도장백색"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "한솔 | 조슈아라이트",
+        "LX 하이막스 | 오로라 리넨크림"
+      ]
+    }
   },
   {
     "no": 29,
@@ -4024,7 +4908,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "50PY~",
     "areaSupply": "51평형",
     "coverUrl": "/portfolio/p29/02.webp",
-    "sortOrder": 28,
+    "sortOrder": 29,
     "images": [
       {
         "id": "29-2",
@@ -4147,7 +5031,31 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 21
       }
     ],
-    "notionLastEditedAt": "2026-07-10T05:52:00.000Z"
+    "notionLastEditedAt": "2026-07-10T05:52:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 그랜드 오크 뉴 165"
+      ],
+      "타일": [
+        "MASSA IV",
+        "HOG60060",
+        "K60-8040",
+        "8001",
+        "3711"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트"
+      ],
+      "필름": [
+        "영림 |PX450| 발렌무디크림",
+        "영림 |PS120| 도장백색",
+        "영림 |PW845|"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "LX 하이막스 | 그라빌라 크림"
+      ]
+    }
   },
   {
     "no": 30,
@@ -4157,7 +5065,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p30/01.webp",
-    "sortOrder": 29,
+    "sortOrder": 30,
     "images": [
       {
         "id": "30-1",
@@ -4286,7 +5194,29 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 22
       }
     ],
-    "notionLastEditedAt": "2026-07-10T05:55:00.000Z"
+    "notionLastEditedAt": "2026-07-10T05:55:00.000Z",
+    "materials": {
+      "마루": [
+        "노바마루 |블랙라벨| 벨라오크"
+      ],
+      "타일": [
+        "K60-8040",
+        "66114",
+        "STONE EVO 60B",
+        "볼티모어 66IV"
+      ],
+      "도배": [
+        "LX베스띠 |82579-02| 내추럴 스타코 데저트 크림",
+        "LX디아망 |PR044-03| 샌드 스타코 웜 화이트"
+      ],
+      "필름": [
+        "영림 |PS170| 회벽백색",
+        "영림 |PS035|"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이"
+      ]
+    }
   },
   {
     "no": 31,
@@ -4296,7 +5226,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "24평형",
     "coverUrl": "/portfolio/p31/02.webp",
-    "sortOrder": 30,
+    "sortOrder": 31,
     "images": [
       {
         "id": "31-2",
@@ -4429,7 +5359,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "34평형",
     "coverUrl": "/portfolio/p32/01.webp",
-    "sortOrder": 31,
+    "sortOrder": 32,
     "images": [
       {
         "id": "32-1",
@@ -4580,7 +5510,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p33/01.webp",
-    "sortOrder": 32,
+    "sortOrder": 33,
     "images": [
       {
         "id": "33-1",
@@ -4691,7 +5621,34 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 17
       }
     ],
-    "notionLastEditedAt": "2026-07-10T06:09:00.000Z"
+    "notionLastEditedAt": "2026-07-10T06:09:00.000Z",
+    "materials": {
+      "마루": [
+        "올고다마루 |로카(기본사이즈)| 세인트 베이지"
+      ],
+      "타일": [
+        "DOT 04",
+        "8001",
+        "K60-8040",
+        "WT3670",
+        "3341",
+        "IK065"
+      ],
+      "도배": [
+        "LX베스띠 |82578-02| 크랙 스톤 피치 베이지",
+        "LX디아망 |PR002-12| 회벽 크림 화이트"
+      ],
+      "필름": [
+        "영림 |PW961|",
+        "영림 |PS010| 중백색",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "LX 하이막스 | 캔디 화이트",
+        "한솔 | 조슈아라이트",
+        "한솔 | 크림화이트"
+      ]
+    }
   },
   {
     "no": 34,
@@ -4701,7 +5658,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "24평형",
     "coverUrl": "/portfolio/p34/01.webp",
-    "sortOrder": 33,
+    "sortOrder": 34,
     "images": [
       {
         "id": "34-1",
@@ -4864,7 +5821,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "40PY",
     "areaSupply": "45평형",
     "coverUrl": "/portfolio/p35/01.webp",
-    "sortOrder": 34,
+    "sortOrder": 35,
     "images": [
       {
         "id": "35-1",
@@ -5017,7 +5974,28 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 26
       }
     ],
-    "notionLastEditedAt": "2026-07-10T06:22:00.000Z"
+    "notionLastEditedAt": "2026-07-10T06:22:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |블론테| 본 오크"
+      ],
+      "타일": [
+        "STONE EVO 60B",
+        "8001",
+        "K60-8037",
+        "33003"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트"
+      ],
+      "필름": [
+        "영림 |PS035|",
+        "영림 |PS120| 도장백색",
+        "영림 |PW965|",
+        "영림 |PS010| 중백색",
+        "한솔 | 도브화이트"
+      ]
+    }
   },
   {
     "no": 36,
@@ -5027,7 +6005,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "25평형",
     "coverUrl": "/portfolio/p36/01.webp",
-    "sortOrder": 35,
+    "sortOrder": 36,
     "images": [
       {
         "id": "36-1",
@@ -5144,7 +6122,24 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 21
       }
     ],
-    "notionLastEditedAt": "2026-07-10T06:29:00.000Z"
+    "notionLastEditedAt": "2026-07-10T06:29:00.000Z",
+    "materials": {
+      "마루": [
+        "올고다마루 |로카(기본사이즈)| 클라우드 베이지"
+      ],
+      "타일": [
+        "TP 04",
+        "97MIX02",
+        "K60-8040",
+        "모데나 W"
+      ],
+      "도배": [
+        "LX디아망 |PR002-13| 회벽 블랑그레이"
+      ],
+      "필름": [
+        "현대 |S216|"
+      ]
+    }
   },
   {
     "no": 37,
@@ -5154,7 +6149,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "40PY",
     "areaSupply": "49평형",
     "coverUrl": "/portfolio/p37/01.webp",
-    "sortOrder": 36,
+    "sortOrder": 37,
     "images": [
       {
         "id": "37-1",
@@ -5301,7 +6296,36 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 23
       }
     ],
-    "notionLastEditedAt": "2026-07-10T06:33:00.000Z"
+    "notionLastEditedAt": "2026-07-10T06:33:00.000Z",
+    "materials": {
+      "마루": [
+        "올고다마루 |로카(기본사이즈)| 세인트 베이지"
+      ],
+      "타일": [
+        "TP 02",
+        "K60-8040",
+        "8001",
+        "30302",
+        "2692",
+        "33001"
+      ],
+      "도배": [
+        "LX디아망 |PR002-13| 회벽 블랑그레이",
+        "LX베스띠 |82579-02| 내추럴 스타코 데저트 크림"
+      ],
+      "필름": [
+        "영림 |PS170| 회벽백색",
+        "영림 |PS035|",
+        "영림 |PS010| 중백색",
+        "LX |BW023| 몬타나 월넛"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "LX 하이막스 | 크리스탈 베이지",
+        "한솔 | 베르겐오크",
+        "한솔 | 도브화이트"
+      ]
+    }
   },
   {
     "no": 38,
@@ -5311,7 +6335,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "24평형",
     "coverUrl": "/portfolio/p38/01.webp",
-    "sortOrder": 37,
+    "sortOrder": 38,
     "images": [
       {
         "id": "38-1",
@@ -5452,7 +6476,32 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 22
       }
     ],
-    "notionLastEditedAt": "2026-07-10T06:36:00.000Z"
+    "notionLastEditedAt": "2026-07-10T06:36:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 로그 브라운"
+      ],
+      "타일": [
+        "STONE EVO 60B",
+        "8001",
+        "EPIC 6601",
+        "704"
+      ],
+      "도배": [
+        "LX디아망 |PR031-02| 내추럴회벽 크림화이트",
+        "LX베스띠 |82577-01| 딥 페인팅 초크화이트"
+      ],
+      "필름": [
+        "영림 |PS098|",
+        "영림 |PS010| 중백색",
+        "영림 |PS035|"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "한솔 | 도브화이트",
+        "LX 하이막스 | 크리스탈 베이지"
+      ]
+    }
   },
   {
     "no": 39,
@@ -5462,7 +6511,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p39/01.webp",
-    "sortOrder": 38,
+    "sortOrder": 39,
     "images": [
       {
         "id": "39-1",
@@ -5607,7 +6656,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p40/01.webp",
-    "sortOrder": 39,
+    "sortOrder": 40,
     "images": [
       {
         "id": "40-1",
@@ -5766,7 +6815,32 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 25
       }
     ],
-    "notionLastEditedAt": "2026-07-10T06:46:00.000Z"
+    "notionLastEditedAt": "2026-07-10T06:46:00.000Z",
+    "materials": {
+      "마루": [
+        "노바마루 |블랙라벨| 블랑오크"
+      ],
+      "타일": [
+        "DOT 04",
+        "66114",
+        "K60-8040",
+        "RFG60H922",
+        "33003"
+      ],
+      "도배": [
+        "LX디아망 |PR002-01| 회벽 화이트",
+        "LX베스띠 |82579-03| 내추럴 스타코 더스트 그레이"
+      ],
+      "필름": [
+        "영림 |PX449| 발렌블랑",
+        "영림 |PS170| 회벽백색"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "LX 하이막스 | 그라빌라 크림",
+        "한솔 | 도브화이트"
+      ]
+    }
   },
   {
     "no": 41,
@@ -5776,7 +6850,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "40PY",
     "areaSupply": "43평형",
     "coverUrl": "/portfolio/p41/01.webp",
-    "sortOrder": 40,
+    "sortOrder": 41,
     "images": [
       {
         "id": "41-1",
@@ -5831,7 +6905,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "40PY",
     "areaSupply": "42평형",
     "coverUrl": "/portfolio/p42/01.webp",
-    "sortOrder": 41,
+    "sortOrder": 42,
     "images": [
       {
         "id": "42-1",
@@ -5990,7 +7064,31 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 25
       }
     ],
-    "notionLastEditedAt": "2026-07-10T06:52:00.000Z"
+    "notionLastEditedAt": "2026-07-10T06:52:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 본 오크"
+      ],
+      "타일": [
+        "베네타 IV",
+        "네블라화이트",
+        "스트림 IV",
+        "퓨어 WH"
+      ],
+      "도배": [
+        "LX베스띠 |82579-02| 내추럴 스타코 데저트 크림",
+        "LX디아망 |PR002-12| 회벽 크림 화이트"
+      ],
+      "필름": [
+        "영림 |PS035|",
+        "영림 |PS130| 크림백색"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "한솔 | 크림화이트",
+        "LX 하이막스 | 스노우 콘크리트"
+      ]
+    }
   },
   {
     "no": 43,
@@ -6000,7 +7098,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "24평형",
     "coverUrl": "/portfolio/p43/01.webp",
-    "sortOrder": 42,
+    "sortOrder": 43,
     "images": [
       {
         "id": "43-1",
@@ -6141,7 +7239,29 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 22
       }
     ],
-    "notionLastEditedAt": "2026-06-25T16:38:00.000Z"
+    "notionLastEditedAt": "2026-06-25T16:38:00.000Z",
+    "materials": {
+      "마루": [
+        "KCC |숲도담 3.2T| NR32-4901 파라디소 화이트"
+      ],
+      "타일": [
+        "K60-6184",
+        "DS18",
+        "TP 02"
+      ],
+      "도배": [
+        "LX디아망 |PR002-01| 회벽 화이트",
+        "LX베스띠 |82576-03| 프레스코 회벽 웜 미스트 그레이"
+      ],
+      "필름": [
+        "영림 |PS170| 회벽백색",
+        "영림 |PS035|"
+      ],
+      "가구재": [
+        "LX 하이막스 | 그라빌라 크림",
+        "한솔 | 포그그레이"
+      ]
+    }
   },
   {
     "no": 44,
@@ -6151,7 +7271,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "24평형",
     "coverUrl": "/portfolio/p44/01.webp",
-    "sortOrder": 43,
+    "sortOrder": 44,
     "images": [
       {
         "id": "44-1",
@@ -6284,7 +7404,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "24평형",
     "coverUrl": "/portfolio/p45/01.webp",
-    "sortOrder": 44,
+    "sortOrder": 45,
     "images": [
       {
         "id": "45-1",
@@ -6413,7 +7533,30 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 20
       }
     ],
-    "notionLastEditedAt": "2026-07-10T06:59:00.000Z"
+    "notionLastEditedAt": "2026-07-10T06:59:00.000Z",
+    "materials": {
+      "마루": [
+        "디엔메종 |텐우드| 오크10"
+      ],
+      "타일": [
+        "ALPHA 602",
+        "K60-8040",
+        "8001"
+      ],
+      "도배": [
+        "LX디아망 |PR002-12| 회벽 크림 화이트"
+      ],
+      "필름": [
+        "영림 |PW961-1|",
+        "영림 |PS130| 크림백색"
+      ],
+      "가구재": [
+        "한솔 | 안도크림",
+        "한솔 | 도브화이트",
+        "LX 하이막스 | 캔디 화이트",
+        "한솔 | 포그그레이"
+      ]
+    }
   },
   {
     "no": 46,
@@ -6423,7 +7566,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "23평형",
     "coverUrl": "/portfolio/p46/01.webp",
-    "sortOrder": 45,
+    "sortOrder": 46,
     "images": [
       {
         "id": "46-1",
@@ -6558,7 +7701,31 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 21
       }
     ],
-    "notionLastEditedAt": "2026-07-10T07:01:00.000Z"
+    "notionLastEditedAt": "2026-07-10T07:01:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |프레스티지| 블랙오크"
+      ],
+      "타일": [
+        "레체03",
+        "WT3670",
+        "TP 02",
+        "8001",
+        "3341"
+      ],
+      "도배": [
+        "LX디아망 |PR002-10| 회벽 퓨어화이트"
+      ],
+      "필름": [
+        "영림 |PS035|",
+        "영림 |PS010| 중백색",
+        "영림 |PS155| 순백색"
+      ],
+      "가구재": [
+        "LX 하이막스 | 스노우 콘크리트",
+        "한솔 | 도브화이트"
+      ]
+    }
   },
   {
     "no": 47,
@@ -6568,7 +7735,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "23평형",
     "coverUrl": "/portfolio/p47/01.webp",
-    "sortOrder": 46,
+    "sortOrder": 47,
     "images": [
       {
         "id": "47-1",
@@ -6577,7 +7744,35 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 0
       }
     ],
-    "notionLastEditedAt": "2026-07-10T07:02:00.000Z"
+    "notionLastEditedAt": "2026-07-10T07:02:00.000Z",
+    "materials": {
+      "마루": [
+        "올고다마루 |로카(기본사이즈)| 세인트 베이지"
+      ],
+      "타일": [
+        "K60-8040",
+        "RFG60H923",
+        "비비드 민트",
+        "36005M",
+        "33005",
+        "8001"
+      ],
+      "도배": [
+        "LX디아망 |PR002-11| 회벽 크림",
+        "LX베스띠 |82577-02| 딥페인팅 에쉬크림"
+      ],
+      "필름": [
+        "영림 |PS170| 회벽백색",
+        "영림 |PS035|",
+        "영림 |PW963|",
+        "영림 |PS010| 중백색"
+      ],
+      "가구재": [
+        "한솔 | 베이내추럴오크",
+        "한솔 | 크림화이트",
+        "LX 하이막스 | 그라빌라 크림"
+      ]
+    }
   },
   {
     "no": 48,
@@ -6587,7 +7782,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "30PY",
     "areaSupply": "32평형",
     "coverUrl": "/portfolio/p48/01.webp",
-    "sortOrder": 47,
+    "sortOrder": 48,
     "images": [
       {
         "id": "48-1",
@@ -6740,7 +7935,33 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 24
       }
     ],
-    "notionLastEditedAt": "2026-07-10T07:06:00.000Z"
+    "notionLastEditedAt": "2026-07-10T07:06:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |마뷸러스 리브| 웜 브리즈"
+      ],
+      "타일": [
+        "33003",
+        "MASSA 60W",
+        "DOT 03",
+        "DS17",
+        "레체01"
+      ],
+      "도배": [
+        "LX디아망 |PR048-04| 마르모아 미스티 웜 그레이",
+        "LX디아망 |PR002-01| 회벽 화이트"
+      ],
+      "필름": [
+        "영림 |PX449| 발렌블랑",
+        "영림 |PS170| 회벽백색",
+        "영림 |PS010| 중백색"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "한솔 | 도브화이트",
+        "LX 하이막스 | 오로라 블랑"
+      ]
+    }
   },
   {
     "no": 49,
@@ -6750,7 +7971,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "40PY",
     "areaSupply": "45평형",
     "coverUrl": "/portfolio/p49/01.webp",
-    "sortOrder": 48,
+    "sortOrder": 49,
     "images": [
       {
         "id": "49-1",
@@ -6903,7 +8124,28 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 24
       }
     ],
-    "notionLastEditedAt": "2026-07-10T07:13:00.000Z"
+    "notionLastEditedAt": "2026-07-10T07:13:00.000Z",
+    "materials": {
+      "마루": [
+        "구정마루 |그랜드 텍스쳐 165| 스테디"
+      ],
+      "타일": [
+        "EVON 15",
+        "APP 6001",
+        "DS17"
+      ],
+      "도배": [
+        "LX디아망 |PR002-13| 회벽 블랑그레이"
+      ],
+      "필름": [
+        "영림 |PS170| 회벽백색",
+        "영림 |PX449| 발렌블랑"
+      ],
+      "가구재": [
+        "한솔 | 포그그레이",
+        "LX 하이막스 | 스노우 콘크리트"
+      ]
+    }
   },
   {
     "no": 50,
@@ -6913,7 +8155,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "27평형",
     "coverUrl": "/portfolio/p50/01.webp",
-    "sortOrder": 49,
+    "sortOrder": 50,
     "images": [
       {
         "id": "50-1",
@@ -7042,7 +8284,33 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 21
       }
     ],
-    "notionLastEditedAt": "2026-07-10T07:16:00.000Z"
+    "notionLastEditedAt": "2026-07-10T07:16:00.000Z",
+    "materials": {
+      "마루": [
+        "노바마루 |블랙라벨| 블랑오크"
+      ],
+      "타일": [
+        "33003",
+        "TP 02",
+        "30301",
+        "2691",
+        "STONE EVO 60B",
+        "8010M"
+      ],
+      "도배": [
+        "LX디아망 |PR002-13| 회벽 블랑그레이",
+        "개나리 로하스 |87456-2| 매트회벽 퓨어 그레이"
+      ],
+      "필름": [
+        "영림 |PS035|",
+        "영림 |PS010| 중백색"
+      ],
+      "가구재": [
+        "예림 | 매트 아이보리",
+        "LX 하이막스 | 페르나 화이트",
+        "한솔 | 크림화이트"
+      ]
+    }
   },
   {
     "no": 51,
@@ -7052,7 +8320,7 @@ export const SEED_PROJECTS: Project[] = [
     "sizeCategory": "20PY",
     "areaSupply": "25평형",
     "coverUrl": "/portfolio/p51/01.webp",
-    "sortOrder": 50,
+    "sortOrder": 51,
     "images": [
       {
         "id": "51-1",
@@ -7220,7 +8488,7 @@ export const SEED_PROJECTS: Project[] = [
     "apartment": "신대방현대아파트 103동 303호",
     "sizeCategory": "30PY",
     "coverUrl": "/portfolio/p52/01.webp",
-    "sortOrder": 51,
+    "sortOrder": 52,
     "images": [
       {
         "id": "52-1",

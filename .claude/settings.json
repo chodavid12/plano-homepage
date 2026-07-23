@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build)",
+      "Bash(npm run sync)",
+      "Bash(npm run sync -- --dry)",
+      "Bash(npm run lint)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(node -e:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(du:*)",
+      "Bash(wc:*)",
+      "Bash(curl -s -o /dev/null -w:*)",
+      "Read(//Users/j/Desktop/plano-hompage/**)"
+    ],
+    "deny": [
+      "Bash(npm audit fix --force)",
+      "Read(./.env.local)",
+      "Read(./.env)"
+    ]
+  }
+}

@@ -21,6 +21,30 @@ const DRY = process.argv.includes("--dry");
 const FORCE = process.argv.includes("--force"); // 증분 무시하고 전체 재다운로드
 
 const ROOMS = ["대표", "거실", "주방", "현관", "욕실", "침실", "드레스룸", "발코니", "서재", "복도", "기타"];
+
+// 마감재 — 포트폴리오 DB의 rollup 5종. 값은 자재 DB '페이지 id' 라서 이름을 따로 조회해야 한다.
+// 조회 결과는 캐시에 남겨 재동기화 때 다시 부르지 않는다(자재는 현장 간 공유됨).
+const MATERIALS = ["마루", "타일", "도배", "필름", "가구재"];
+const MAT_CACHE = path.join(ROOT, "scripts", ".materials-cache.json");
+
+function loadMatCache() {
+  try { return JSON.parse(fs.readFileSync(MAT_CACHE, "utf8")); } catch { return {}; }
+}
+// 자재 페이지의 제목 속성(이름/제품명 등 DB마다 다름)을 뽑는다
+function matTitle(pg) {
+  const t = Object.values(pg.properties).find((x) => x.type === "title");
+  return (t?.title || []).map((x) => x.plain_text).join("").trim();
+}
+// 포트폴리오 행 → { 마루: [자재 페이지 id, ...], ... }
+function materialIds(pg) {
+  const out = {};
+  for (const m of MATERIALS) {
+    const arr = pg.properties[m]?.rollup?.array || [];
+    const ids = arr.flatMap((a) => (a.type === "relation" ? a.relation.map((r) => r.id) : []));
+    if (ids.length) out[m] = ids;
+  }
+  return out;
+}
 const btext = (b) => { const v = b[b.type]; return (v?.rich_text?.map((r) => r.plain_text).join("") || "").trim(); };
 const norm = (t) => { const s = t.replace(/\s/g, ""); for (const r of ROOMS) if (s === r || s.includes(r)) return r; return null; };
 const marker = (b) => { const t = btext(b); if (!t) return null; if (b.type.startsWith("heading")) return norm(t); if (b.type === "paragraph" && t.length <= 8) return norm(t); return null; };
@@ -109,7 +133,36 @@ async function main() {
     .sort((a, b) => new Date(b.created) - new Date(a.created)); // 생성일시 내림차순 = 표시 순서
   const prev = readPrevSeed();
   let maxNo = Math.max(0, ...[...prev.values()].map((p) => p.no || 0));
-  console.log(`포트폴리오 DB ${rows.length}행 · 이전 seed ${prev.size}개${FORCE ? " (--force: 전체 재다운로드)" : ""}\n`);
+  console.log(`포트폴리오 DB ${rows.length}행 · 이전 seed ${prev.size}개${FORCE ? " (--force: 전체 재다운로드)" : ""}`);
+
+  // ── 마감재 이름 해석 (캐시에 없는 자재만 조회) ──────────────────────
+  const matCache = loadMatCache();
+  const needed = new Set();
+  for (const { pg } of rows) {
+    for (const ids of Object.values(materialIds(pg))) {
+      for (const id of ids) if (!matCache[id]) needed.add(id);
+    }
+  }
+  if (needed.size) {
+    const list = [...needed];
+    const found = await mapLimit(list, CONCURRENCY, async (id) => {
+      try { return matTitle(await notion.pages.retrieve({ page_id: id })); } catch { return ""; }
+    });
+    list.forEach((id, i) => { matCache[id] = found[i]; });
+    if (!DRY) fs.writeFileSync(MAT_CACHE, JSON.stringify(matCache, null, 0), "utf8");
+  }
+  const matCount = Object.values(matCache).filter(Boolean).length;
+  console.log(`마감재 자재 ${matCount}종 (신규 조회 ${needed.size})\n`);
+
+  // 포트폴리오 행 → { 마루: ["올고다마루 | 아르망 화이트", ...], ... }
+  const materialsOf = (pg) => {
+    const out = {};
+    for (const [cat, ids] of Object.entries(materialIds(pg))) {
+      const names = [...new Set(ids.map((id) => matCache[id]).filter(Boolean))];
+      if (names.length) out[cat] = names;
+    }
+    return Object.keys(out).length ? out : undefined;
+  };
 
   const projects = [];
   let reused = 0;
@@ -124,7 +177,8 @@ async function main() {
 
     // 증분 — 노션에서 수정 안 됐고 이미지가 그대로면 통째로 재사용 (다운로드 0)
     if (!FORCE && old?.notionLastEditedAt === lastEdited && old.images?.length && fs.existsSync(dir)) {
-      projects.push({ ...old, sortOrder: projects.length });
+      // 이미지는 재사용하되 마감재는 매번 갱신 — 자재 수정은 이미지 재다운로드가 필요 없다
+      projects.push({ ...old, materials: materialsOf(pg), sortOrder: projects.length });
       reused++;
       continue;
     }
@@ -164,6 +218,7 @@ async function main() {
       title,
       apartment: title,
       ...sizeFromTitle(title),
+      materials: materialsOf(pg),
       coverUrl: images[0].imageUrl,
       sortOrder: projects.length, // 생성일시 내림차순 표시 순서 (no 와 분리)
       images,

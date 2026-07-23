@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { BlurFade } from "@/components/ui/blur-fade";
+import PhilosophyIndex, { type IndexItem } from "@/components/about/PhilosophyIndex";
 
 export const metadata: Metadata = {
   title: "ABOUT",
@@ -50,60 +52,27 @@ const PRINCIPLES: Principle[] = [
   },
 ];
 
-// 상단 요약 인포그래픽용 — 상세 본문을 한 줄로 압축
-const SUMMARY = [
+// 인덱스(목차) — 상세 본문을 한 줄로 압축
+const SUMMARY: IndexItem[] = [
   {
     no: "01",
     title: "실용성 이후에 심미성",
     line: "사용성과 유지 가능성을 먼저, 심미성은 그 다음입니다.",
+    image: "/portfolio/r1.webp",
   },
   {
     no: "02",
     title: "비용 이상의 결과물",
     line: "결과에 직접 영향을 주는 곳에 예산을 집중합니다.",
+    image: "/portfolio/r2.webp",
   },
   {
     no: "03",
     title: "현장에서 지는 책임",
     line: "보이지 않는 부분까지, 마무리 이후까지 책임집니다.",
+    image: "/portfolio/r3.webp",
   },
 ];
-
-// 원형 회전 태그라인 배지 — 중앙에 심볼
-function CircleBadge() {
-  const tagline = "PLANO DESIGN · MODERN & NATURAL · SPACE PLANNING · ";
-  return (
-    <div className="relative h-60 w-60 sm:h-72 sm:w-72 md:h-80 md:w-80">
-      <svg
-        viewBox="0 0 220 220"
-        className="h-full w-full animate-spin-slow text-white/75"
-        aria-hidden="true"
-      >
-        <defs>
-          <path
-            id="essentials-arc"
-            d="M110,110 m-82,0 a82,82 0 1,1 164,0 a82,82 0 1,1 -164,0"
-            fill="none"
-          />
-        </defs>
-        <text className="fill-current text-[9px] uppercase tracking-[0.2em]">
-          <textPath href="#essentials-arc" startOffset="0">
-            {tagline}
-          </textPath>
-        </text>
-      </svg>
-      <div className="absolute inset-0 flex items-center justify-center">
-        <Image
-          src="/brand/symbol-white.png"
-          alt="PLANO"
-          width={200}
-          height={200}
-          className="w-[34%] opacity-95"
-        />
-      </div>
-    </div>
-  );
-}
 
 // **...** 마크업을 <strong>으로 변환
 function RichText({ text }: { text: string }) {
@@ -125,128 +94,139 @@ function RichText({ text }: { text: string }) {
 export default function AboutPage() {
   return (
     <div>
-      {/* 인트로 — 경영철학 헤드라인 */}
-      <section className="container-site pt-20 pb-14 md:pt-28 md:pb-20">
-        <p className="overline animate-fade-up">About · Philosophy</p>
-        <h1 className="mt-6 max-w-3xl animate-fade-up text-[1.75rem] font-semibold leading-[1.4] tracking-tight text-ink-900 sm:text-4xl md:text-[2.7rem] md:leading-[1.32]">
-          <span className="text-wood-500">PLANO의 경영철학</span>은
-          <br />
-          아래 3가지 키워드로 정리됩니다.
-        </h1>
-      </section>
-
-      {/* 요약 인포그래픽 — 한눈에 보는 3가지 (Our Essentials) */}
-      <section className="relative overflow-hidden bg-ink-900 text-white">
-        <div className="absolute inset-0" aria-hidden="true">
-          <Image
-            src="/portfolio/r2.webp"
-            alt=""
-            fill
-            sizes="100vw"
-            className="object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-ink-900/75" />
+      {/* ── 오프닝 — 여백으로 시작하는 선언 ───────────────────────── */}
+      <section className="container-site relative pt-24 md:pt-36">
+        {/* 워터마크 심볼 — 헤드라인 뒤로 흐르게 */}
+        <div
+          className="pointer-events-none absolute -top-4 right-0 hidden w-[300px] opacity-[0.07] md:block lg:w-[380px]"
+          aria-hidden="true"
+        >
+          <Image src="/brand/symbol-white.png" alt="" width={380} height={380} className="w-full invert" />
         </div>
 
-        <div className="container-site relative grid items-center gap-14 py-20 md:grid-cols-[1.15fr_0.85fr] md:py-28">
-          <div>
-            <p className="overline text-wood-400">Our Essentials</p>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-[2.6rem]">
-              한눈에 보는 3가지 기준
-            </h2>
+        <BlurFade delay={0.05}>
+          <p className="overline">About · Philosophy</p>
+        </BlurFade>
 
-            <ul className="mt-12 space-y-9 md:mt-14">
-              {SUMMARY.map((s) => (
-                <li
-                  key={s.no}
-                  className="flex gap-5 border-l border-white/15 pl-5 sm:gap-6"
-                >
-                  <span className="shrink-0 text-sm font-medium leading-7 text-wood-400">
-                    {s.no}
-                  </span>
-                  <div>
-                    <h3 className="text-xl font-semibold text-white md:text-2xl">{s.title}</h3>
-                    <p className="mt-1.5 text-sm leading-relaxed text-white/65 md:text-base">
-                      {s.line}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <BlurFade delay={0.15}>
+          <h1 className="relative mt-7 max-w-4xl text-[1.9rem] font-semibold leading-[1.38] tracking-tight text-ink-900 sm:text-[2.5rem] md:text-[3.15rem] md:leading-[1.3]">
+            <span className="text-wood-500">PLANO의 경영철학</span>은
+            <br />
+            아래 3가지 키워드로 정리됩니다.
+          </h1>
+        </BlurFade>
 
-          <div className="flex justify-center md:justify-end">
-            <CircleBadge />
+        {/* 얇은 우드 룰 — 선언과 목차를 가르는 유일한 장치 */}
+        <BlurFade delay={0.3}>
+          <div className="mt-14 flex items-center gap-4 md:mt-20">
+            <span className="h-px w-14 bg-wood-500" />
+            <span className="font-display text-[0.68rem] uppercase tracking-[0.22em] text-ink-700/50">
+              Three Standards
+            </span>
           </div>
-        </div>
+        </BlurFade>
       </section>
 
-      {/* 3가지 키워드 — 이미지/텍스트 교차 */}
-      <div className="space-y-24 pt-24 pb-24 md:space-y-32 md:pt-32 md:pb-32">
-        {PRINCIPLES.map((p, i) => {
-          const flipped = i % 2 === 1;
+      {/* ── 인덱스 — 호버하면 우측 프리뷰가 바뀐다 ─────────────────── */}
+      <section className="container-site pb-24 pt-10 md:pb-32 md:pt-14">
+        <BlurFade delay={0.1} inView>
+          <PhilosophyIndex items={SUMMARY} />
+        </BlurFade>
+      </section>
+
+      {/* ── 본문 — 좌측 레일 고정 / 우측 텍스트 스크롤 ──────────────── */}
+      <div className="border-t border-sand-200 bg-sand-100/40">
+        {PRINCIPLES.map((p) => {
+          // 본문이 짧은 항목(02)은 세로 이미지를 쓰면 우측에 빈 공간이 크게 남는다.
+          // 분량에 따라 이미지 비율을 맞춰 좌우 높이를 비슷하게 유지.
+          const tall = p.paragraphs.length >= 3 || Boolean(p.highlight);
           return (
-            <section key={p.no} className="container-site">
-              <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-                {/* 이미지 */}
-                <div
-                  className={`relative aspect-[4/3] overflow-hidden bg-sand-200 ${
-                    flipped ? "lg:order-2" : ""
-                  }`}
-                >
-                  <Image
-                    src={p.image}
-                    alt={p.title}
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover"
-                  />
-                </div>
-
-                {/* 텍스트 */}
-                <div className={flipped ? "lg:order-1" : ""}>
-                  <div className="flex items-baseline gap-4">
-                    <span className="text-4xl font-light leading-none text-wood-400 md:text-5xl">
+          <section
+            key={p.no}
+            id={`principle-${p.no}`}
+            className="container-site scroll-mt-24 border-b border-sand-200 py-20 last:border-b-0 md:py-28"
+          >
+            <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
+              {/* 좌 — 번호 · 이미지 (스크롤 중 고정) */}
+              <div className="lg:sticky lg:top-28 lg:self-start">
+                <BlurFade inView>
+                  <div className="flex items-center gap-5">
+                    <span
+                      className="font-display text-5xl font-light leading-none text-transparent md:text-6xl"
+                      style={{ WebkitTextStroke: "1px #C3A87F" }}
+                    >
                       {p.no}
                     </span>
-                    <h2 className="text-2xl font-semibold tracking-tight text-ink-900 md:text-[1.7rem]">
-                      {p.title}
-                    </h2>
+                    <span className="h-px flex-1 bg-sand-300" />
                   </div>
 
-                  <div className="mt-7 max-w-xl space-y-5 text-[0.97rem] leading-[1.85] text-ink-700/85 md:text-base">
-                    {p.paragraphs.map((para, j) => (
-                      <p key={j}>
+                  <div
+                    className={`relative mt-7 overflow-hidden bg-sand-200 ${
+                      tall ? "aspect-[4/5]" : "aspect-[4/3]"
+                    }`}
+                  >
+                    <Image
+                      src={p.image}
+                      alt={p.title}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 40vw"
+                      className="object-cover"
+                    />
+                    <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-ink-900/5" />
+                  </div>
+                </BlurFade>
+              </div>
+
+              {/* 우 — 제목 · 본문 · 결론 */}
+              <div className="lg:pt-3">
+                <BlurFade delay={0.1} inView>
+                  <h2 className="text-[1.75rem] font-semibold leading-snug tracking-tight text-ink-900 md:text-[2.15rem]">
+                    {p.title}
+                  </h2>
+                </BlurFade>
+
+                <div className="mt-8 max-w-[46ch] space-y-6 text-[1rem] font-light leading-[1.9] text-ink-800/85 md:mt-10 md:text-[1.06rem]">
+                  {p.paragraphs.map((para, j) => (
+                    <BlurFade key={j} delay={0.16 + j * 0.07} inView>
+                      <p>
                         <RichText text={para} />
                       </p>
-                    ))}
-                  </div>
-
-                  {p.highlight && (
-                    <p className="mt-8 max-w-xl border-l-2 border-wood-400 pl-5 text-base font-medium leading-relaxed text-ink-900 md:text-lg">
-                      {p.highlight}
-                    </p>
-                  )}
+                    </BlurFade>
+                  ))}
                 </div>
+
+                {p.highlight && (
+                  <BlurFade delay={0.3} inView>
+                    {/* 결론 — 본문과 다른 무게로 떨어뜨린다 */}
+                    <figure className="mt-12 max-w-[42ch] border-t border-wood-400/50 pt-7 md:mt-14">
+                      <blockquote className="text-[1.15rem] font-medium leading-[1.65] tracking-tight text-ink-900 md:text-[1.35rem]">
+                        {p.highlight}
+                      </blockquote>
+                    </figure>
+                  </BlurFade>
+                )}
               </div>
-            </section>
+            </div>
+          </section>
           );
         })}
       </div>
 
-      {/* 닫는 CTA */}
-      <section className="container-site pb-24 md:pb-32">
-        <div className="flex flex-col items-start gap-6 border-t border-sand-200 pt-12 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-lg font-light text-ink-800">
-            PLANO와 함께 공간을 계획해 보세요.
-          </p>
-          <Link href="/consultant" className="btn btn-dark min-w-[190px]">
-            상담 신청
-            <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={1.5}>
-              <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Link>
-        </div>
+      {/* ── 닫는 CTA ─────────────────────────────────────────────── */}
+      <section className="container-site py-24 md:py-32">
+        <BlurFade inView>
+          <div className="flex flex-col items-start gap-8 sm:flex-row sm:items-center sm:justify-between">
+            <p className="max-w-md text-[1.35rem] font-light leading-snug tracking-tight text-ink-900 md:text-[1.7rem]">
+              PLANO와 함께 공간을 계획해 보세요.
+            </p>
+            <Link href="/consultant" className="btn btn-dark min-w-[200px] shrink-0">
+              상담 신청
+              <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={1.5}>
+                <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
+          </div>
+        </BlurFade>
       </section>
     </div>
   );
