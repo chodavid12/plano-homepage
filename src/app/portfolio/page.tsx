@@ -26,14 +26,9 @@ export default async function PortfolioPage({ searchParams }: Props) {
 
   return (
     <div className="container-site py-16 md:py-24">
-      <header className="mb-12 flex items-end justify-between">
-        <div>
-          <p className="overline">Portfolio</p>
-          <h1 className="mt-3 text-3xl tracking-tight md:text-4xl">프로젝트</h1>
-        </div>
-        <p className="pb-1 text-sm text-ink-700/50">
-          총 <span className="text-ink-900">{filtered.length}</span>개
-        </p>
+      <header className="mb-12">
+        <p className="overline">Portfolio</p>
+        <h1 className="mt-3 text-3xl tracking-tight md:text-4xl">프로젝트</h1>
       </header>
 
       <PortfolioControls rooms={rooms} />
@@ -93,7 +88,7 @@ function SpaceView({
                   className="block animate-fade-up"
                   style={{ animationDelay: `${Math.min(i, 8) * 60}ms` }}
                 >
-                  <div className="group relative aspect-[16/10] overflow-hidden bg-sand-200">
+                  <div className="group relative aspect-[4/3] overflow-hidden bg-sand-200 sm:aspect-[16/10]">
                     <Image
                       src={imageUrl}
                       alt={project.title}
