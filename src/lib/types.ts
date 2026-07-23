@@ -6,6 +6,9 @@ export interface ProjectImage {
   id: string;
   room: string; // 공간명 (거실/주방/…) — 상세 탭 라벨
   imageUrl: string;
+  /** 변환된 webp 의 실제 치수 — 갤러리에서 원본 비율대로 표시(세로/가로 혼재) */
+  width?: number;
+  height?: number;
   sortOrder: number;
 }
 

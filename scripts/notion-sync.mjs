@@ -198,12 +198,20 @@ async function main() {
       try {
         const res = await fetch(s.url, { signal: AbortSignal.timeout(20000) });
         if (!res.ok) return null;
-        await sharp(Buffer.from(await res.arrayBuffer()))
+        // 변환 결과의 실제 치수를 기록 — 갤러리에서 원본 비율대로 보여주기 위함(세로컷 잘림 방지)
+        const info = await sharp(Buffer.from(await res.arrayBuffer()))
           .rotate()
           .resize({ width: MAXW, withoutEnlargement: true })
           .webp({ quality: Q })
           .toFile(path.join(dir, name));
-        return { id: `${no}-${i + 1}`, room: s.room, imageUrl: `/portfolio/p${no}/${name}`, sortOrder: i };
+        return {
+          id: `${no}-${i + 1}`,
+          room: s.room,
+          imageUrl: `/portfolio/p${no}/${name}`,
+          width: info.width,
+          height: info.height,
+          sortOrder: i,
+        };
       } catch {
         return null; // 실패분은 건너뜀 (순서/이름은 원래 인덱스 유지)
       }

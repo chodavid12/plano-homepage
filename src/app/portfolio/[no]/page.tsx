@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getProject, getProjects } from "@/lib/data";
 import ProjectGallery from "@/components/portfolio/ProjectGallery";
+import BackLink from "@/components/portfolio/BackLink";
 
 export const dynamicParams = true;
 
@@ -49,7 +50,10 @@ export default async function ProjectDetailPage({ params }: { params: { no: stri
   const metaItems = meta.filter((m): m is { label: string; value: string } => Boolean(m.value));
 
   return (
-    <article className="mx-auto w-full max-w-[1600px] px-5 py-14 sm:px-6 md:py-20 lg:px-8">
+    <article className="mx-auto w-full max-w-[1600px] px-5 py-10 sm:px-6 md:py-14 lg:px-8">
+      {/* 뒤로가기 — 제목 위. 목록의 필터·검색 상태로 돌아가도록 브라우저 히스토리를 쓴다 */}
+      <BackLink />
+
       {/* 상세 갤러리 — 좌: 제목·정보·썸네일 / 우: 메인 이미지 */}
       <ProjectGallery
         images={project.images}

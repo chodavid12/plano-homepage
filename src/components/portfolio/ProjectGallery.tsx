@@ -21,6 +21,12 @@ interface Props {
 // 마감재 표시 순서 (노션 속성 순서와 무관하게 고정)
 const MATERIAL_ORDER = ["마루", "타일", "도배", "필름", "가구재"];
 
+// 메인 이미지 높이 상한 — 세로 사진이 화면을 독점하지 않도록
+const MAX_H = "78vh";
+// 치수가 없는 예전 이미지 폴백 (3:2)
+const FALLBACK_W = 3;
+const FALLBACK_H = 2;
+
 // 상세 갤러리 — 좌: 제목·정보·썸네일 / 우: 큰 메인 이미지 (LILSQUARE식 2단)
 export default function ProjectGallery({ images, title, subtitle, meta, materials }: Props) {
   // 공간(room) 순서 유지하며 그룹화
@@ -69,6 +75,9 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
   const items = current.items;
   const active = items[Math.min(imgIdx, items.length - 1)];
 
+  const activeW = active.width || FALLBACK_W;
+  const activeH = active.height || FALLBACK_H;
+
   const selectRoom = (i: number) => {
     setRoomIdx(i);
     setImgIdx(0);
@@ -86,39 +95,27 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
           <p className="mt-3 text-base font-light text-ink-700/80">{subtitle}</p>
         )}
 
-        {meta.length > 0 && (
-          <dl className="mt-8 space-y-2.5 border-t border-sand-200 pt-7 text-sm">
+        {/* 사양 — 면적/마감재를 한 덩어리로. 라벨은 또렷하게, 값은 넉넉한 행간으로 */}
+        {(meta.length > 0 || orderedMaterials.length > 0) && (
+          <dl className="mt-8 divide-y divide-sand-200/80 border-y border-sand-200">
             {meta.map((m) => (
-              <div key={m.label} className="flex gap-5">
-                <dt className="w-12 shrink-0 text-[0.7rem] uppercase tracking-[0.15em] text-ink-700/45">
-                  {m.label}
-                </dt>
-                <dd className="text-ink-900">{m.value}</dd>
-              </div>
+              <SpecRow key={m.label} label={m.label}>
+                <span className="font-medium text-ink-900">{m.value}</span>
+              </SpecRow>
+            ))}
+
+            {orderedMaterials.map(([cat, names]) => (
+              <SpecRow key={cat} label={cat}>
+                {/* 자재는 줄바꿈으로 흘려 넣는다 — 한 줄씩 쌓으면 갤러리 탭이 화면 밖으로 밀린다 */}
+                {names.map((n, i) => (
+                  <span key={n}>
+                    {i > 0 && <span className="text-ink-700/45">, </span>}
+                    <MaterialName name={n} />
+                  </span>
+                ))}
+              </SpecRow>
             ))}
           </dl>
-        )}
-
-        {orderedMaterials.length > 0 && (
-          <section className="mt-7 border-t border-sand-200 pt-7">
-            <h2 className="text-[0.7rem] uppercase tracking-[0.15em] text-ink-700/45">마감재</h2>
-            <dl className="mt-4 space-y-3 text-sm">
-              {orderedMaterials.map(([cat, names]) => (
-                <div key={cat} className="flex gap-5">
-                  <dt className="w-12 shrink-0 pt-px text-[0.78rem] text-ink-700/60">{cat}</dt>
-                  {/* 자재는 줄바꿈으로 흘려 넣는다 — 한 줄씩 쌓으면 갤러리 탭이 화면 밖으로 밀린다 */}
-                  <dd className="min-w-0 flex-1 text-[0.83rem] leading-relaxed text-ink-800">
-                    {names.map((n, i) => (
-                      <span key={n}>
-                        {i > 0 && <span className="text-ink-700/35">, </span>}
-                        <MaterialName name={n} />
-                      </span>
-                    ))}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </section>
         )}
 
         {showTabs && (
@@ -141,7 +138,16 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
 
       {/* 우측 — 메인 이미지 (모바일에선 제목 아래) */}
       <div className="lg:col-start-2 lg:row-span-2 lg:row-start-1">
-        <div className="relative aspect-[3/2] overflow-hidden bg-sand-200">
+        {/* 프레임을 이미지 비율에 맞춘다(세로컷 잘림 방지).
+            세로 사진이 화면을 다 잡아먹지 않도록 높이 상한(MAX_H)을 두고,
+            그만큼 폭을 줄여 비율은 그대로 유지한다. */}
+        <div
+          className="relative mx-auto w-full overflow-hidden bg-sand-200"
+          style={{
+            aspectRatio: `${activeW} / ${activeH}`,
+            maxWidth: `calc(${MAX_H} * ${activeW / activeH})`,
+          }}
+        >
           <Image
             src={active.imageUrl}
             alt={`${title} ${imgIdx + 1}`}
@@ -191,19 +197,31 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
   );
 }
 
+// 사양 한 줄 — 라벨(면적/마루/타일…) + 값
+function SpecRow({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div className="flex gap-4 py-3">
+      <dt className="w-14 shrink-0 pt-[0.15rem] text-[0.75rem] leading-5 tracking-[0.02em] text-ink-700">
+        {label}
+      </dt>
+      <dd className="min-w-0 flex-1 text-[0.9rem] leading-[1.7] text-ink-800">{children}</dd>
+    </div>
+  );
+}
+
 // 자재명은 노션에서 "브랜드 |품번| 제품명" 형태로 적힌다.
-// 브랜드를 앞세우고 나머지는 눌러서 목록이 한눈에 훑히도록 한다.
+// 브랜드를 앞세우고 나머지는 한 단계만 눌러 — 너무 흐리면 읽히지 않는다.
 function MaterialName({ name }: { name: string }) {
   const parts = name
     .split("|")
     .map((s) => s.trim())
     .filter(Boolean);
-  if (parts.length <= 1) return <>{name}</>;
+  if (parts.length <= 1) return <span className="font-medium text-ink-900">{name}</span>;
   const [brand, ...rest] = parts;
   return (
     <>
-      <span className="text-ink-900">{brand}</span>
-      <span className="text-ink-700/60"> · {rest.join(" · ")}</span>
+      <span className="font-medium text-ink-900">{brand}</span>
+      <span className="text-ink-700"> {rest.join(" · ")}</span>
     </>
   );
 }

@@ -45,163 +45,217 @@ export const SEED_PROJECTS: Project[] = [
         "id": "53-1",
         "room": "대표",
         "imageUrl": "/portfolio/p53/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "53-2",
         "room": "대표",
         "imageUrl": "/portfolio/p53/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "53-3",
         "room": "현관",
         "imageUrl": "/portfolio/p53/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "53-4",
         "room": "현관",
         "imageUrl": "/portfolio/p53/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "53-5",
         "room": "현관",
         "imageUrl": "/portfolio/p53/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "53-6",
         "room": "거실",
         "imageUrl": "/portfolio/p53/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-7",
         "room": "거실",
         "imageUrl": "/portfolio/p53/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-8",
         "room": "거실",
         "imageUrl": "/portfolio/p53/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-9",
         "room": "거실",
         "imageUrl": "/portfolio/p53/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-10",
         "room": "거실",
         "imageUrl": "/portfolio/p53/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-11",
         "room": "거실",
         "imageUrl": "/portfolio/p53/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-12",
         "room": "복도",
         "imageUrl": "/portfolio/p53/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-13",
         "room": "주방",
         "imageUrl": "/portfolio/p53/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-14",
         "room": "주방",
         "imageUrl": "/portfolio/p53/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-15",
         "room": "주방",
         "imageUrl": "/portfolio/p53/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-16",
         "room": "주방",
         "imageUrl": "/portfolio/p53/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-17",
         "room": "주방",
         "imageUrl": "/portfolio/p53/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-18",
         "room": "주방",
         "imageUrl": "/portfolio/p53/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-19",
         "room": "침실",
         "imageUrl": "/portfolio/p53/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-20",
         "room": "침실",
         "imageUrl": "/portfolio/p53/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "53-21",
         "room": "침실",
         "imageUrl": "/portfolio/p53/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-22",
         "room": "침실",
         "imageUrl": "/portfolio/p53/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "53-23",
         "room": "침실",
         "imageUrl": "/portfolio/p53/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "53-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p53/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "53-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p53/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "53-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p53/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "53-27",
         "room": "욕실",
         "imageUrl": "/portfolio/p53/27.webp",
-        "sortOrder": 26
+        "sortOrder": 26,
+        "width": 1600,
+        "height": 2400
       }
     ]
   },
@@ -219,145 +273,193 @@ export const SEED_PROJECTS: Project[] = [
         "id": "1-1",
         "room": "대표",
         "imageUrl": "/portfolio/p1/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-2",
         "room": "대표",
         "imageUrl": "/portfolio/p1/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-4",
         "room": "현관",
         "imageUrl": "/portfolio/p1/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "1-5",
         "room": "현관",
         "imageUrl": "/portfolio/p1/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "1-6",
         "room": "현관",
         "imageUrl": "/portfolio/p1/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "1-7",
         "room": "현관",
         "imageUrl": "/portfolio/p1/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "1-8",
         "room": "거실",
         "imageUrl": "/portfolio/p1/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-9",
         "room": "거실",
         "imageUrl": "/portfolio/p1/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-10",
         "room": "거실",
         "imageUrl": "/portfolio/p1/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-11",
         "room": "거실",
         "imageUrl": "/portfolio/p1/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-12",
         "room": "거실",
         "imageUrl": "/portfolio/p1/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-13",
         "room": "거실",
         "imageUrl": "/portfolio/p1/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-14",
         "room": "주방",
         "imageUrl": "/portfolio/p1/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-15",
         "room": "주방",
         "imageUrl": "/portfolio/p1/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-16",
         "room": "주방",
         "imageUrl": "/portfolio/p1/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-17",
         "room": "주방",
         "imageUrl": "/portfolio/p1/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "1-18",
         "room": "주방",
         "imageUrl": "/portfolio/p1/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-19",
         "room": "주방",
         "imageUrl": "/portfolio/p1/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-20",
         "room": "침실",
         "imageUrl": "/portfolio/p1/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-21",
         "room": "침실",
         "imageUrl": "/portfolio/p1/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-22",
         "room": "침실",
         "imageUrl": "/portfolio/p1/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-23",
         "room": "침실",
         "imageUrl": "/portfolio/p1/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "1-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p1/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "1-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p1/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-02T16:16:00.000Z",
@@ -400,163 +502,217 @@ export const SEED_PROJECTS: Project[] = [
         "id": "2-1",
         "room": "대표",
         "imageUrl": "/portfolio/p2/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-2",
         "room": "대표",
         "imageUrl": "/portfolio/p2/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-3",
         "room": "현관",
         "imageUrl": "/portfolio/p2/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "2-4",
         "room": "현관",
         "imageUrl": "/portfolio/p2/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "2-5",
         "room": "현관",
         "imageUrl": "/portfolio/p2/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "2-6",
         "room": "현관",
         "imageUrl": "/portfolio/p2/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "2-7",
         "room": "현관",
         "imageUrl": "/portfolio/p2/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "2-8",
         "room": "거실",
         "imageUrl": "/portfolio/p2/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-10",
         "room": "거실",
         "imageUrl": "/portfolio/p2/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-11",
         "room": "거실",
         "imageUrl": "/portfolio/p2/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-12",
         "room": "거실",
         "imageUrl": "/portfolio/p2/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-13",
         "room": "거실",
         "imageUrl": "/portfolio/p2/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-14",
         "room": "주방",
         "imageUrl": "/portfolio/p2/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-15",
         "room": "주방",
         "imageUrl": "/portfolio/p2/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-16",
         "room": "주방",
         "imageUrl": "/portfolio/p2/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-17",
         "room": "주방",
         "imageUrl": "/portfolio/p2/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-18",
         "room": "주방",
         "imageUrl": "/portfolio/p2/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "2-19",
         "room": "침실",
         "imageUrl": "/portfolio/p2/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-20",
         "room": "침실",
         "imageUrl": "/portfolio/p2/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-21",
         "room": "침실",
         "imageUrl": "/portfolio/p2/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-22",
         "room": "침실",
         "imageUrl": "/portfolio/p2/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-23",
         "room": "침실",
         "imageUrl": "/portfolio/p2/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "2-24",
         "room": "침실",
         "imageUrl": "/portfolio/p2/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "2-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p2/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "2-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p2/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "2-27",
         "room": "욕실",
         "imageUrl": "/portfolio/p2/27.webp",
-        "sortOrder": 26
+        "sortOrder": 26,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "2-28",
         "room": "욕실",
         "imageUrl": "/portfolio/p2/28.webp",
-        "sortOrder": 27
+        "sortOrder": 27,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-02T16:29:00.000Z",
@@ -603,163 +759,217 @@ export const SEED_PROJECTS: Project[] = [
         "id": "3-1",
         "room": "대표",
         "imageUrl": "/portfolio/p3/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-2",
         "room": "대표",
         "imageUrl": "/portfolio/p3/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-3",
         "room": "현관",
         "imageUrl": "/portfolio/p3/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "3-4",
         "room": "현관",
         "imageUrl": "/portfolio/p3/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "3-5",
         "room": "현관",
         "imageUrl": "/portfolio/p3/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "3-6",
         "room": "현관",
         "imageUrl": "/portfolio/p3/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "3-7",
         "room": "현관",
         "imageUrl": "/portfolio/p3/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "3-8",
         "room": "거실",
         "imageUrl": "/portfolio/p3/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-9",
         "room": "거실",
         "imageUrl": "/portfolio/p3/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-11",
         "room": "거실",
         "imageUrl": "/portfolio/p3/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-12",
         "room": "거실",
         "imageUrl": "/portfolio/p3/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-13",
         "room": "거실",
         "imageUrl": "/portfolio/p3/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-14",
         "room": "주방",
         "imageUrl": "/portfolio/p3/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-15",
         "room": "주방",
         "imageUrl": "/portfolio/p3/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-16",
         "room": "주방",
         "imageUrl": "/portfolio/p3/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-17",
         "room": "주방",
         "imageUrl": "/portfolio/p3/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-18",
         "room": "주방",
         "imageUrl": "/portfolio/p3/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-19",
         "room": "주방",
         "imageUrl": "/portfolio/p3/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-20",
         "room": "침실",
         "imageUrl": "/portfolio/p3/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-21",
         "room": "침실",
         "imageUrl": "/portfolio/p3/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-22",
         "room": "침실",
         "imageUrl": "/portfolio/p3/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "3-23",
         "room": "침실",
         "imageUrl": "/portfolio/p3/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-24",
         "room": "침실",
         "imageUrl": "/portfolio/p3/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "3-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p3/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "3-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p3/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "3-27",
         "room": "욕실",
         "imageUrl": "/portfolio/p3/27.webp",
-        "sortOrder": 26
+        "sortOrder": 26,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "3-28",
         "room": "욕실",
         "imageUrl": "/portfolio/p3/28.webp",
-        "sortOrder": 27
+        "sortOrder": 27,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-02T16:21:00.000Z",
@@ -830,151 +1040,201 @@ export const SEED_PROJECTS: Project[] = [
         "id": "4-1",
         "room": "대표",
         "imageUrl": "/portfolio/p4/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-2",
         "room": "대표",
         "imageUrl": "/portfolio/p4/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-3",
         "room": "현관",
         "imageUrl": "/portfolio/p4/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "4-4",
         "room": "현관",
         "imageUrl": "/portfolio/p4/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "4-6",
         "room": "현관",
         "imageUrl": "/portfolio/p4/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "4-7",
         "room": "거실",
         "imageUrl": "/portfolio/p4/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-8",
         "room": "거실",
         "imageUrl": "/portfolio/p4/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-9",
         "room": "거실",
         "imageUrl": "/portfolio/p4/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-10",
         "room": "거실",
         "imageUrl": "/portfolio/p4/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-11",
         "room": "거실",
         "imageUrl": "/portfolio/p4/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-12",
         "room": "거실",
         "imageUrl": "/portfolio/p4/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-13",
         "room": "주방",
         "imageUrl": "/portfolio/p4/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-14",
         "room": "주방",
         "imageUrl": "/portfolio/p4/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-15",
         "room": "주방",
         "imageUrl": "/portfolio/p4/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-16",
         "room": "주방",
         "imageUrl": "/portfolio/p4/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-17",
         "room": "주방",
         "imageUrl": "/portfolio/p4/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-18",
         "room": "주방",
         "imageUrl": "/portfolio/p4/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-19",
         "room": "침실",
         "imageUrl": "/portfolio/p4/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-20",
         "room": "침실",
         "imageUrl": "/portfolio/p4/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-21",
         "room": "침실",
         "imageUrl": "/portfolio/p4/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-22",
         "room": "침실",
         "imageUrl": "/portfolio/p4/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "4-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p4/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "4-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p4/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "4-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p4/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "4-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p4/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       }
     ]
   },
@@ -992,145 +1252,193 @@ export const SEED_PROJECTS: Project[] = [
         "id": "5-1",
         "room": "대표",
         "imageUrl": "/portfolio/p5/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-2",
         "room": "대표",
         "imageUrl": "/portfolio/p5/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-3",
         "room": "현관",
         "imageUrl": "/portfolio/p5/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "5-4",
         "room": "현관",
         "imageUrl": "/portfolio/p5/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "5-5",
         "room": "현관",
         "imageUrl": "/portfolio/p5/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "5-6",
         "room": "현관",
         "imageUrl": "/portfolio/p5/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "5-7",
         "room": "현관",
         "imageUrl": "/portfolio/p5/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "5-9",
         "room": "거실",
         "imageUrl": "/portfolio/p5/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-10",
         "room": "거실",
         "imageUrl": "/portfolio/p5/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-11",
         "room": "거실",
         "imageUrl": "/portfolio/p5/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-12",
         "room": "거실",
         "imageUrl": "/portfolio/p5/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-13",
         "room": "거실",
         "imageUrl": "/portfolio/p5/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-15",
         "room": "주방",
         "imageUrl": "/portfolio/p5/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-16",
         "room": "주방",
         "imageUrl": "/portfolio/p5/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-17",
         "room": "주방",
         "imageUrl": "/portfolio/p5/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-18",
         "room": "주방",
         "imageUrl": "/portfolio/p5/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-19",
         "room": "주방",
         "imageUrl": "/portfolio/p5/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-20",
         "room": "주방",
         "imageUrl": "/portfolio/p5/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-21",
         "room": "침실",
         "imageUrl": "/portfolio/p5/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-22",
         "room": "침실",
         "imageUrl": "/portfolio/p5/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "5-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p5/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "5-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p5/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "5-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p5/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "5-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p5/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-02T16:25:00.000Z",
@@ -1178,169 +1486,225 @@ export const SEED_PROJECTS: Project[] = [
         "id": "6-1",
         "room": "대표",
         "imageUrl": "/portfolio/p6/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-2",
         "room": "대표",
         "imageUrl": "/portfolio/p6/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-3",
         "room": "현관",
         "imageUrl": "/portfolio/p6/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "6-4",
         "room": "현관",
         "imageUrl": "/portfolio/p6/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "6-5",
         "room": "현관",
         "imageUrl": "/portfolio/p6/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "6-6",
         "room": "현관",
         "imageUrl": "/portfolio/p6/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "6-7",
         "room": "거실",
         "imageUrl": "/portfolio/p6/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-8",
         "room": "거실",
         "imageUrl": "/portfolio/p6/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-9",
         "room": "거실",
         "imageUrl": "/portfolio/p6/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-10",
         "room": "거실",
         "imageUrl": "/portfolio/p6/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-11",
         "room": "거실",
         "imageUrl": "/portfolio/p6/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-12",
         "room": "거실",
         "imageUrl": "/portfolio/p6/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-13",
         "room": "복도",
         "imageUrl": "/portfolio/p6/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-14",
         "room": "주방",
         "imageUrl": "/portfolio/p6/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-15",
         "room": "주방",
         "imageUrl": "/portfolio/p6/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-16",
         "room": "주방",
         "imageUrl": "/portfolio/p6/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-17",
         "room": "주방",
         "imageUrl": "/portfolio/p6/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-18",
         "room": "주방",
         "imageUrl": "/portfolio/p6/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-19",
         "room": "침실",
         "imageUrl": "/portfolio/p6/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-20",
         "room": "침실",
         "imageUrl": "/portfolio/p6/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "6-21",
         "room": "침실",
         "imageUrl": "/portfolio/p6/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "6-22",
         "room": "침실",
         "imageUrl": "/portfolio/p6/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-23",
         "room": "침실",
         "imageUrl": "/portfolio/p6/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-24",
         "room": "침실",
         "imageUrl": "/portfolio/p6/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "6-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p6/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "6-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p6/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "6-27",
         "room": "욕실",
         "imageUrl": "/portfolio/p6/27.webp",
-        "sortOrder": 26
+        "sortOrder": 26,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "6-28",
         "room": "욕실",
         "imageUrl": "/portfolio/p6/28.webp",
-        "sortOrder": 27
+        "sortOrder": 27,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-02T16:33:00.000Z",
@@ -1384,169 +1748,225 @@ export const SEED_PROJECTS: Project[] = [
         "id": "7-1",
         "room": "대표",
         "imageUrl": "/portfolio/p7/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-2",
         "room": "대표",
         "imageUrl": "/portfolio/p7/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-3",
         "room": "현관",
         "imageUrl": "/portfolio/p7/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "7-4",
         "room": "현관",
         "imageUrl": "/portfolio/p7/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "7-5",
         "room": "현관",
         "imageUrl": "/portfolio/p7/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "7-6",
         "room": "거실",
         "imageUrl": "/portfolio/p7/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-7",
         "room": "거실",
         "imageUrl": "/portfolio/p7/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-8",
         "room": "거실",
         "imageUrl": "/portfolio/p7/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-9",
         "room": "거실",
         "imageUrl": "/portfolio/p7/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-10",
         "room": "거실",
         "imageUrl": "/portfolio/p7/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-11",
         "room": "거실",
         "imageUrl": "/portfolio/p7/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-12",
         "room": "복도",
         "imageUrl": "/portfolio/p7/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-13",
         "room": "복도",
         "imageUrl": "/portfolio/p7/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-14",
         "room": "주방",
         "imageUrl": "/portfolio/p7/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-15",
         "room": "주방",
         "imageUrl": "/portfolio/p7/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-16",
         "room": "주방",
         "imageUrl": "/portfolio/p7/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-17",
         "room": "주방",
         "imageUrl": "/portfolio/p7/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-18",
         "room": "주방",
         "imageUrl": "/portfolio/p7/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-19",
         "room": "주방",
         "imageUrl": "/portfolio/p7/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-20",
         "room": "침실",
         "imageUrl": "/portfolio/p7/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-21",
         "room": "침실",
         "imageUrl": "/portfolio/p7/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-22",
         "room": "침실",
         "imageUrl": "/portfolio/p7/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "7-23",
         "room": "침실",
         "imageUrl": "/portfolio/p7/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "7-24",
         "room": "침실",
         "imageUrl": "/portfolio/p7/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "7-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p7/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "7-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p7/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "7-27",
         "room": "욕실",
         "imageUrl": "/portfolio/p7/27.webp",
-        "sortOrder": 26
+        "sortOrder": 26,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "7-28",
         "room": "욕실",
         "imageUrl": "/portfolio/p7/28.webp",
-        "sortOrder": 27
+        "sortOrder": 27,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-02T16:38:00.000Z",
@@ -1590,199 +2010,265 @@ export const SEED_PROJECTS: Project[] = [
         "id": "8-1",
         "room": "현관",
         "imageUrl": "/portfolio/p8/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-2",
         "room": "현관",
         "imageUrl": "/portfolio/p8/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-3",
         "room": "현관",
         "imageUrl": "/portfolio/p8/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-4",
         "room": "현관",
         "imageUrl": "/portfolio/p8/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-6",
         "room": "현관",
         "imageUrl": "/portfolio/p8/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-7",
         "room": "거실",
         "imageUrl": "/portfolio/p8/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-8",
         "room": "거실",
         "imageUrl": "/portfolio/p8/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-11",
         "room": "거실",
         "imageUrl": "/portfolio/p8/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-12",
         "room": "거실",
         "imageUrl": "/portfolio/p8/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-13",
         "room": "복도",
         "imageUrl": "/portfolio/p8/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-14",
         "room": "복도",
         "imageUrl": "/portfolio/p8/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-15",
         "room": "복도",
         "imageUrl": "/portfolio/p8/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-16",
         "room": "복도",
         "imageUrl": "/portfolio/p8/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-17",
         "room": "복도",
         "imageUrl": "/portfolio/p8/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-18",
         "room": "복도",
         "imageUrl": "/portfolio/p8/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-19",
         "room": "주방",
         "imageUrl": "/portfolio/p8/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-20",
         "room": "주방",
         "imageUrl": "/portfolio/p8/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-21",
         "room": "주방",
         "imageUrl": "/portfolio/p8/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-22",
         "room": "주방",
         "imageUrl": "/portfolio/p8/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-23",
         "room": "주방",
         "imageUrl": "/portfolio/p8/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-24",
         "room": "주방",
         "imageUrl": "/portfolio/p8/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-25",
         "room": "침실",
         "imageUrl": "/portfolio/p8/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-26",
         "room": "침실",
         "imageUrl": "/portfolio/p8/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-27",
         "room": "침실",
         "imageUrl": "/portfolio/p8/27.webp",
-        "sortOrder": 26
+        "sortOrder": 26,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "8-28",
         "room": "침실",
         "imageUrl": "/portfolio/p8/28.webp",
-        "sortOrder": 27
+        "sortOrder": 27,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-29",
         "room": "침실",
         "imageUrl": "/portfolio/p8/29.webp",
-        "sortOrder": 28
+        "sortOrder": 28,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-30",
         "room": "침실",
         "imageUrl": "/portfolio/p8/30.webp",
-        "sortOrder": 29
+        "sortOrder": 29,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-31",
         "room": "욕실",
         "imageUrl": "/portfolio/p8/31.webp",
-        "sortOrder": 30
+        "sortOrder": 30,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-32",
         "room": "욕실",
         "imageUrl": "/portfolio/p8/32.webp",
-        "sortOrder": 31
+        "sortOrder": 31,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-33",
         "room": "욕실",
         "imageUrl": "/portfolio/p8/33.webp",
-        "sortOrder": 32
+        "sortOrder": 32,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-34",
         "room": "욕실",
         "imageUrl": "/portfolio/p8/34.webp",
-        "sortOrder": 33
+        "sortOrder": 33,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-35",
         "room": "욕실",
         "imageUrl": "/portfolio/p8/35.webp",
-        "sortOrder": 34
+        "sortOrder": 34,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "8-36",
         "room": "욕실",
         "imageUrl": "/portfolio/p8/36.webp",
-        "sortOrder": 35
+        "sortOrder": 35,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-02T16:53:00.000Z",
@@ -1828,157 +2314,209 @@ export const SEED_PROJECTS: Project[] = [
         "id": "9-1",
         "room": "대표",
         "imageUrl": "/portfolio/p9/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-2",
         "room": "대표",
         "imageUrl": "/portfolio/p9/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-3",
         "room": "현관",
         "imageUrl": "/portfolio/p9/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "9-4",
         "room": "현관",
         "imageUrl": "/portfolio/p9/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "9-5",
         "room": "거실",
         "imageUrl": "/portfolio/p9/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-6",
         "room": "거실",
         "imageUrl": "/portfolio/p9/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-7",
         "room": "거실",
         "imageUrl": "/portfolio/p9/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-8",
         "room": "거실",
         "imageUrl": "/portfolio/p9/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-9",
         "room": "거실",
         "imageUrl": "/portfolio/p9/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-10",
         "room": "거실",
         "imageUrl": "/portfolio/p9/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-11",
         "room": "주방",
         "imageUrl": "/portfolio/p9/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-12",
         "room": "주방",
         "imageUrl": "/portfolio/p9/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-13",
         "room": "주방",
         "imageUrl": "/portfolio/p9/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-14",
         "room": "주방",
         "imageUrl": "/portfolio/p9/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-15",
         "room": "주방",
         "imageUrl": "/portfolio/p9/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-16",
         "room": "주방",
         "imageUrl": "/portfolio/p9/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-17",
         "room": "침실",
         "imageUrl": "/portfolio/p9/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-18",
         "room": "침실",
         "imageUrl": "/portfolio/p9/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "9-19",
         "room": "침실",
         "imageUrl": "/portfolio/p9/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-20",
         "room": "침실",
         "imageUrl": "/portfolio/p9/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "9-21",
         "room": "침실",
         "imageUrl": "/portfolio/p9/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "9-22",
         "room": "침실",
         "imageUrl": "/portfolio/p9/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "9-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p9/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "9-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p9/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "9-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p9/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "9-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p9/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-08T15:19:00.000Z",
@@ -2022,157 +2560,209 @@ export const SEED_PROJECTS: Project[] = [
         "id": "10-1",
         "room": "대표",
         "imageUrl": "/portfolio/p10/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-2",
         "room": "대표",
         "imageUrl": "/portfolio/p10/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-3",
         "room": "현관",
         "imageUrl": "/portfolio/p10/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "10-4",
         "room": "현관",
         "imageUrl": "/portfolio/p10/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "10-5",
         "room": "현관",
         "imageUrl": "/portfolio/p10/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "10-6",
         "room": "현관",
         "imageUrl": "/portfolio/p10/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "10-8",
         "room": "거실",
         "imageUrl": "/portfolio/p10/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-9",
         "room": "거실",
         "imageUrl": "/portfolio/p10/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-10",
         "room": "거실",
         "imageUrl": "/portfolio/p10/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-11",
         "room": "거실",
         "imageUrl": "/portfolio/p10/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-12",
         "room": "거실",
         "imageUrl": "/portfolio/p10/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-13",
         "room": "복도",
         "imageUrl": "/portfolio/p10/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-14",
         "room": "주방",
         "imageUrl": "/portfolio/p10/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-15",
         "room": "주방",
         "imageUrl": "/portfolio/p10/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-16",
         "room": "주방",
         "imageUrl": "/portfolio/p10/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "10-17",
         "room": "주방",
         "imageUrl": "/portfolio/p10/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-18",
         "room": "주방",
         "imageUrl": "/portfolio/p10/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-19",
         "room": "주방",
         "imageUrl": "/portfolio/p10/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-20",
         "room": "침실",
         "imageUrl": "/portfolio/p10/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-21",
         "room": "침실",
         "imageUrl": "/portfolio/p10/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-22",
         "room": "침실",
         "imageUrl": "/portfolio/p10/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-23",
         "room": "침실",
         "imageUrl": "/portfolio/p10/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "10-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p10/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "10-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p10/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "10-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p10/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "10-27",
         "room": "욕실",
         "imageUrl": "/portfolio/p10/27.webp",
-        "sortOrder": 26
+        "sortOrder": 26,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-08T15:25:00.000Z",
@@ -2214,151 +2804,201 @@ export const SEED_PROJECTS: Project[] = [
         "id": "11-1",
         "room": "대표",
         "imageUrl": "/portfolio/p11/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1063
       },
       {
         "id": "11-2",
         "room": "대표",
         "imageUrl": "/portfolio/p11/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-3",
         "room": "현관",
         "imageUrl": "/portfolio/p11/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "11-4",
         "room": "현관",
         "imageUrl": "/portfolio/p11/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "11-5",
         "room": "현관",
         "imageUrl": "/portfolio/p11/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "11-6",
         "room": "현관",
         "imageUrl": "/portfolio/p11/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "11-7",
         "room": "거실",
         "imageUrl": "/portfolio/p11/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-8",
         "room": "거실",
         "imageUrl": "/portfolio/p11/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-9",
         "room": "거실",
         "imageUrl": "/portfolio/p11/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-10",
         "room": "거실",
         "imageUrl": "/portfolio/p11/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-11",
         "room": "거실",
         "imageUrl": "/portfolio/p11/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-12",
         "room": "거실",
         "imageUrl": "/portfolio/p11/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-13",
         "room": "주방",
         "imageUrl": "/portfolio/p11/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1063
       },
       {
         "id": "11-14",
         "room": "주방",
         "imageUrl": "/portfolio/p11/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-15",
         "room": "주방",
         "imageUrl": "/portfolio/p11/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-16",
         "room": "주방",
         "imageUrl": "/portfolio/p11/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "11-17",
         "room": "주방",
         "imageUrl": "/portfolio/p11/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 2403
       },
       {
         "id": "11-18",
         "room": "복도",
         "imageUrl": "/portfolio/p11/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-19",
         "room": "침실",
         "imageUrl": "/portfolio/p11/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-20",
         "room": "침실",
         "imageUrl": "/portfolio/p11/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-21",
         "room": "침실",
         "imageUrl": "/portfolio/p11/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-22",
         "room": "드레스룸",
         "imageUrl": "/portfolio/p11/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-23",
         "room": "드레스룸",
         "imageUrl": "/portfolio/p11/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "11-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p11/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "11-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p11/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-06-25T16:25:00.000Z",
@@ -2401,85 +3041,113 @@ export const SEED_PROJECTS: Project[] = [
         "id": "12-1",
         "room": "대표",
         "imageUrl": "/portfolio/p12/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "12-2",
         "room": "대표",
         "imageUrl": "/portfolio/p12/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "12-3",
         "room": "현관",
         "imageUrl": "/portfolio/p12/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "12-4",
         "room": "현관",
         "imageUrl": "/portfolio/p12/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "12-5",
         "room": "현관",
         "imageUrl": "/portfolio/p12/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "12-6",
         "room": "현관",
         "imageUrl": "/portfolio/p12/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "12-8",
         "room": "거실",
         "imageUrl": "/portfolio/p12/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "12-10",
         "room": "거실",
         "imageUrl": "/portfolio/p12/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "12-11",
         "room": "거실",
         "imageUrl": "/portfolio/p12/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "12-12",
         "room": "거실",
         "imageUrl": "/portfolio/p12/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "12-13",
         "room": "주방",
         "imageUrl": "/portfolio/p12/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "12-14",
         "room": "주방",
         "imageUrl": "/portfolio/p12/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "12-15",
         "room": "주방",
         "imageUrl": "/portfolio/p12/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "12-16",
         "room": "주방",
         "imageUrl": "/portfolio/p12/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-08T15:27:00.000Z",
@@ -2524,157 +3192,209 @@ export const SEED_PROJECTS: Project[] = [
         "id": "13-1",
         "room": "대표",
         "imageUrl": "/portfolio/p13/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-2",
         "room": "대표",
         "imageUrl": "/portfolio/p13/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-3",
         "room": "현관",
         "imageUrl": "/portfolio/p13/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "13-4",
         "room": "현관",
         "imageUrl": "/portfolio/p13/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "13-5",
         "room": "현관",
         "imageUrl": "/portfolio/p13/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "13-6",
         "room": "현관",
         "imageUrl": "/portfolio/p13/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "13-7",
         "room": "현관",
         "imageUrl": "/portfolio/p13/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "13-8",
         "room": "거실",
         "imageUrl": "/portfolio/p13/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-9",
         "room": "거실",
         "imageUrl": "/portfolio/p13/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-10",
         "room": "거실",
         "imageUrl": "/portfolio/p13/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-11",
         "room": "거실",
         "imageUrl": "/portfolio/p13/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-12",
         "room": "거실",
         "imageUrl": "/portfolio/p13/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-13",
         "room": "거실",
         "imageUrl": "/portfolio/p13/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-14",
         "room": "복도",
         "imageUrl": "/portfolio/p13/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-15",
         "room": "복도",
         "imageUrl": "/portfolio/p13/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-16",
         "room": "주방",
         "imageUrl": "/portfolio/p13/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-17",
         "room": "주방",
         "imageUrl": "/portfolio/p13/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-18",
         "room": "주방",
         "imageUrl": "/portfolio/p13/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-19",
         "room": "주방",
         "imageUrl": "/portfolio/p13/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-20",
         "room": "주방",
         "imageUrl": "/portfolio/p13/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-21",
         "room": "주방",
         "imageUrl": "/portfolio/p13/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-22",
         "room": "침실",
         "imageUrl": "/portfolio/p13/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "13-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p13/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "13-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p13/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "13-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p13/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "13-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p13/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-08T15:31:00.000Z",
@@ -2718,157 +3438,209 @@ export const SEED_PROJECTS: Project[] = [
         "id": "14-1",
         "room": "대표",
         "imageUrl": "/portfolio/p14/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-2",
         "room": "대표",
         "imageUrl": "/portfolio/p14/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-3",
         "room": "현관",
         "imageUrl": "/portfolio/p14/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "14-4",
         "room": "현관",
         "imageUrl": "/portfolio/p14/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "14-5",
         "room": "현관",
         "imageUrl": "/portfolio/p14/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "14-8",
         "room": "거실",
         "imageUrl": "/portfolio/p14/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-9",
         "room": "거실",
         "imageUrl": "/portfolio/p14/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-10",
         "room": "거실",
         "imageUrl": "/portfolio/p14/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-11",
         "room": "거실",
         "imageUrl": "/portfolio/p14/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-12",
         "room": "거실",
         "imageUrl": "/portfolio/p14/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-13",
         "room": "복도",
         "imageUrl": "/portfolio/p14/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-14",
         "room": "복도",
         "imageUrl": "/portfolio/p14/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-15",
         "room": "주방",
         "imageUrl": "/portfolio/p14/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-16",
         "room": "주방",
         "imageUrl": "/portfolio/p14/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-17",
         "room": "주방",
         "imageUrl": "/portfolio/p14/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-18",
         "room": "주방",
         "imageUrl": "/portfolio/p14/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-19",
         "room": "주방",
         "imageUrl": "/portfolio/p14/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-20",
         "room": "주방",
         "imageUrl": "/portfolio/p14/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-21",
         "room": "침실",
         "imageUrl": "/portfolio/p14/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-22",
         "room": "침실",
         "imageUrl": "/portfolio/p14/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "14-23",
         "room": "침실",
         "imageUrl": "/portfolio/p14/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "14-24",
         "room": "침실",
         "imageUrl": "/portfolio/p14/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "14-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p14/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "14-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p14/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "14-27",
         "room": "욕실",
         "imageUrl": "/portfolio/p14/27.webp",
-        "sortOrder": 26
+        "sortOrder": 26,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "14-28",
         "room": "욕실",
         "imageUrl": "/portfolio/p14/28.webp",
-        "sortOrder": 27
+        "sortOrder": 27,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-08T15:35:00.000Z",
@@ -2909,103 +3681,137 @@ export const SEED_PROJECTS: Project[] = [
         "id": "15-1",
         "room": "대표",
         "imageUrl": "/portfolio/p15/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "15-2",
         "room": "대표",
         "imageUrl": "/portfolio/p15/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "15-3",
         "room": "거실",
         "imageUrl": "/portfolio/p15/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "15-7",
         "room": "거실",
         "imageUrl": "/portfolio/p15/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "15-8",
         "room": "거실",
         "imageUrl": "/portfolio/p15/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "15-9",
         "room": "복도",
         "imageUrl": "/portfolio/p15/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "15-10",
         "room": "복도",
         "imageUrl": "/portfolio/p15/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "15-11",
         "room": "주방",
         "imageUrl": "/portfolio/p15/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "15-12",
         "room": "주방",
         "imageUrl": "/portfolio/p15/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "15-13",
         "room": "주방",
         "imageUrl": "/portfolio/p15/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "15-14",
         "room": "주방",
         "imageUrl": "/portfolio/p15/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "15-15",
         "room": "주방",
         "imageUrl": "/portfolio/p15/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "15-16",
         "room": "주방",
         "imageUrl": "/portfolio/p15/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "15-17",
         "room": "침실",
         "imageUrl": "/portfolio/p15/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "15-18",
         "room": "침실",
         "imageUrl": "/portfolio/p15/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "15-19",
         "room": "욕실",
         "imageUrl": "/portfolio/p15/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "15-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p15/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-08T15:38:00.000Z",
@@ -3046,163 +3852,217 @@ export const SEED_PROJECTS: Project[] = [
         "id": "16-1",
         "room": "대표",
         "imageUrl": "/portfolio/p16/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-2",
         "room": "대표",
         "imageUrl": "/portfolio/p16/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-3",
         "room": "현관",
         "imageUrl": "/portfolio/p16/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "16-4",
         "room": "현관",
         "imageUrl": "/portfolio/p16/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "16-5",
         "room": "현관",
         "imageUrl": "/portfolio/p16/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "16-6",
         "room": "현관",
         "imageUrl": "/portfolio/p16/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "16-7",
         "room": "거실",
         "imageUrl": "/portfolio/p16/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-8",
         "room": "거실",
         "imageUrl": "/portfolio/p16/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-9",
         "room": "거실",
         "imageUrl": "/portfolio/p16/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-10",
         "room": "거실",
         "imageUrl": "/portfolio/p16/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-11",
         "room": "거실",
         "imageUrl": "/portfolio/p16/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-12",
         "room": "거실",
         "imageUrl": "/portfolio/p16/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-13",
         "room": "복도",
         "imageUrl": "/portfolio/p16/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-14",
         "room": "주방",
         "imageUrl": "/portfolio/p16/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-15",
         "room": "주방",
         "imageUrl": "/portfolio/p16/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-16",
         "room": "주방",
         "imageUrl": "/portfolio/p16/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-17",
         "room": "주방",
         "imageUrl": "/portfolio/p16/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-18",
         "room": "주방",
         "imageUrl": "/portfolio/p16/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-19",
         "room": "주방",
         "imageUrl": "/portfolio/p16/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-20",
         "room": "침실",
         "imageUrl": "/portfolio/p16/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-21",
         "room": "침실",
         "imageUrl": "/portfolio/p16/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-22",
         "room": "침실",
         "imageUrl": "/portfolio/p16/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-23",
         "room": "침실",
         "imageUrl": "/portfolio/p16/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "16-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p16/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "16-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p16/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "16-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p16/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "16-27",
         "room": "욕실",
         "imageUrl": "/portfolio/p16/27.webp",
-        "sortOrder": 26
+        "sortOrder": 26,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-08T15:43:00.000Z",
@@ -3241,67 +4101,89 @@ export const SEED_PROJECTS: Project[] = [
         "id": "17-1",
         "room": "대표",
         "imageUrl": "/portfolio/p17/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "17-2",
         "room": "대표",
         "imageUrl": "/portfolio/p17/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "17-3",
         "room": "현관",
         "imageUrl": "/portfolio/p17/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "17-4",
         "room": "현관",
         "imageUrl": "/portfolio/p17/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "17-5",
         "room": "현관",
         "imageUrl": "/portfolio/p17/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "17-6",
         "room": "현관",
         "imageUrl": "/portfolio/p17/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "17-7",
         "room": "거실",
         "imageUrl": "/portfolio/p17/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "17-8",
         "room": "거실",
         "imageUrl": "/portfolio/p17/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "17-9",
         "room": "거실",
         "imageUrl": "/portfolio/p17/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "17-10",
         "room": "주방",
         "imageUrl": "/portfolio/p17/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "17-11",
         "room": "주방",
         "imageUrl": "/portfolio/p17/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       }
     ],
     "notionLastEditedAt": "2026-07-08T15:46:00.000Z",
@@ -3344,73 +4226,97 @@ export const SEED_PROJECTS: Project[] = [
         "id": "18-1",
         "room": "대표",
         "imageUrl": "/portfolio/p18/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "18-2",
         "room": "대표",
         "imageUrl": "/portfolio/p18/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "18-3",
         "room": "대표",
         "imageUrl": "/portfolio/p18/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "18-4",
         "room": "대표",
         "imageUrl": "/portfolio/p18/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "18-5",
         "room": "대표",
         "imageUrl": "/portfolio/p18/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "18-6",
         "room": "대표",
         "imageUrl": "/portfolio/p18/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "18-7",
         "room": "대표",
         "imageUrl": "/portfolio/p18/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "18-8",
         "room": "대표",
         "imageUrl": "/portfolio/p18/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "18-9",
         "room": "대표",
         "imageUrl": "/portfolio/p18/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "18-10",
         "room": "대표",
         "imageUrl": "/portfolio/p18/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "18-11",
         "room": "대표",
         "imageUrl": "/portfolio/p18/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "18-12",
         "room": "대표",
         "imageUrl": "/portfolio/p18/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-09T03:14:00.000Z",
@@ -3454,61 +4360,81 @@ export const SEED_PROJECTS: Project[] = [
         "id": "19-1",
         "room": "대표",
         "imageUrl": "/portfolio/p19/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "19-2",
         "room": "대표",
         "imageUrl": "/portfolio/p19/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "19-3",
         "room": "대표",
         "imageUrl": "/portfolio/p19/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "19-5",
         "room": "대표",
         "imageUrl": "/portfolio/p19/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "19-6",
         "room": "대표",
         "imageUrl": "/portfolio/p19/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "19-7",
         "room": "대표",
         "imageUrl": "/portfolio/p19/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "19-8",
         "room": "대표",
         "imageUrl": "/portfolio/p19/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "19-9",
         "room": "대표",
         "imageUrl": "/portfolio/p19/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "19-10",
         "room": "대표",
         "imageUrl": "/portfolio/p19/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "19-11",
         "room": "대표",
         "imageUrl": "/portfolio/p19/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-09T03:15:00.000Z",
@@ -3552,121 +4478,161 @@ export const SEED_PROJECTS: Project[] = [
         "id": "20-1",
         "room": "대표",
         "imageUrl": "/portfolio/p20/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "20-2",
         "room": "대표",
         "imageUrl": "/portfolio/p20/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "20-3",
         "room": "거실",
         "imageUrl": "/portfolio/p20/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "20-4",
         "room": "거실",
         "imageUrl": "/portfolio/p20/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "20-5",
         "room": "거실",
         "imageUrl": "/portfolio/p20/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "20-6",
         "room": "거실",
         "imageUrl": "/portfolio/p20/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "20-7",
         "room": "주방",
         "imageUrl": "/portfolio/p20/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "20-8",
         "room": "주방",
         "imageUrl": "/portfolio/p20/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "20-9",
         "room": "주방",
         "imageUrl": "/portfolio/p20/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "20-11",
         "room": "주방",
         "imageUrl": "/portfolio/p20/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "20-12",
         "room": "주방",
         "imageUrl": "/portfolio/p20/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "20-13",
         "room": "현관",
         "imageUrl": "/portfolio/p20/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "20-14",
         "room": "현관",
         "imageUrl": "/portfolio/p20/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "20-15",
         "room": "침실",
         "imageUrl": "/portfolio/p20/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "20-16",
         "room": "침실",
         "imageUrl": "/portfolio/p20/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "20-17",
         "room": "침실",
         "imageUrl": "/portfolio/p20/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "20-18",
         "room": "드레스룸",
         "imageUrl": "/portfolio/p20/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "20-19",
         "room": "욕실",
         "imageUrl": "/portfolio/p20/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "20-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p20/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "20-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p20/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-06-25T16:27:00.000Z",
@@ -3709,97 +4675,129 @@ export const SEED_PROJECTS: Project[] = [
         "id": "21-3",
         "room": "거실",
         "imageUrl": "/portfolio/p21/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "21-4",
         "room": "거실",
         "imageUrl": "/portfolio/p21/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "21-6",
         "room": "거실",
         "imageUrl": "/portfolio/p21/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "21-8",
         "room": "거실",
         "imageUrl": "/portfolio/p21/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "21-9",
         "room": "주방",
         "imageUrl": "/portfolio/p21/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "21-10",
         "room": "주방",
         "imageUrl": "/portfolio/p21/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "21-11",
         "room": "주방",
         "imageUrl": "/portfolio/p21/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "21-12",
         "room": "주방",
         "imageUrl": "/portfolio/p21/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "21-13",
         "room": "침실",
         "imageUrl": "/portfolio/p21/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "21-14",
         "room": "침실",
         "imageUrl": "/portfolio/p21/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "21-15",
         "room": "침실",
         "imageUrl": "/portfolio/p21/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "21-16",
         "room": "욕실",
         "imageUrl": "/portfolio/p21/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "21-17",
         "room": "욕실",
         "imageUrl": "/portfolio/p21/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "21-18",
         "room": "욕실",
         "imageUrl": "/portfolio/p21/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "21-19",
         "room": "욕실",
         "imageUrl": "/portfolio/p21/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "21-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p21/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T07:33:00.000Z",
@@ -3841,61 +4839,81 @@ export const SEED_PROJECTS: Project[] = [
         "id": "22-1",
         "room": "대표",
         "imageUrl": "/portfolio/p22/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "22-2",
         "room": "대표",
         "imageUrl": "/portfolio/p22/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "22-3",
         "room": "대표",
         "imageUrl": "/portfolio/p22/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "22-5",
         "room": "대표",
         "imageUrl": "/portfolio/p22/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "22-6",
         "room": "대표",
         "imageUrl": "/portfolio/p22/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "22-7",
         "room": "대표",
         "imageUrl": "/portfolio/p22/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "22-8",
         "room": "대표",
         "imageUrl": "/portfolio/p22/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "22-9",
         "room": "대표",
         "imageUrl": "/portfolio/p22/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "22-10",
         "room": "대표",
         "imageUrl": "/portfolio/p22/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "22-11",
         "room": "대표",
         "imageUrl": "/portfolio/p22/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-09T03:18:00.000Z",
@@ -3940,61 +4958,81 @@ export const SEED_PROJECTS: Project[] = [
         "id": "23-1",
         "room": "대표",
         "imageUrl": "/portfolio/p23/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "23-2",
         "room": "대표",
         "imageUrl": "/portfolio/p23/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "23-3",
         "room": "대표",
         "imageUrl": "/portfolio/p23/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "23-4",
         "room": "대표",
         "imageUrl": "/portfolio/p23/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "23-5",
         "room": "대표",
         "imageUrl": "/portfolio/p23/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "23-6",
         "room": "대표",
         "imageUrl": "/portfolio/p23/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "23-7",
         "room": "대표",
         "imageUrl": "/portfolio/p23/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "23-8",
         "room": "대표",
         "imageUrl": "/portfolio/p23/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "23-9",
         "room": "대표",
         "imageUrl": "/portfolio/p23/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "23-10",
         "room": "대표",
         "imageUrl": "/portfolio/p23/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-09T03:18:00.000Z",
@@ -4036,151 +5074,201 @@ export const SEED_PROJECTS: Project[] = [
         "id": "24-1",
         "room": "현관",
         "imageUrl": "/portfolio/p24/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "24-2",
         "room": "현관",
         "imageUrl": "/portfolio/p24/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "24-3",
         "room": "현관",
         "imageUrl": "/portfolio/p24/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "24-4",
         "room": "현관",
         "imageUrl": "/portfolio/p24/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "24-5",
         "room": "현관",
         "imageUrl": "/portfolio/p24/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "24-6",
         "room": "현관",
         "imageUrl": "/portfolio/p24/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "24-7",
         "room": "거실",
         "imageUrl": "/portfolio/p24/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-8",
         "room": "거실",
         "imageUrl": "/portfolio/p24/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-9",
         "room": "거실",
         "imageUrl": "/portfolio/p24/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-10",
         "room": "거실",
         "imageUrl": "/portfolio/p24/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-11",
         "room": "거실",
         "imageUrl": "/portfolio/p24/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-12",
         "room": "거실",
         "imageUrl": "/portfolio/p24/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-13",
         "room": "주방",
         "imageUrl": "/portfolio/p24/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-14",
         "room": "주방",
         "imageUrl": "/portfolio/p24/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-15",
         "room": "주방",
         "imageUrl": "/portfolio/p24/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-16",
         "room": "주방",
         "imageUrl": "/portfolio/p24/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-17",
         "room": "침실",
         "imageUrl": "/portfolio/p24/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "24-18",
         "room": "침실",
         "imageUrl": "/portfolio/p24/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-19",
         "room": "침실",
         "imageUrl": "/portfolio/p24/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-20",
         "room": "침실",
         "imageUrl": "/portfolio/p24/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "24-21",
         "room": "침실",
         "imageUrl": "/portfolio/p24/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "24-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p24/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "24-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p24/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "24-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p24/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "24-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p24/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T04:47:00.000Z",
@@ -4223,151 +5311,201 @@ export const SEED_PROJECTS: Project[] = [
         "id": "25-1",
         "room": "현관",
         "imageUrl": "/portfolio/p25/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "25-2",
         "room": "현관",
         "imageUrl": "/portfolio/p25/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "25-3",
         "room": "현관",
         "imageUrl": "/portfolio/p25/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "25-4",
         "room": "현관",
         "imageUrl": "/portfolio/p25/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "25-5",
         "room": "현관",
         "imageUrl": "/portfolio/p25/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "25-6",
         "room": "거실",
         "imageUrl": "/portfolio/p25/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-7",
         "room": "거실",
         "imageUrl": "/portfolio/p25/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-8",
         "room": "거실",
         "imageUrl": "/portfolio/p25/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-9",
         "room": "거실",
         "imageUrl": "/portfolio/p25/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-10",
         "room": "거실",
         "imageUrl": "/portfolio/p25/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-11",
         "room": "거실",
         "imageUrl": "/portfolio/p25/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-12",
         "room": "복도",
         "imageUrl": "/portfolio/p25/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-13",
         "room": "복도",
         "imageUrl": "/portfolio/p25/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-14",
         "room": "주방",
         "imageUrl": "/portfolio/p25/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-15",
         "room": "주방",
         "imageUrl": "/portfolio/p25/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-16",
         "room": "주방",
         "imageUrl": "/portfolio/p25/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-17",
         "room": "주방",
         "imageUrl": "/portfolio/p25/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-18",
         "room": "주방",
         "imageUrl": "/portfolio/p25/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-19",
         "room": "주방",
         "imageUrl": "/portfolio/p25/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-20",
         "room": "침실",
         "imageUrl": "/portfolio/p25/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-21",
         "room": "침실",
         "imageUrl": "/portfolio/p25/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "25-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p25/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "25-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p25/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "25-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p25/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "25-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p25/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T04:35:00.000Z",
@@ -4412,127 +5550,169 @@ export const SEED_PROJECTS: Project[] = [
         "id": "26-1",
         "room": "현관",
         "imageUrl": "/portfolio/p26/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "26-2",
         "room": "현관",
         "imageUrl": "/portfolio/p26/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "26-3",
         "room": "현관",
         "imageUrl": "/portfolio/p26/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "26-4",
         "room": "거실",
         "imageUrl": "/portfolio/p26/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "26-5",
         "room": "거실",
         "imageUrl": "/portfolio/p26/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "26-6",
         "room": "거실",
         "imageUrl": "/portfolio/p26/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "26-7",
         "room": "거실",
         "imageUrl": "/portfolio/p26/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "26-8",
         "room": "거실",
         "imageUrl": "/portfolio/p26/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "26-9",
         "room": "거실",
         "imageUrl": "/portfolio/p26/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "26-10",
         "room": "복도",
         "imageUrl": "/portfolio/p26/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "26-11",
         "room": "복도",
         "imageUrl": "/portfolio/p26/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "26-12",
         "room": "주방",
         "imageUrl": "/portfolio/p26/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "26-13",
         "room": "주방",
         "imageUrl": "/portfolio/p26/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "26-14",
         "room": "주방",
         "imageUrl": "/portfolio/p26/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "26-15",
         "room": "주방",
         "imageUrl": "/portfolio/p26/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "26-16",
         "room": "침실",
         "imageUrl": "/portfolio/p26/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "26-17",
         "room": "침실",
         "imageUrl": "/portfolio/p26/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "26-18",
         "room": "욕실",
         "imageUrl": "/portfolio/p26/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "26-19",
         "room": "욕실",
         "imageUrl": "/portfolio/p26/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "26-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p26/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "26-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p26/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T04:57:00.000Z",
@@ -4574,175 +5754,233 @@ export const SEED_PROJECTS: Project[] = [
         "id": "27-1",
         "room": "현관",
         "imageUrl": "/portfolio/p27/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-2",
         "room": "현관",
         "imageUrl": "/portfolio/p27/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-3",
         "room": "현관",
         "imageUrl": "/portfolio/p27/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-4",
         "room": "현관",
         "imageUrl": "/portfolio/p27/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-5",
         "room": "현관",
         "imageUrl": "/portfolio/p27/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-6",
         "room": "거실",
         "imageUrl": "/portfolio/p27/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-7",
         "room": "거실",
         "imageUrl": "/portfolio/p27/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-8",
         "room": "거실",
         "imageUrl": "/portfolio/p27/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-9",
         "room": "거실",
         "imageUrl": "/portfolio/p27/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "27-11",
         "room": "거실",
         "imageUrl": "/portfolio/p27/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-12",
         "room": "주방",
         "imageUrl": "/portfolio/p27/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-13",
         "room": "주방",
         "imageUrl": "/portfolio/p27/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-15",
         "room": "주방",
         "imageUrl": "/portfolio/p27/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "27-16",
         "room": "주방",
         "imageUrl": "/portfolio/p27/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-17",
         "room": "주방",
         "imageUrl": "/portfolio/p27/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-18",
         "room": "침실",
         "imageUrl": "/portfolio/p27/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-19",
         "room": "침실",
         "imageUrl": "/portfolio/p27/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "27-20",
         "room": "침실",
         "imageUrl": "/portfolio/p27/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-21",
         "room": "침실",
         "imageUrl": "/portfolio/p27/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "27-22",
         "room": "침실",
         "imageUrl": "/portfolio/p27/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "27-23",
         "room": "침실",
         "imageUrl": "/portfolio/p27/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "27-24",
         "room": "복도",
         "imageUrl": "/portfolio/p27/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "27-25",
         "room": "복도",
         "imageUrl": "/portfolio/p27/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "27-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p27/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "27-27",
         "room": "욕실",
         "imageUrl": "/portfolio/p27/27.webp",
-        "sortOrder": 26
+        "sortOrder": 26,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "27-28",
         "room": "욕실",
         "imageUrl": "/portfolio/p27/28.webp",
-        "sortOrder": 27
+        "sortOrder": 27,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-29",
         "room": "욕실",
         "imageUrl": "/portfolio/p27/29.webp",
-        "sortOrder": 28
+        "sortOrder": 28,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-30",
         "room": "욕실",
         "imageUrl": "/portfolio/p27/30.webp",
-        "sortOrder": 29
+        "sortOrder": 29,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "27-31",
         "room": "욕실",
         "imageUrl": "/portfolio/p27/31.webp",
-        "sortOrder": 30
+        "sortOrder": 30,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T05:38:00.000Z",
@@ -4786,91 +6024,121 @@ export const SEED_PROJECTS: Project[] = [
         "id": "28-1",
         "room": "현관",
         "imageUrl": "/portfolio/p28/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "28-4",
         "room": "거실",
         "imageUrl": "/portfolio/p28/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "28-5",
         "room": "거실",
         "imageUrl": "/portfolio/p28/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "28-7",
         "room": "거실",
         "imageUrl": "/portfolio/p28/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "28-8",
         "room": "거실",
         "imageUrl": "/portfolio/p28/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "28-10",
         "room": "주방",
         "imageUrl": "/portfolio/p28/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "28-11",
         "room": "주방",
         "imageUrl": "/portfolio/p28/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "28-12",
         "room": "침실",
         "imageUrl": "/portfolio/p28/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "28-13",
         "room": "침실",
         "imageUrl": "/portfolio/p28/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "28-15",
         "room": "침실",
         "imageUrl": "/portfolio/p28/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "28-17",
         "room": "침실",
         "imageUrl": "/portfolio/p28/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "28-18",
         "room": "욕실",
         "imageUrl": "/portfolio/p28/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "28-19",
         "room": "욕실",
         "imageUrl": "/portfolio/p28/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "28-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p28/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "28-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p28/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T05:44:00.000Z",
@@ -4914,121 +6182,161 @@ export const SEED_PROJECTS: Project[] = [
         "id": "29-2",
         "room": "현관",
         "imageUrl": "/portfolio/p29/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "29-3",
         "room": "현관",
         "imageUrl": "/portfolio/p29/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "29-4",
         "room": "현관",
         "imageUrl": "/portfolio/p29/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "29-5",
         "room": "현관",
         "imageUrl": "/portfolio/p29/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "29-6",
         "room": "거실",
         "imageUrl": "/portfolio/p29/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "29-7",
         "room": "거실",
         "imageUrl": "/portfolio/p29/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "29-8",
         "room": "거실",
         "imageUrl": "/portfolio/p29/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "29-10",
         "room": "거실",
         "imageUrl": "/portfolio/p29/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "29-11",
         "room": "거실",
         "imageUrl": "/portfolio/p29/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "29-12",
         "room": "주방",
         "imageUrl": "/portfolio/p29/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "29-13",
         "room": "주방",
         "imageUrl": "/portfolio/p29/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "29-14",
         "room": "주방",
         "imageUrl": "/portfolio/p29/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "29-15",
         "room": "주방",
         "imageUrl": "/portfolio/p29/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "29-16",
         "room": "주방",
         "imageUrl": "/portfolio/p29/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "29-17",
         "room": "욕실",
         "imageUrl": "/portfolio/p29/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "29-18",
         "room": "욕실",
         "imageUrl": "/portfolio/p29/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "29-19",
         "room": "욕실",
         "imageUrl": "/portfolio/p29/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "29-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p29/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "29-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p29/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "29-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p29/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T05:52:00.000Z",
@@ -5071,127 +6379,169 @@ export const SEED_PROJECTS: Project[] = [
         "id": "30-1",
         "room": "현관",
         "imageUrl": "/portfolio/p30/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "30-2",
         "room": "현관",
         "imageUrl": "/portfolio/p30/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "30-3",
         "room": "현관",
         "imageUrl": "/portfolio/p30/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "30-4",
         "room": "현관",
         "imageUrl": "/portfolio/p30/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "30-5",
         "room": "거실",
         "imageUrl": "/portfolio/p30/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "30-7",
         "room": "거실",
         "imageUrl": "/portfolio/p30/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "30-8",
         "room": "거실",
         "imageUrl": "/portfolio/p30/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "30-10",
         "room": "거실",
         "imageUrl": "/portfolio/p30/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "30-11",
         "room": "주방",
         "imageUrl": "/portfolio/p30/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "30-12",
         "room": "주방",
         "imageUrl": "/portfolio/p30/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "30-13",
         "room": "주방",
         "imageUrl": "/portfolio/p30/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "30-14",
         "room": "주방",
         "imageUrl": "/portfolio/p30/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "30-15",
         "room": "침실",
         "imageUrl": "/portfolio/p30/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "30-16",
         "room": "침실",
         "imageUrl": "/portfolio/p30/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "30-17",
         "room": "침실",
         "imageUrl": "/portfolio/p30/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "30-18",
         "room": "침실",
         "imageUrl": "/portfolio/p30/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "30-19",
         "room": "침실",
         "imageUrl": "/portfolio/p30/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "30-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p30/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "30-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p30/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "30-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p30/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "30-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p30/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T05:55:00.000Z",
@@ -5232,121 +6582,161 @@ export const SEED_PROJECTS: Project[] = [
         "id": "31-2",
         "room": "현관",
         "imageUrl": "/portfolio/p31/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "31-3",
         "room": "현관",
         "imageUrl": "/portfolio/p31/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "31-4",
         "room": "거실",
         "imageUrl": "/portfolio/p31/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-5",
         "room": "거실",
         "imageUrl": "/portfolio/p31/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-6",
         "room": "거실",
         "imageUrl": "/portfolio/p31/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-7",
         "room": "거실",
         "imageUrl": "/portfolio/p31/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-8",
         "room": "거실",
         "imageUrl": "/portfolio/p31/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-9",
         "room": "거실",
         "imageUrl": "/portfolio/p31/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-10",
         "room": "복도",
         "imageUrl": "/portfolio/p31/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-11",
         "room": "주방",
         "imageUrl": "/portfolio/p31/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-12",
         "room": "주방",
         "imageUrl": "/portfolio/p31/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-13",
         "room": "주방",
         "imageUrl": "/portfolio/p31/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-14",
         "room": "주방",
         "imageUrl": "/portfolio/p31/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-15",
         "room": "침실",
         "imageUrl": "/portfolio/p31/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-16",
         "room": "침실",
         "imageUrl": "/portfolio/p31/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-17",
         "room": "침실",
         "imageUrl": "/portfolio/p31/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "31-18",
         "room": "욕실",
         "imageUrl": "/portfolio/p31/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "31-19",
         "room": "욕실",
         "imageUrl": "/portfolio/p31/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "31-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p31/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "31-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p31/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:01:00.000Z"
@@ -5365,139 +6755,185 @@ export const SEED_PROJECTS: Project[] = [
         "id": "32-1",
         "room": "현관",
         "imageUrl": "/portfolio/p32/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "32-3",
         "room": "거실",
         "imageUrl": "/portfolio/p32/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-4",
         "room": "거실",
         "imageUrl": "/portfolio/p32/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-5",
         "room": "거실",
         "imageUrl": "/portfolio/p32/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-6",
         "room": "거실",
         "imageUrl": "/portfolio/p32/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-7",
         "room": "거실",
         "imageUrl": "/portfolio/p32/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-8",
         "room": "거실",
         "imageUrl": "/portfolio/p32/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-9",
         "room": "복도",
         "imageUrl": "/portfolio/p32/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "32-10",
         "room": "주방",
         "imageUrl": "/portfolio/p32/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-11",
         "room": "주방",
         "imageUrl": "/portfolio/p32/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-12",
         "room": "주방",
         "imageUrl": "/portfolio/p32/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-13",
         "room": "주방",
         "imageUrl": "/portfolio/p32/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-14",
         "room": "주방",
         "imageUrl": "/portfolio/p32/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-15",
         "room": "주방",
         "imageUrl": "/portfolio/p32/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-16",
         "room": "침실",
         "imageUrl": "/portfolio/p32/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "32-17",
         "room": "침실",
         "imageUrl": "/portfolio/p32/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "32-18",
         "room": "침실",
         "imageUrl": "/portfolio/p32/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-19",
         "room": "욕실",
         "imageUrl": "/portfolio/p32/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "32-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p32/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "32-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p32/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "32-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p32/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p32/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "32-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p32/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:06:00.000Z"
@@ -5516,109 +6952,145 @@ export const SEED_PROJECTS: Project[] = [
         "id": "33-1",
         "room": "현관",
         "imageUrl": "/portfolio/p33/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "33-2",
         "room": "현관",
         "imageUrl": "/portfolio/p33/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "33-3",
         "room": "거실",
         "imageUrl": "/portfolio/p33/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "33-4",
         "room": "주방",
         "imageUrl": "/portfolio/p33/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "33-5",
         "room": "주방",
         "imageUrl": "/portfolio/p33/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "33-6",
         "room": "주방",
         "imageUrl": "/portfolio/p33/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "33-7",
         "room": "주방",
         "imageUrl": "/portfolio/p33/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "33-8",
         "room": "주방",
         "imageUrl": "/portfolio/p33/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "33-9",
         "room": "주방",
         "imageUrl": "/portfolio/p33/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "33-10",
         "room": "침실",
         "imageUrl": "/portfolio/p33/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "33-11",
         "room": "침실",
         "imageUrl": "/portfolio/p33/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "33-12",
         "room": "침실",
         "imageUrl": "/portfolio/p33/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "33-13",
         "room": "침실",
         "imageUrl": "/portfolio/p33/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "33-14",
         "room": "침실",
         "imageUrl": "/portfolio/p33/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "33-15",
         "room": "욕실",
         "imageUrl": "/portfolio/p33/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "33-16",
         "room": "욕실",
         "imageUrl": "/portfolio/p33/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "33-17",
         "room": "욕실",
         "imageUrl": "/portfolio/p33/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "33-18",
         "room": "욕실",
         "imageUrl": "/portfolio/p33/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:09:00.000Z",
@@ -5664,151 +7136,201 @@ export const SEED_PROJECTS: Project[] = [
         "id": "34-1",
         "room": "현관",
         "imageUrl": "/portfolio/p34/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "34-2",
         "room": "현관",
         "imageUrl": "/portfolio/p34/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "34-3",
         "room": "현관",
         "imageUrl": "/portfolio/p34/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "34-4",
         "room": "현관",
         "imageUrl": "/portfolio/p34/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "34-5",
         "room": "거실",
         "imageUrl": "/portfolio/p34/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-6",
         "room": "거실",
         "imageUrl": "/portfolio/p34/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-7",
         "room": "거실",
         "imageUrl": "/portfolio/p34/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-8",
         "room": "거실",
         "imageUrl": "/portfolio/p34/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-9",
         "room": "거실",
         "imageUrl": "/portfolio/p34/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-10",
         "room": "거실",
         "imageUrl": "/portfolio/p34/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-11",
         "room": "복도",
         "imageUrl": "/portfolio/p34/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "34-12",
         "room": "복도",
         "imageUrl": "/portfolio/p34/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-13",
         "room": "주방",
         "imageUrl": "/portfolio/p34/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-14",
         "room": "주방",
         "imageUrl": "/portfolio/p34/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-15",
         "room": "주방",
         "imageUrl": "/portfolio/p34/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-16",
         "room": "주방",
         "imageUrl": "/portfolio/p34/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-17",
         "room": "주방",
         "imageUrl": "/portfolio/p34/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-18",
         "room": "주방",
         "imageUrl": "/portfolio/p34/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-19",
         "room": "침실",
         "imageUrl": "/portfolio/p34/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-20",
         "room": "침실",
         "imageUrl": "/portfolio/p34/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "34-21",
         "room": "침실",
         "imageUrl": "/portfolio/p34/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "34-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p34/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "34-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p34/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "34-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p34/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "34-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p34/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:14:00.000Z"
@@ -5827,151 +7349,201 @@ export const SEED_PROJECTS: Project[] = [
         "id": "35-1",
         "room": "현관",
         "imageUrl": "/portfolio/p35/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "35-2",
         "room": "현관",
         "imageUrl": "/portfolio/p35/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "35-3",
         "room": "현관",
         "imageUrl": "/portfolio/p35/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "35-4",
         "room": "현관",
         "imageUrl": "/portfolio/p35/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "35-5",
         "room": "현관",
         "imageUrl": "/portfolio/p35/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "35-7",
         "room": "거실",
         "imageUrl": "/portfolio/p35/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-8",
         "room": "거실",
         "imageUrl": "/portfolio/p35/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-9",
         "room": "거실",
         "imageUrl": "/portfolio/p35/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-10",
         "room": "거실",
         "imageUrl": "/portfolio/p35/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-11",
         "room": "거실",
         "imageUrl": "/portfolio/p35/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-12",
         "room": "주방",
         "imageUrl": "/portfolio/p35/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-13",
         "room": "주방",
         "imageUrl": "/portfolio/p35/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "35-14",
         "room": "주방",
         "imageUrl": "/portfolio/p35/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "35-15",
         "room": "주방",
         "imageUrl": "/portfolio/p35/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "35-16",
         "room": "주방",
         "imageUrl": "/portfolio/p35/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-17",
         "room": "주방",
         "imageUrl": "/portfolio/p35/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-18",
         "room": "침실",
         "imageUrl": "/portfolio/p35/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-19",
         "room": "침실",
         "imageUrl": "/portfolio/p35/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-21",
         "room": "침실",
         "imageUrl": "/portfolio/p35/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-22",
         "room": "침실",
         "imageUrl": "/portfolio/p35/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-23",
         "room": "침실",
         "imageUrl": "/portfolio/p35/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "35-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p35/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "35-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p35/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "35-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p35/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "35-27",
         "room": "욕실",
         "imageUrl": "/portfolio/p35/27.webp",
-        "sortOrder": 26
+        "sortOrder": 26,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:22:00.000Z",
@@ -6011,115 +7583,153 @@ export const SEED_PROJECTS: Project[] = [
         "id": "36-1",
         "room": "현관",
         "imageUrl": "/portfolio/p36/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "36-2",
         "room": "현관",
         "imageUrl": "/portfolio/p36/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "36-3",
         "room": "현관",
         "imageUrl": "/portfolio/p36/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "36-4",
         "room": "현관",
         "imageUrl": "/portfolio/p36/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "36-5",
         "room": "현관",
         "imageUrl": "/portfolio/p36/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "36-7",
         "room": "거실",
         "imageUrl": "/portfolio/p36/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "36-9",
         "room": "거실",
         "imageUrl": "/portfolio/p36/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "36-11",
         "room": "거실",
         "imageUrl": "/portfolio/p36/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "36-12",
         "room": "주방",
         "imageUrl": "/portfolio/p36/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "36-13",
         "room": "주방",
         "imageUrl": "/portfolio/p36/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "36-14",
         "room": "주방",
         "imageUrl": "/portfolio/p36/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "36-15",
         "room": "주방",
         "imageUrl": "/portfolio/p36/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "36-16",
         "room": "주방",
         "imageUrl": "/portfolio/p36/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "36-17",
         "room": "주방",
         "imageUrl": "/portfolio/p36/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "36-18",
         "room": "침실",
         "imageUrl": "/portfolio/p36/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "36-19",
         "room": "침실",
         "imageUrl": "/portfolio/p36/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "36-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p36/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "36-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p36/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "36-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p36/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:29:00.000Z",
@@ -6155,145 +7765,193 @@ export const SEED_PROJECTS: Project[] = [
         "id": "37-1",
         "room": "현관",
         "imageUrl": "/portfolio/p37/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "37-2",
         "room": "현관",
         "imageUrl": "/portfolio/p37/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "37-3",
         "room": "현관",
         "imageUrl": "/portfolio/p37/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "37-4",
         "room": "현관",
         "imageUrl": "/portfolio/p37/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "37-5",
         "room": "현관",
         "imageUrl": "/portfolio/p37/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "37-6",
         "room": "거실",
         "imageUrl": "/portfolio/p37/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-7",
         "room": "거실",
         "imageUrl": "/portfolio/p37/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-8",
         "room": "거실",
         "imageUrl": "/portfolio/p37/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-9",
         "room": "거실",
         "imageUrl": "/portfolio/p37/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-10",
         "room": "거실",
         "imageUrl": "/portfolio/p37/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-11",
         "room": "거실",
         "imageUrl": "/portfolio/p37/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-12",
         "room": "주방",
         "imageUrl": "/portfolio/p37/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-13",
         "room": "주방",
         "imageUrl": "/portfolio/p37/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-14",
         "room": "주방",
         "imageUrl": "/portfolio/p37/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-15",
         "room": "주방",
         "imageUrl": "/portfolio/p37/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-16",
         "room": "주방",
         "imageUrl": "/portfolio/p37/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-17",
         "room": "주방",
         "imageUrl": "/portfolio/p37/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-18",
         "room": "침실",
         "imageUrl": "/portfolio/p37/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-19",
         "room": "침실",
         "imageUrl": "/portfolio/p37/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-20",
         "room": "침실",
         "imageUrl": "/portfolio/p37/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "37-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p37/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "37-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p37/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "37-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p37/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "37-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p37/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:33:00.000Z",
@@ -6341,139 +7999,185 @@ export const SEED_PROJECTS: Project[] = [
         "id": "38-1",
         "room": "현관",
         "imageUrl": "/portfolio/p38/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1179,
+        "height": 1762
       },
       {
         "id": "38-2",
         "room": "현관",
         "imageUrl": "/portfolio/p38/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1179,
+        "height": 1762
       },
       {
         "id": "38-3",
         "room": "현관",
         "imageUrl": "/portfolio/p38/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1179,
+        "height": 1762
       },
       {
         "id": "38-4",
         "room": "현관",
         "imageUrl": "/portfolio/p38/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1179,
+        "height": 1762
       },
       {
         "id": "38-5",
         "room": "현관",
         "imageUrl": "/portfolio/p38/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1179,
+        "height": 1762
       },
       {
         "id": "38-6",
         "room": "거실",
         "imageUrl": "/portfolio/p38/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-7",
         "room": "거실",
         "imageUrl": "/portfolio/p38/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-8",
         "room": "거실",
         "imageUrl": "/portfolio/p38/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-9",
         "room": "거실",
         "imageUrl": "/portfolio/p38/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-10",
         "room": "거실",
         "imageUrl": "/portfolio/p38/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-11",
         "room": "거실",
         "imageUrl": "/portfolio/p38/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-12",
         "room": "복도",
         "imageUrl": "/portfolio/p38/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-13",
         "room": "주방",
         "imageUrl": "/portfolio/p38/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-14",
         "room": "주방",
         "imageUrl": "/portfolio/p38/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-15",
         "room": "주방",
         "imageUrl": "/portfolio/p38/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-16",
         "room": "주방",
         "imageUrl": "/portfolio/p38/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1178,
+        "height": 779
       },
       {
         "id": "38-17",
         "room": "주방",
         "imageUrl": "/portfolio/p38/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1179,
+        "height": 1762
       },
       {
         "id": "38-18",
         "room": "침실",
         "imageUrl": "/portfolio/p38/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-19",
         "room": "침실",
         "imageUrl": "/portfolio/p38/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-20",
         "room": "침실",
         "imageUrl": "/portfolio/p38/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "38-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p38/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1179,
+        "height": 1762
       },
       {
         "id": "38-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p38/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1179,
+        "height": 1762
       },
       {
         "id": "38-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p38/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1179,
+        "height": 1762
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:36:00.000Z",
@@ -6517,133 +8221,177 @@ export const SEED_PROJECTS: Project[] = [
         "id": "39-1",
         "room": "현관",
         "imageUrl": "/portfolio/p39/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "39-2",
         "room": "현관",
         "imageUrl": "/portfolio/p39/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "39-3",
         "room": "현관",
         "imageUrl": "/portfolio/p39/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "39-4",
         "room": "현관",
         "imageUrl": "/portfolio/p39/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "39-5",
         "room": "현관",
         "imageUrl": "/portfolio/p39/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "39-6",
         "room": "현관",
         "imageUrl": "/portfolio/p39/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "39-7",
         "room": "거실",
         "imageUrl": "/portfolio/p39/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-8",
         "room": "거실",
         "imageUrl": "/portfolio/p39/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-9",
         "room": "거실",
         "imageUrl": "/portfolio/p39/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-10",
         "room": "거실",
         "imageUrl": "/portfolio/p39/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-11",
         "room": "거실",
         "imageUrl": "/portfolio/p39/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-12",
         "room": "거실",
         "imageUrl": "/portfolio/p39/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-13",
         "room": "주방",
         "imageUrl": "/portfolio/p39/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-14",
         "room": "주방",
         "imageUrl": "/portfolio/p39/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-15",
         "room": "주방",
         "imageUrl": "/portfolio/p39/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-16",
         "room": "주방",
         "imageUrl": "/portfolio/p39/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-17",
         "room": "주방",
         "imageUrl": "/portfolio/p39/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-18",
         "room": "침실",
         "imageUrl": "/portfolio/p39/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-19",
         "room": "침실",
         "imageUrl": "/portfolio/p39/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "39-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p39/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "39-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p39/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "39-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p39/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:41:00.000Z"
@@ -6662,157 +8410,209 @@ export const SEED_PROJECTS: Project[] = [
         "id": "40-1",
         "room": "현관",
         "imageUrl": "/portfolio/p40/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "40-2",
         "room": "현관",
         "imageUrl": "/portfolio/p40/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "40-3",
         "room": "현관",
         "imageUrl": "/portfolio/p40/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "40-4",
         "room": "현관",
         "imageUrl": "/portfolio/p40/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "40-5",
         "room": "거실",
         "imageUrl": "/portfolio/p40/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-6",
         "room": "거실",
         "imageUrl": "/portfolio/p40/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-7",
         "room": "거실",
         "imageUrl": "/portfolio/p40/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-8",
         "room": "거실",
         "imageUrl": "/portfolio/p40/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-9",
         "room": "거실",
         "imageUrl": "/portfolio/p40/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-10",
         "room": "거실",
         "imageUrl": "/portfolio/p40/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-11",
         "room": "주방",
         "imageUrl": "/portfolio/p40/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "40-12",
         "room": "주방",
         "imageUrl": "/portfolio/p40/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-13",
         "room": "주방",
         "imageUrl": "/portfolio/p40/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-14",
         "room": "주방",
         "imageUrl": "/portfolio/p40/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-15",
         "room": "주방",
         "imageUrl": "/portfolio/p40/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-16",
         "room": "주방",
         "imageUrl": "/portfolio/p40/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-17",
         "room": "침실",
         "imageUrl": "/portfolio/p40/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-18",
         "room": "침실",
         "imageUrl": "/portfolio/p40/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-19",
         "room": "침실",
         "imageUrl": "/portfolio/p40/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-20",
         "room": "침실",
         "imageUrl": "/portfolio/p40/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "40-21",
         "room": "침실",
         "imageUrl": "/portfolio/p40/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "40-22",
         "room": "침실",
         "imageUrl": "/portfolio/p40/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "40-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p40/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "40-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p40/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "40-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p40/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "40-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p40/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:46:00.000Z",
@@ -6856,43 +8656,57 @@ export const SEED_PROJECTS: Project[] = [
         "id": "41-1",
         "room": "거실",
         "imageUrl": "/portfolio/p41/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2133
       },
       {
         "id": "41-2",
         "room": "주방",
         "imageUrl": "/portfolio/p41/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1200
       },
       {
         "id": "41-3",
         "room": "주방",
         "imageUrl": "/portfolio/p41/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 1200
       },
       {
         "id": "41-4",
         "room": "주방",
         "imageUrl": "/portfolio/p41/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2133
       },
       {
         "id": "41-5",
         "room": "주방",
         "imageUrl": "/portfolio/p41/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2133
       },
       {
         "id": "41-6",
         "room": "욕실",
         "imageUrl": "/portfolio/p41/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1200
       },
       {
         "id": "41-7",
         "room": "욕실",
         "imageUrl": "/portfolio/p41/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1200
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:48:00.000Z"
@@ -6911,157 +8725,209 @@ export const SEED_PROJECTS: Project[] = [
         "id": "42-1",
         "room": "현관",
         "imageUrl": "/portfolio/p42/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "42-2",
         "room": "현관",
         "imageUrl": "/portfolio/p42/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "42-3",
         "room": "현관",
         "imageUrl": "/portfolio/p42/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "42-4",
         "room": "현관",
         "imageUrl": "/portfolio/p42/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "42-5",
         "room": "거실",
         "imageUrl": "/portfolio/p42/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-6",
         "room": "거실",
         "imageUrl": "/portfolio/p42/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-7",
         "room": "거실",
         "imageUrl": "/portfolio/p42/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-8",
         "room": "거실",
         "imageUrl": "/portfolio/p42/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-9",
         "room": "거실",
         "imageUrl": "/portfolio/p42/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-10",
         "room": "거실",
         "imageUrl": "/portfolio/p42/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-11",
         "room": "주방",
         "imageUrl": "/portfolio/p42/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1178,
+        "height": 1769
       },
       {
         "id": "42-12",
         "room": "주방",
         "imageUrl": "/portfolio/p42/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1178,
+        "height": 779
       },
       {
         "id": "42-13",
         "room": "주방",
         "imageUrl": "/portfolio/p42/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-14",
         "room": "주방",
         "imageUrl": "/portfolio/p42/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "42-15",
         "room": "주방",
         "imageUrl": "/portfolio/p42/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "42-16",
         "room": "주방",
         "imageUrl": "/portfolio/p42/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "42-17",
         "room": "침실",
         "imageUrl": "/portfolio/p42/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-18",
         "room": "침실",
         "imageUrl": "/portfolio/p42/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-19",
         "room": "침실",
         "imageUrl": "/portfolio/p42/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-20",
         "room": "침실",
         "imageUrl": "/portfolio/p42/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-21",
         "room": "침실",
         "imageUrl": "/portfolio/p42/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-22",
         "room": "침실",
         "imageUrl": "/portfolio/p42/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1179,
+        "height": 779
       },
       {
         "id": "42-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p42/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "42-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p42/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "42-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p42/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "42-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p42/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 1179,
+        "height": 1770
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:52:00.000Z",
@@ -7104,139 +8970,185 @@ export const SEED_PROJECTS: Project[] = [
         "id": "43-1",
         "room": "대표",
         "imageUrl": "/portfolio/p43/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-2",
         "room": "대표",
         "imageUrl": "/portfolio/p43/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-3",
         "room": "현관",
         "imageUrl": "/portfolio/p43/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "43-4",
         "room": "현관",
         "imageUrl": "/portfolio/p43/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "43-5",
         "room": "현관",
         "imageUrl": "/portfolio/p43/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "43-6",
         "room": "현관",
         "imageUrl": "/portfolio/p43/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "43-7",
         "room": "복도",
         "imageUrl": "/portfolio/p43/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "43-8",
         "room": "거실",
         "imageUrl": "/portfolio/p43/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-9",
         "room": "거실",
         "imageUrl": "/portfolio/p43/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-10",
         "room": "거실",
         "imageUrl": "/portfolio/p43/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-11",
         "room": "거실",
         "imageUrl": "/portfolio/p43/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-12",
         "room": "거실",
         "imageUrl": "/portfolio/p43/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-13",
         "room": "거실",
         "imageUrl": "/portfolio/p43/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-14",
         "room": "주방",
         "imageUrl": "/portfolio/p43/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-15",
         "room": "주방",
         "imageUrl": "/portfolio/p43/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-16",
         "room": "주방",
         "imageUrl": "/portfolio/p43/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-17",
         "room": "주방",
         "imageUrl": "/portfolio/p43/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-18",
         "room": "주방",
         "imageUrl": "/portfolio/p43/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-19",
         "room": "주방",
         "imageUrl": "/portfolio/p43/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "43-20",
         "room": "침실",
         "imageUrl": "/portfolio/p43/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-21",
         "room": "침실",
         "imageUrl": "/portfolio/p43/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "43-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p43/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "43-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p43/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-06-25T16:38:00.000Z",
@@ -7277,121 +9189,161 @@ export const SEED_PROJECTS: Project[] = [
         "id": "44-1",
         "room": "현관",
         "imageUrl": "/portfolio/p44/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1179,
+        "height": 1757
       },
       {
         "id": "44-2",
         "room": "현관",
         "imageUrl": "/portfolio/p44/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "44-3",
         "room": "현관",
         "imageUrl": "/portfolio/p44/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1179,
+        "height": 1745
       },
       {
         "id": "44-4",
         "room": "현관",
         "imageUrl": "/portfolio/p44/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "44-5",
         "room": "현관",
         "imageUrl": "/portfolio/p44/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "44-6",
         "room": "거실",
         "imageUrl": "/portfolio/p44/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "44-7",
         "room": "거실",
         "imageUrl": "/portfolio/p44/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "44-8",
         "room": "거실",
         "imageUrl": "/portfolio/p44/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "44-9",
         "room": "거실",
         "imageUrl": "/portfolio/p44/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1179,
+        "height": 772
       },
       {
         "id": "44-10",
         "room": "거실",
         "imageUrl": "/portfolio/p44/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "44-11",
         "room": "거실",
         "imageUrl": "/portfolio/p44/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "44-12",
         "room": "주방",
         "imageUrl": "/portfolio/p44/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "44-13",
         "room": "주방",
         "imageUrl": "/portfolio/p44/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "44-14",
         "room": "주방",
         "imageUrl": "/portfolio/p44/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "44-15",
         "room": "주방",
         "imageUrl": "/portfolio/p44/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "44-16",
         "room": "주방",
         "imageUrl": "/portfolio/p44/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "44-17",
         "room": "침실",
         "imageUrl": "/portfolio/p44/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "44-18",
         "room": "침실",
         "imageUrl": "/portfolio/p44/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "44-19",
         "room": "욕실",
         "imageUrl": "/portfolio/p44/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1178,
+        "height": 1747
       },
       {
         "id": "44-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p44/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1179,
+        "height": 1748
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:55:00.000Z"
@@ -7410,127 +9362,169 @@ export const SEED_PROJECTS: Project[] = [
         "id": "45-1",
         "room": "현관",
         "imageUrl": "/portfolio/p45/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1179,
+        "height": 1756
       },
       {
         "id": "45-2",
         "room": "현관",
         "imageUrl": "/portfolio/p45/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1179,
+        "height": 1756
       },
       {
         "id": "45-3",
         "room": "현관",
         "imageUrl": "/portfolio/p45/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1179,
+        "height": 1756
       },
       {
         "id": "45-4",
         "room": "현관",
         "imageUrl": "/portfolio/p45/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "45-5",
         "room": "현관",
         "imageUrl": "/portfolio/p45/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1179,
+        "height": 1756
       },
       {
         "id": "45-6",
         "room": "현관",
         "imageUrl": "/portfolio/p45/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1179,
+        "height": 1756
       },
       {
         "id": "45-7",
         "room": "거실",
         "imageUrl": "/portfolio/p45/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-8",
         "room": "거실",
         "imageUrl": "/portfolio/p45/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-9",
         "room": "거실",
         "imageUrl": "/portfolio/p45/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-10",
         "room": "거실",
         "imageUrl": "/portfolio/p45/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-11",
         "room": "거실",
         "imageUrl": "/portfolio/p45/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-12",
         "room": "거실",
         "imageUrl": "/portfolio/p45/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-13",
         "room": "주방",
         "imageUrl": "/portfolio/p45/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-14",
         "room": "주방",
         "imageUrl": "/portfolio/p45/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-15",
         "room": "주방",
         "imageUrl": "/portfolio/p45/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-16",
         "room": "주방",
         "imageUrl": "/portfolio/p45/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-17",
         "room": "주방",
         "imageUrl": "/portfolio/p45/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-18",
         "room": "침실",
         "imageUrl": "/portfolio/p45/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-19",
         "room": "침실",
         "imageUrl": "/portfolio/p45/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "45-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p45/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1179,
+        "height": 1756
       },
       {
         "id": "45-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p45/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1179,
+        "height": 1756
       }
     ],
     "notionLastEditedAt": "2026-07-10T06:59:00.000Z",
@@ -7572,133 +9566,177 @@ export const SEED_PROJECTS: Project[] = [
         "id": "46-1",
         "room": "현관",
         "imageUrl": "/portfolio/p46/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1178,
+        "height": 1769
       },
       {
         "id": "46-2",
         "room": "현관",
         "imageUrl": "/portfolio/p46/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "46-3",
         "room": "현관",
         "imageUrl": "/portfolio/p46/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "46-4",
         "room": "현관",
         "imageUrl": "/portfolio/p46/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "46-5",
         "room": "현관",
         "imageUrl": "/portfolio/p46/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "46-6",
         "room": "거실",
         "imageUrl": "/portfolio/p46/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1179,
+        "height": 774
       },
       {
         "id": "46-7",
         "room": "거실",
         "imageUrl": "/portfolio/p46/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1179,
+        "height": 774
       },
       {
         "id": "46-8",
         "room": "거실",
         "imageUrl": "/portfolio/p46/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1179,
+        "height": 774
       },
       {
         "id": "46-9",
         "room": "거실",
         "imageUrl": "/portfolio/p46/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1179,
+        "height": 774
       },
       {
         "id": "46-10",
         "room": "거실",
         "imageUrl": "/portfolio/p46/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1179,
+        "height": 774
       },
       {
         "id": "46-11",
         "room": "주방",
         "imageUrl": "/portfolio/p46/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1179,
+        "height": 774
       },
       {
         "id": "46-12",
         "room": "주방",
         "imageUrl": "/portfolio/p46/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1179,
+        "height": 774
       },
       {
         "id": "46-13",
         "room": "주방",
         "imageUrl": "/portfolio/p46/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1179,
+        "height": 774
       },
       {
         "id": "46-14",
         "room": "주방",
         "imageUrl": "/portfolio/p46/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "46-15",
         "room": "주방",
         "imageUrl": "/portfolio/p46/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1179,
+        "height": 774
       },
       {
         "id": "46-16",
         "room": "주방",
         "imageUrl": "/portfolio/p46/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1178,
+        "height": 774
       },
       {
         "id": "46-17",
         "room": "침실",
         "imageUrl": "/portfolio/p46/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1179,
+        "height": 774
       },
       {
         "id": "46-18",
         "room": "침실",
         "imageUrl": "/portfolio/p46/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1179,
+        "height": 774
       },
       {
         "id": "46-19",
         "room": "욕실",
         "imageUrl": "/portfolio/p46/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "46-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p46/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "46-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p46/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1179,
+        "height": 1770
       },
       {
         "id": "46-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p46/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1179,
+        "height": 1770
       }
     ],
     "notionLastEditedAt": "2026-07-10T07:01:00.000Z",
@@ -7741,7 +9779,9 @@ export const SEED_PROJECTS: Project[] = [
         "id": "47-1",
         "room": "대표",
         "imageUrl": "/portfolio/p47/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1260,
+        "height": 1023
       }
     ],
     "notionLastEditedAt": "2026-07-10T07:02:00.000Z",
@@ -7788,151 +9828,201 @@ export const SEED_PROJECTS: Project[] = [
         "id": "48-1",
         "room": "현관",
         "imageUrl": "/portfolio/p48/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1179,
+        "height": 1726
       },
       {
         "id": "48-2",
         "room": "현관",
         "imageUrl": "/portfolio/p48/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1179,
+        "height": 1761
       },
       {
         "id": "48-3",
         "room": "거실",
         "imageUrl": "/portfolio/p48/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1179,
+        "height": 750
       },
       {
         "id": "48-4",
         "room": "거실",
         "imageUrl": "/portfolio/p48/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1179,
+        "height": 776
       },
       {
         "id": "48-5",
         "room": "거실",
         "imageUrl": "/portfolio/p48/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1179,
+        "height": 740
       },
       {
         "id": "48-6",
         "room": "거실",
         "imageUrl": "/portfolio/p48/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1179,
+        "height": 758
       },
       {
         "id": "48-7",
         "room": "거실",
         "imageUrl": "/portfolio/p48/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1179,
+        "height": 767
       },
       {
         "id": "48-8",
         "room": "거실",
         "imageUrl": "/portfolio/p48/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1179,
+        "height": 768
       },
       {
         "id": "48-9",
         "room": "복도",
         "imageUrl": "/portfolio/p48/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1179,
+        "height": 1744
       },
       {
         "id": "48-10",
         "room": "주방",
         "imageUrl": "/portfolio/p48/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1179,
+        "height": 1765
       },
       {
         "id": "48-11",
         "room": "주방",
         "imageUrl": "/portfolio/p48/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1179,
+        "height": 1759
       },
       {
         "id": "48-12",
         "room": "주방",
         "imageUrl": "/portfolio/p48/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1179,
+        "height": 767
       },
       {
         "id": "48-13",
         "room": "주방",
         "imageUrl": "/portfolio/p48/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1179,
+        "height": 767
       },
       {
         "id": "48-14",
         "room": "주방",
         "imageUrl": "/portfolio/p48/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1179,
+        "height": 773
       },
       {
         "id": "48-15",
         "room": "주방",
         "imageUrl": "/portfolio/p48/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1179,
+        "height": 777
       },
       {
         "id": "48-16",
         "room": "침실",
         "imageUrl": "/portfolio/p48/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1179,
+        "height": 1743
       },
       {
         "id": "48-17",
         "room": "침실",
         "imageUrl": "/portfolio/p48/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1179,
+        "height": 768
       },
       {
         "id": "48-18",
         "room": "침실",
         "imageUrl": "/portfolio/p48/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1179,
+        "height": 768
       },
       {
         "id": "48-19",
         "room": "침실",
         "imageUrl": "/portfolio/p48/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1179,
+        "height": 771
       },
       {
         "id": "48-20",
         "room": "침실",
         "imageUrl": "/portfolio/p48/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1179,
+        "height": 771
       },
       {
         "id": "48-21",
         "room": "침실",
         "imageUrl": "/portfolio/p48/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1179,
+        "height": 774
       },
       {
         "id": "48-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p48/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1179,
+        "height": 1747
       },
       {
         "id": "48-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p48/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1179,
+        "height": 1741
       },
       {
         "id": "48-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p48/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1179,
+        "height": 1735
       },
       {
         "id": "48-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p48/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1179,
+        "height": 1755
       }
     ],
     "notionLastEditedAt": "2026-07-10T07:06:00.000Z",
@@ -7977,151 +10067,201 @@ export const SEED_PROJECTS: Project[] = [
         "id": "49-1",
         "room": "현관",
         "imageUrl": "/portfolio/p49/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1179,
+        "height": 1766
       },
       {
         "id": "49-2",
         "room": "현관",
         "imageUrl": "/portfolio/p49/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1179,
+        "height": 1760
       },
       {
         "id": "49-3",
         "room": "현관",
         "imageUrl": "/portfolio/p49/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1179,
+        "height": 1760
       },
       {
         "id": "49-4",
         "room": "거실",
         "imageUrl": "/portfolio/p49/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-5",
         "room": "거실",
         "imageUrl": "/portfolio/p49/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-6",
         "room": "거실",
         "imageUrl": "/portfolio/p49/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-7",
         "room": "거실",
         "imageUrl": "/portfolio/p49/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-8",
         "room": "거실",
         "imageUrl": "/portfolio/p49/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-9",
         "room": "거실",
         "imageUrl": "/portfolio/p49/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-10",
         "room": "침실",
         "imageUrl": "/portfolio/p49/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-11",
         "room": "침실",
         "imageUrl": "/portfolio/p49/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-12",
         "room": "침실",
         "imageUrl": "/portfolio/p49/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-13",
         "room": "침실",
         "imageUrl": "/portfolio/p49/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-14",
         "room": "침실",
         "imageUrl": "/portfolio/p49/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-15",
         "room": "침실",
         "imageUrl": "/portfolio/p49/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1179,
+        "height": 781
       },
       {
         "id": "49-16",
         "room": "욕실",
         "imageUrl": "/portfolio/p49/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1179,
+        "height": 1763
       },
       {
         "id": "49-17",
         "room": "욕실",
         "imageUrl": "/portfolio/p49/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1179,
+        "height": 1755
       },
       {
         "id": "49-18",
         "room": "욕실",
         "imageUrl": "/portfolio/p49/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1179,
+        "height": 1757
       },
       {
         "id": "49-19",
         "room": "욕실",
         "imageUrl": "/portfolio/p49/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1179,
+        "height": 1751
       },
       {
         "id": "49-20",
         "room": "주방",
         "imageUrl": "/portfolio/p49/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-21",
         "room": "주방",
         "imageUrl": "/portfolio/p49/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1179,
+        "height": 1769
       },
       {
         "id": "49-22",
         "room": "주방",
         "imageUrl": "/portfolio/p49/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1179,
+        "height": 1766
       },
       {
         "id": "49-23",
         "room": "주방",
         "imageUrl": "/portfolio/p49/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-24",
         "room": "주방",
         "imageUrl": "/portfolio/p49/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1179,
+        "height": 780
       },
       {
         "id": "49-25",
         "room": "주방",
         "imageUrl": "/portfolio/p49/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1179,
+        "height": 780
       }
     ],
     "notionLastEditedAt": "2026-07-10T07:13:00.000Z",
@@ -8161,127 +10301,169 @@ export const SEED_PROJECTS: Project[] = [
         "id": "50-1",
         "room": "현관",
         "imageUrl": "/portfolio/p50/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "50-2",
         "room": "현관",
         "imageUrl": "/portfolio/p50/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "50-3",
         "room": "현관",
         "imageUrl": "/portfolio/p50/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "50-4",
         "room": "현관",
         "imageUrl": "/portfolio/p50/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "50-5",
         "room": "거실",
         "imageUrl": "/portfolio/p50/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-7",
         "room": "거실",
         "imageUrl": "/portfolio/p50/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-8",
         "room": "거실",
         "imageUrl": "/portfolio/p50/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-9",
         "room": "거실",
         "imageUrl": "/portfolio/p50/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-10",
         "room": "거실",
         "imageUrl": "/portfolio/p50/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-11",
         "room": "주방",
         "imageUrl": "/portfolio/p50/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-12",
         "room": "주방",
         "imageUrl": "/portfolio/p50/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-13",
         "room": "주방",
         "imageUrl": "/portfolio/p50/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-14",
         "room": "주방",
         "imageUrl": "/portfolio/p50/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-15",
         "room": "주방",
         "imageUrl": "/portfolio/p50/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-16",
         "room": "주방",
         "imageUrl": "/portfolio/p50/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-17",
         "room": "침실",
         "imageUrl": "/portfolio/p50/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-18",
         "room": "침실",
         "imageUrl": "/portfolio/p50/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "50-19",
         "room": "욕실",
         "imageUrl": "/portfolio/p50/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "50-20",
         "room": "욕실",
         "imageUrl": "/portfolio/p50/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "50-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p50/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "50-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p50/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T07:16:00.000Z",
@@ -8326,157 +10508,209 @@ export const SEED_PROJECTS: Project[] = [
         "id": "51-1",
         "room": "현관",
         "imageUrl": "/portfolio/p51/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-2",
         "room": "현관",
         "imageUrl": "/portfolio/p51/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-3",
         "room": "현관",
         "imageUrl": "/portfolio/p51/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-4",
         "room": "현관",
         "imageUrl": "/portfolio/p51/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-5",
         "room": "현관",
         "imageUrl": "/portfolio/p51/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-6",
         "room": "거실",
         "imageUrl": "/portfolio/p51/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-7",
         "room": "거실",
         "imageUrl": "/portfolio/p51/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-8",
         "room": "거실",
         "imageUrl": "/portfolio/p51/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1024,
+        "height": 768
       },
       {
         "id": "51-9",
         "room": "주방",
         "imageUrl": "/portfolio/p51/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-10",
         "room": "주방",
         "imageUrl": "/portfolio/p51/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-11",
         "room": "주방",
         "imageUrl": "/portfolio/p51/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1024,
+        "height": 768
       },
       {
         "id": "51-12",
         "room": "주방",
         "imageUrl": "/portfolio/p51/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-13",
         "room": "주방",
         "imageUrl": "/portfolio/p51/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1024,
+        "height": 768
       },
       {
         "id": "51-14",
         "room": "주방",
         "imageUrl": "/portfolio/p51/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1024,
+        "height": 768
       },
       {
         "id": "51-15",
         "room": "침실",
         "imageUrl": "/portfolio/p51/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-16",
         "room": "침실",
         "imageUrl": "/portfolio/p51/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-17",
         "room": "침실",
         "imageUrl": "/portfolio/p51/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1024,
+        "height": 768
       },
       {
         "id": "51-18",
         "room": "침실",
         "imageUrl": "/portfolio/p51/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-19",
         "room": "침실",
         "imageUrl": "/portfolio/p51/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-20",
         "room": "침실",
         "imageUrl": "/portfolio/p51/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-21",
         "room": "욕실",
         "imageUrl": "/portfolio/p51/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p51/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p51/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p51/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p51/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 768,
+        "height": 1024
       },
       {
         "id": "51-26",
         "room": "욕실",
         "imageUrl": "/portfolio/p51/26.webp",
-        "sortOrder": 25
+        "sortOrder": 25,
+        "width": 768,
+        "height": 1024
       }
     ],
     "notionLastEditedAt": "2026-07-10T07:23:00.000Z"
@@ -8494,151 +10728,201 @@ export const SEED_PROJECTS: Project[] = [
         "id": "52-1",
         "room": "현관",
         "imageUrl": "/portfolio/p52/01.webp",
-        "sortOrder": 0
+        "sortOrder": 0,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "52-2",
         "room": "현관",
         "imageUrl": "/portfolio/p52/02.webp",
-        "sortOrder": 1
+        "sortOrder": 1,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "52-3",
         "room": "현관",
         "imageUrl": "/portfolio/p52/03.webp",
-        "sortOrder": 2
+        "sortOrder": 2,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "52-4",
         "room": "현관",
         "imageUrl": "/portfolio/p52/04.webp",
-        "sortOrder": 3
+        "sortOrder": 3,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "52-5",
         "room": "현관",
         "imageUrl": "/portfolio/p52/05.webp",
-        "sortOrder": 4
+        "sortOrder": 4,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "52-6",
         "room": "현관",
         "imageUrl": "/portfolio/p52/06.webp",
-        "sortOrder": 5
+        "sortOrder": 5,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "52-7",
         "room": "거실",
         "imageUrl": "/portfolio/p52/07.webp",
-        "sortOrder": 6
+        "sortOrder": 6,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-8",
         "room": "거실",
         "imageUrl": "/portfolio/p52/08.webp",
-        "sortOrder": 7
+        "sortOrder": 7,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-9",
         "room": "거실",
         "imageUrl": "/portfolio/p52/09.webp",
-        "sortOrder": 8
+        "sortOrder": 8,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-10",
         "room": "거실",
         "imageUrl": "/portfolio/p52/10.webp",
-        "sortOrder": 9
+        "sortOrder": 9,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-11",
         "room": "거실",
         "imageUrl": "/portfolio/p52/11.webp",
-        "sortOrder": 10
+        "sortOrder": 10,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-12",
         "room": "거실",
         "imageUrl": "/portfolio/p52/12.webp",
-        "sortOrder": 11
+        "sortOrder": 11,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-13",
         "room": "주방",
         "imageUrl": "/portfolio/p52/13.webp",
-        "sortOrder": 12
+        "sortOrder": 12,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "52-14",
         "room": "주방",
         "imageUrl": "/portfolio/p52/14.webp",
-        "sortOrder": 13
+        "sortOrder": 13,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-15",
         "room": "주방",
         "imageUrl": "/portfolio/p52/15.webp",
-        "sortOrder": 14
+        "sortOrder": 14,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-16",
         "room": "주방",
         "imageUrl": "/portfolio/p52/16.webp",
-        "sortOrder": 15
+        "sortOrder": 15,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-17",
         "room": "주방",
         "imageUrl": "/portfolio/p52/17.webp",
-        "sortOrder": 16
+        "sortOrder": 16,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-18",
         "room": "주방",
         "imageUrl": "/portfolio/p52/18.webp",
-        "sortOrder": 17
+        "sortOrder": 17,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-19",
         "room": "침실",
         "imageUrl": "/portfolio/p52/19.webp",
-        "sortOrder": 18
+        "sortOrder": 18,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "52-20",
         "room": "침실",
         "imageUrl": "/portfolio/p52/20.webp",
-        "sortOrder": 19
+        "sortOrder": 19,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-21",
         "room": "침실",
         "imageUrl": "/portfolio/p52/21.webp",
-        "sortOrder": 20
+        "sortOrder": 20,
+        "width": 1600,
+        "height": 1067
       },
       {
         "id": "52-22",
         "room": "욕실",
         "imageUrl": "/portfolio/p52/22.webp",
-        "sortOrder": 21
+        "sortOrder": 21,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "52-23",
         "room": "욕실",
         "imageUrl": "/portfolio/p52/23.webp",
-        "sortOrder": 22
+        "sortOrder": 22,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "52-24",
         "room": "욕실",
         "imageUrl": "/portfolio/p52/24.webp",
-        "sortOrder": 23
+        "sortOrder": 23,
+        "width": 1600,
+        "height": 2400
       },
       {
         "id": "52-25",
         "room": "욕실",
         "imageUrl": "/portfolio/p52/25.webp",
-        "sortOrder": 24
+        "sortOrder": 24,
+        "width": 1600,
+        "height": 2400
       }
     ],
     "notionLastEditedAt": "2026-07-10T07:27:00.000Z"
