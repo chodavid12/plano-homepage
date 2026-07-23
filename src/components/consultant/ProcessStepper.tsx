@@ -94,9 +94,13 @@ export default function ProcessStepper() {
           >
             <h2 className="text-2xl tracking-tight text-ink-900 md:text-[1.7rem]">{phase.title}</h2>
             <div className="mt-6 grid gap-x-8 gap-y-5 sm:grid-cols-2">
-              {phase.steps.map((s) => (
+              {/* 2열로 감기면 좌→우→좌 순서라 읽는 차례가 흐려진다. 번호로 순서를 못박는다 */}
+              {phase.steps.map((s, i) => (
                 <div key={s.title} className="border-l-2 border-sand-200 pl-4">
-                  <p className="text-[0.95rem] font-medium text-ink-900">{s.title}</p>
+                  <p className="flex gap-1.5 text-[0.95rem] font-medium text-ink-900">
+                    <span className="text-wood-500">{i + 1}.</span>
+                    <span>{s.title}</span>
+                  </p>
                   <p className="mt-1.5 text-sm leading-relaxed text-ink-700/75">{s.desc}</p>
                 </div>
               ))}

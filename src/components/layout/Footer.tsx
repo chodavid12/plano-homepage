@@ -4,6 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Logo from "@/components/Logo";
 
+const SOCIALS = [
+  { label: "Instagram @planodesign.kr", href: "https://instagram.com/planodesign.kr" },
+  { label: "오늘의집", href: "https://ohou.se/experts/myhome/9104123" },
+  { label: "네이버 블로그", href: "https://blog.naver.com/planointerior" },
+];
+
 export default function Footer() {
   const pathname = usePathname();
   if (pathname === "/") return null; // 랜딩에서는 푸터 숨김
@@ -32,14 +38,20 @@ export default function Footer() {
 
         <div className="text-sm text-ink-700/80">
           <h3 className="overline mb-4 text-ink-700">FOLLOW</h3>
-          <a
-            href="https://instagram.com/planodesign.kr"
-            target="_blank"
-            rel="noreferrer"
-            className="underline-offset-4 hover:underline"
-          >
-            Instagram @planodesign.kr
-          </a>
+          <ul className="space-y-2">
+            {SOCIALS.map((s) => (
+              <li key={s.href}>
+                <a
+                  href={s.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline-offset-4 hover:underline"
+                >
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
