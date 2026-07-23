@@ -7,8 +7,8 @@ export default function ProjectCard({ project }: { project: Project }) {
   const hoverSrc = project.images.find((im) => im.imageUrl !== project.coverUrl)?.imageUrl;
   return (
     <Link href={`/portfolio/${project.no}`} className="block">
-      {/* 모바일은 세로로 큰 사진(4:3)으로 몰입감 ↑, 데스크톱(2단)은 16:10 유지 */}
-      <div className="group relative aspect-[4/3] overflow-hidden bg-sand-200 sm:aspect-[16/10]">
+      {/* 모바일은 정사각형(1:1)으로 사진을 크게, 데스크톱(2단)은 16:10 유지 */}
+      <div className="group relative aspect-square overflow-hidden bg-sand-200 sm:aspect-[16/10]">
         <Image
           src={project.coverUrl}
           alt={`${project.title} 대표 이미지`}

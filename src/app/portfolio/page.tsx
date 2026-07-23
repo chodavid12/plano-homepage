@@ -88,7 +88,7 @@ function SpaceView({
                   className="block animate-fade-up"
                   style={{ animationDelay: `${Math.min(i, 8) * 60}ms` }}
                 >
-                  <div className="group relative aspect-[4/3] overflow-hidden bg-sand-200 sm:aspect-[16/10]">
+                  <div className="group relative aspect-square overflow-hidden bg-sand-200 sm:aspect-[16/10]">
                     <Image
                       src={imageUrl}
                       alt={project.title}
