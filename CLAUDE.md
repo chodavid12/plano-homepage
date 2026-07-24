@@ -15,13 +15,20 @@ Next.js 14 (App Router) · TypeScript · Tailwind. 배포는 Vercel git 연동 �
 - API 라우트 없음(`src/app/api/` 자체가 없음). 상담은 노션 폼 링크로 나간다.
 - Supabase 는 걷어냈다(commit 8e6ee8f). 되살리지 말 것.
 
-### 동기화
+### 동기화 → 배포
+
+노션 반영은 원스텝 파이프라인 하나로 끝낸다(동기화→치수→빌드→커밋→푸시, 변경 없으면 조기 종료).
+`notion-sync` 스킬이 이걸 감싼다("노션 동기화" 요청 시 자동).
 
 ```bash
-npm run sync          # 증분 — 변경 없으면 ~2초
-npm run sync -- --dry # 미리보기(다운로드 없음)
-npm run sync -- --force  # 전체 재다운로드 (오래 걸림)
+bash scripts/sync-deploy.sh            # 전체 (동기화+배포)
+bash scripts/sync-deploy.sh --dry      # 미리보기(다운로드·커밋 없음)
+bash scripts/sync-deploy.sh --no-push  # 커밋까지만
+bash scripts/sync-deploy.sh --force    # 전체 재다운로드(오래 걸림)
 ```
+
+동기화만 따로 돌리려면 `npm run sync`(증분 · 변경 없으면 ~2초). 스크립트는 여기에 치수
+보정·빌드·시크릿 차단·커밋·푸시를 더한 것이다.
 
 - 증분 판단은 `notionLastEditedAt`. 변경 없는 현장은 이미지 재다운로드를 건너뛴다.
 - `no` 는 노션 pageId 에 고정 → 공유 URL 이 안 바뀐다. 표시 순서는 `sortOrder`(생성일시 내림차순).
