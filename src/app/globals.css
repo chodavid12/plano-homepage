@@ -99,13 +99,13 @@
   }
 }
 
-/* 히어로 Ken Burns — 우측 무빙(카메라 오른쪽 = 이미지 왼쪽 이동), 4초 왕복 */
-@keyframes heroPanRight {
-  from { transform: scale(1.12) translateX(3%); }
-  to   { transform: scale(1.12) translateX(-3%); }
+/* 히어로 Ken Burns — 느린 줌인 1회 후 정지(왕복 X, 끝 상태 유지) */
+@keyframes heroZoomIn {
+  from { transform: scale(1); }
+  to   { transform: scale(1.12); }
 }
 .animate-hero-pan {
-  animation: heroPanRight 4s ease-in-out infinite alternate;
+  animation: heroZoomIn 12s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   will-change: transform;
 }
 @media (prefers-reduced-motion: reduce) {
