@@ -98,3 +98,16 @@
     opacity: 0;
   }
 }
+
+/* 히어로 Ken Burns — 우측 무빙(카메라 오른쪽 = 이미지 왼쪽 이동), 4초 왕복 */
+@keyframes heroPanRight {
+  from { transform: scale(1.12) translateX(3%); }
+  to   { transform: scale(1.12) translateX(-3%); }
+}
+.animate-hero-pan {
+  animation: heroPanRight 4s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-pan { animation: none; }
+}
