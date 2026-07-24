@@ -7,7 +7,7 @@ export default function HomePage() {
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
       {/* 배경: public/hero.jpg 가 있으면 그것을, 없으면 시드 SVG로 폴백 */}
       <div
-        className="absolute inset-0 animate-hero-pan bg-sand-200 bg-cover bg-center"
+        className="absolute inset-0 animate-hero-zoom bg-sand-200 bg-cover bg-center"
         style={{ backgroundImage: "url('/hero.jpg'), url('/seed/hero.svg')" }}
         aria-hidden="true"
       />

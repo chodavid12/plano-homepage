@@ -104,10 +104,10 @@
   from { transform: scale(1); }
   to   { transform: scale(1.12); }
 }
-.animate-hero-pan {
+/* 1회성 애니메이션이라 will-change 는 두지 않는다(끝난 뒤 GPU 레이어 영구 점유 방지) */
+.animate-hero-zoom {
   animation: heroZoomIn 12s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  will-change: transform;
 }
 @media (prefers-reduced-motion: reduce) {
-  .animate-hero-pan { animation: none; }
+  .animate-hero-zoom { animation: none; }
 }

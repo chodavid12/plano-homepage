@@ -4,8 +4,8 @@ import ProcessStepper from "@/components/consultant/ProcessStepper";
 const CONSULT_FORM_URL =
   "https://copper-curtain-f8f.notion.site/1f2b42808b588041a20de7f53366e88d?pvs=105";
 
-// 지점 — 네이버 플레이스 공유 링크(naver.me 단축). address 는 있으면 표시, 없으면 지점명만.
-const BRANCHES: { name: string; address?: string; map: string }[] = [
+// 지점 — 네이버 플레이스 공유 링크(naver.me 단축)
+const BRANCHES = [
   { name: "흑석점", map: "https://naver.me/xGIEU2nU" },
   { name: "마포점", map: "https://naver.me/FNIDfHEC" },
 ];
@@ -81,10 +81,7 @@ export default function ConsultantPage() {
                   <path d="M12 21s-6-5.2-6-10a6 6 0 1112 0c0 4.8-6 10-6 10z" strokeLinejoin="round" />
                   <circle cx="12" cy="11" r="2.2" />
                 </svg>
-                <span>
-                  <span className="block text-base font-medium text-ink-900">{b.name}</span>
-                  {b.address && <span className="mt-0.5 block text-sm text-ink-700/70">{b.address}</span>}
-                </span>
+                <span className="block text-base font-medium text-ink-900">{b.name}</span>
               </span>
               <span className="flex shrink-0 items-center gap-1.5 text-xs uppercase tracking-[0.12em] text-ink-700/70 transition-colors group-hover:text-ink-900">
                 네이버 지도

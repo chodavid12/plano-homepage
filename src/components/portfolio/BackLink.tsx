@@ -11,11 +11,19 @@ export default function BackLink() {
   const router = useRouter();
 
   const handleClick = () => {
-    if (typeof window !== "undefined" && window.history.length > 1) {
-      router.back();
-    } else {
-      router.push("/portfolio");
+    // 사이트 안(같은 오리진)에서 들어왔을 때만 back() — 목록의 필터·스크롤 유지.
+    // 외부(구글·SNS)나 새 탭·공유 링크로 바로 들어온 경우엔 back()이 사이트 밖으로
+    // 나가버리므로 /portfolio 로 보낸다. history.length 는 외부 항목도 세어 판정 불가.
+    let internal = false;
+    if (typeof document !== "undefined" && document.referrer) {
+      try {
+        internal = new URL(document.referrer).origin === window.location.origin;
+      } catch {
+        internal = false;
+      }
     }
+    if (internal) router.back();
+    else router.push("/portfolio");
   };
 
   return (

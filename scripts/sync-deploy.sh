@@ -28,31 +28,28 @@ if [ "$DRY" = "1" ]; then
   exit 0
 fi
 
-# ── 2. 동기화 (변경분만 다운로드) ────────────────────────────────
+# ── 2. 동기화 (변경분만 다운로드 · 다운로드 시 이미지 치수도 기록) ──
 node --env-file-if-exists=.env.local scripts/notion-sync.mjs $FORCE 2>&1 | tee /tmp/plano-sync.log
 SUMMARY=$(grep '현장 (재사용' /tmp/plano-sync.log | tail -1 | sed 's/ → .*//; s/^✓ //' || true)
 
-# ── 3. 새 이미지 치수 보정(누락분만, 네트워크 없음) ──────────────
-node scripts/add-dimensions.mjs >/dev/null
-
-# ── 4. 변경 없으면 종료 ──────────────────────────────────────────
+# ── 3. 변경 없으면 종료 ──────────────────────────────────────────
 if git diff --quiet && git diff --cached --quiet; then
   echo "✓ 노션 변경 없음 — 배포할 것 없음."
   exit 0
 fi
 
-# ── 5. 빌드 검증 (.next 오염 방지) ───────────────────────────────
+# ── 4. 빌드 검증 (.next 오염 방지) ───────────────────────────────
 rm -rf .next
 if ! npm run build > /tmp/plano-build.log 2>&1; then
   echo "✗ 빌드 실패 — 커밋 중단:"; tail -25 /tmp/plano-build.log; exit 1
 fi
 
-# ── 6. 시크릿·대용량 스테이징 차단 ───────────────────────────────
+# ── 5. 시크릿·대용량 스테이징 차단 ───────────────────────────────
 git add -A
 LEAK=$(git diff --cached --name-only | grep -c '\.env\|포트폴리오/' || true)
 [ "$LEAK" = "0" ] || { echo "✗ 민감/대용량 파일 스테이징 감지 — 중단"; git reset -q; exit 1; }
 
-# ── 7. 커밋 (+ 푸시 → Vercel 자동 배포) ──────────────────────────
+# ── 6. 커밋 (+ 푸시 → Vercel 자동 배포) ──────────────────────────
 git commit -q -m "sync: 노션 포트폴리오 최신 반영 ($(date +%Y-%m-%d))
 
 ${SUMMARY:-변경 반영}

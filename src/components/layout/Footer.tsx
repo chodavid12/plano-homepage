@@ -13,6 +13,9 @@ const SOCIALS = [
 export default function Footer() {
   const pathname = usePathname();
   if (pathname === "/") return null; // 랜딩에서는 푸터 숨김
+  // 플로팅 '1:1 문의'가 뜨는 페이지에서만 저작권 줄이 가려지므로 그때만 하단 여백 확보.
+  // FloatingInquiry 는 '/'·'/consultant' 에서 숨으므로 상담 페이지엔 여백 불필요.
+  const floatingHidden = pathname.startsWith("/consultant");
 
   return (
     <footer className="mt-24 border-t border-sand-200 bg-sand-100">
@@ -57,7 +60,11 @@ export default function Footer() {
 
       <div className="border-t border-sand-200">
         {/* 모바일은 우하단 플로팅 '1:1 문의' 버튼이 저작권 줄을 가리므로 하단 여백 확보 */}
-        <div className="container-site flex flex-col gap-2 pt-5 pb-24 text-xs text-ink-700/50 sm:flex-row sm:items-center sm:justify-between sm:py-5">
+        <div
+          className={`container-site flex flex-col gap-2 pt-5 text-xs text-ink-700/50 sm:flex-row sm:items-center sm:justify-between sm:py-5 ${
+            floatingHidden ? "pb-5" : "pb-24"
+          }`}
+        >
           <span>© {new Date().getFullYear()} PLANO DESIGN. All rights reserved.</span>
           <span>플라노디자인 · 사업자정보 기재 예정</span>
         </div>

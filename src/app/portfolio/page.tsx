@@ -33,11 +33,11 @@ export default async function PortfolioPage({ searchParams }: Props) {
       <PortfolioControls rooms={rooms} />
 
       <div className="mt-12">
-        {isSpace ? (
+        {filtered.length === 0 ? (
+          <p className="py-24 text-center text-ink-700/50">검색 결과가 없습니다.</p>
+        ) : isSpace ? (
           // 세부 공간별 보기 — 프로젝트가 아니라 사진 갤러리(선택한 공간의 사진 전부)
           <SpaceGallery photos={spacePhotos(filtered, searchParams.room)} />
-        ) : filtered.length === 0 ? (
-          <p className="py-24 text-center text-ink-700/50">검색 결과가 없습니다.</p>
         ) : (
           <div className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2">
             {filtered.map((p, i) => (
