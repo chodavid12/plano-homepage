@@ -8,7 +8,7 @@ const CONSULT_FORM_URL =
 // 지점 — 네이버 플레이스 공유 링크(naver.me 단축)
 const BRANCHES = [
   { name: "흑석점", map: "https://naver.me/xGIEU2nU" },
-  { name: "마포점", map: "https://naver.me/FNIDfHEC" },
+  { name: "마포점", map: "https://naver.me/5dhBC6qL" },
 ];
 
 export const metadata: Metadata = {
