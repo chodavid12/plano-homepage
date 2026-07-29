@@ -136,19 +136,22 @@ export default function AboutPage() {
 
       {/* ── 본문 — 좌측 레일 고정 / 우측 텍스트 스크롤 ──────────────── */}
       <div className="border-t border-sand-200 bg-sand-100/40">
-        {PRINCIPLES.map((p) => {
-          // 본문이 짧은 항목(02)은 세로 이미지를 쓰면 우측에 빈 공간이 크게 남는다.
-          // 분량에 따라 이미지 비율을 맞춰 좌우 높이를 비슷하게 유지.
-          const tall = p.paragraphs.length >= 3 || Boolean(p.highlight);
+        {PRINCIPLES.map((p, i) => {
+          // 지그재그 — 홀수 항목(02)은 이미지를 오른쪽으로 보내 일렬 느낌을 깬다.
+          const flipped = i % 2 === 1;
           return (
           <section
             key={p.no}
             id={`principle-${p.no}`}
             className="container-site scroll-mt-24 border-b border-sand-200 py-20 last:border-b-0 md:py-28"
           >
-            <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
-              {/* 좌 — 번호 · 이미지 (스크롤 중 고정) */}
-              <div className="lg:sticky lg:top-28 lg:self-start">
+            <div
+              className={`grid gap-10 lg:gap-20 ${
+                flipped ? "lg:grid-cols-[1.15fr_0.85fr]" : "lg:grid-cols-[0.85fr_1.15fr]"
+              }`}
+            >
+              {/* 번호 · 이미지 (스크롤 중 고정) — flipped 면 데스크톱에서 우측 */}
+              <div className={`lg:sticky lg:top-28 lg:self-start ${flipped ? "lg:order-2" : "lg:order-1"}`}>
                 <BlurFade inView>
                   <div className="flex items-center gap-5">
                     <span
@@ -160,11 +163,7 @@ export default function AboutPage() {
                     <span className="h-px flex-1 bg-sand-300" />
                   </div>
 
-                  <div
-                    className={`relative mt-7 overflow-hidden bg-sand-200 ${
-                      tall ? "aspect-[4/5]" : "aspect-[4/3]"
-                    }`}
-                  >
+                  <div className="relative mt-7 aspect-[4/5] overflow-hidden bg-sand-200">
                     <Image
                       src={p.image}
                       alt={p.title}
@@ -177,8 +176,8 @@ export default function AboutPage() {
                 </BlurFade>
               </div>
 
-              {/* 우 — 제목 · 본문 · 결론 */}
-              <div className="lg:pt-3">
+              {/* 제목 · 본문 · 결론 — flipped 면 데스크톱에서 좌측 */}
+              <div className={`lg:pt-3 ${flipped ? "lg:order-1" : "lg:order-2"}`}>
                 <BlurFade delay={0.1} inView>
                   <h2 className="text-[1.75rem] font-semibold leading-snug tracking-tight text-ink-900 md:text-[2.15rem]">
                     {p.title}
