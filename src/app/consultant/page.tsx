@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import ProcessStepper from "@/components/consultant/ProcessStepper";
 
 const CONSULT_FORM_URL =
@@ -33,26 +34,41 @@ export default function ConsultantPage() {
         <ProcessStepper />
       </section>
 
-      {/* 상담 신청 — 노션 폼으로 연결 */}
-      <section className="mx-auto mt-20 max-w-xl border-t border-sand-200 pt-16 text-center md:mt-24 md:pt-20">
-        <p className="overline">Get in touch</p>
-        <h2 className="mt-3 text-2xl md:text-3xl">지금 상담 신청하기</h2>
-        <p className="mt-4 text-sm font-light leading-relaxed text-ink-700/70">
-          아래 버튼을 눌러 상담 신청서를 작성해 주세요.
-          <br className="hidden sm:block" />
-          담당자가 확인 후 연락드립니다.
-        </p>
-        <a
-          href={CONSULT_FORM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-dark mt-9 min-w-[240px]"
-        >
-          상담 신청하기
-          <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={1.6}>
-            <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </a>
+      {/* 상담 신청 — 잡지풍 이미지 밴드(사진 위 스크림 + 흰 텍스트). 노션 폼 연결 */}
+      {/* 컨테이너 패딩을 상쇄해 좌우로 넓게(풀블리드 느낌) */}
+      <section className="relative mt-20 -mx-5 overflow-hidden sm:-mx-8 md:mt-24 lg:-mx-12">
+        <Image
+          src="/consult.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        {/* 스크림 — 사진을 눌러 텍스트 가독성 확보(잡지 표지 어법) */}
+        <div className="absolute inset-0 bg-ink-900/55" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 via-transparent to-ink-900/20" aria-hidden="true" />
+
+        <div className="relative z-10 mx-auto flex max-w-xl flex-col items-center px-6 py-24 text-center md:py-32">
+          <p className="overline text-wood-400">Get in touch</p>
+          {/* globals 가 h2 에 ink-900 강제 → 어두운 배경이라 text-white 명시 */}
+          <h2 className="mt-3 text-2xl text-white drop-shadow-sm md:text-3xl">지금 상담 신청하기</h2>
+          <p className="mt-4 text-sm font-light leading-relaxed text-white/75">
+            아래 버튼을 눌러 상담 신청서를 작성해 주세요.
+            <br className="hidden sm:block" />
+            담당자가 확인 후 연락드립니다.
+          </p>
+          <a
+            href={CONSULT_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-light mt-9 min-w-[240px]"
+          >
+            상담 신청하기
+            <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={1.6}>
+              <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
+        </div>
       </section>
 
       {/* 찾아오시는 길 — 관심이 생긴 뒤 확인하는 위치·안심 정보. CTA 다음, 푸터 CONTACT 위 */}
