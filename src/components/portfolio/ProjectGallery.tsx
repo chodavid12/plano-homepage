@@ -87,63 +87,25 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
   };
 
   return (
-    // 모바일은 순서(order)로, 데스크톱(lg)은 DOM 순서 그대로 2단 배치.
-    // 모바일 순서: 제목 → 큰 사진 → 공간탭 → 썸네일 → 사양(스펙)
-    //   고객은 사진을 보러 들어오므로, 스펙표가 사진을 밀어내지 않게 사진을 위로 올린다.
-    // 데스크톱: 좌열(제목·사양·탭·썸네일) + 우열(메인 이미지, 전체 높이 span)
-    <div className="grid gap-x-8 gap-y-7 lg:grid-cols-[minmax(0,3.5fr)_minmax(0,8.5fr)] lg:items-start lg:gap-y-8">
-      {/* 제목 */}
-      <div className="order-1 animate-fade-up lg:order-none lg:col-start-1">
+    // 릴스퀘어식 — 세로 한 컬럼: 제목·사양·탭·썸네일 필름스트립 → 큰 메인 이미지.
+    // order 로 모바일만 이미지를 위로(제목 바로 아래) 올린다. 데스크톱은 이미지가 맨 아래 큼직하게.
+    <div className="flex flex-col gap-6">
+      {/* 제목 (order-1) */}
+      <div className="order-1 animate-fade-up">
         <h1 className="text-2xl tracking-tight text-ink-900 sm:text-3xl md:text-4xl">{title}</h1>
-        {subtitle && (
-          <p className="mt-3 text-base font-light text-ink-700/80">{subtitle}</p>
-        )}
+        {subtitle && <p className="mt-3 text-base font-light text-ink-700/80">{subtitle}</p>}
       </div>
 
-      {/* 메인 이미지 — 모바일에선 제목 바로 아래 */}
-      <div className="order-2 lg:order-none lg:col-start-2 lg:row-span-full">
-        {/* 프레임을 이미지 비율에 맞춘다(세로컷 잘림 방지).
-            세로 사진이 화면을 다 잡아먹지 않도록 높이 상한(MAX_H)을 두고,
-            그만큼 폭을 줄여 비율은 그대로 유지한다. */}
-        <div
-          className="relative mx-auto w-full overflow-hidden bg-sand-200"
-          style={{
-            aspectRatio: `${activeW} / ${activeH}`,
-            maxWidth: `calc(${MAX_H} * ${activeW / activeH})`,
-          }}
-        >
-          <Image
-            src={active.imageUrl}
-            alt={`${title} ${imgIdx + 1}`}
-            fill
-            sizes="(max-width: 1024px) 100vw, 800px"
-            className="object-cover"
-            priority
-          />
-          {items.length > 1 && (
-            <>
-              <NavButton dir="prev" onClick={() => move(-1)} />
-              <NavButton dir="next" onClick={() => move(1)} />
-              <div className="absolute bottom-3 right-3 rounded-full bg-ink-900/55 px-3 py-1 text-xs text-white">
-                {imgIdx + 1} / {items.length}
-              </div>
-            </>
-          )}
-        </div>
-      </div>
-
-      {/* 사양 — 면적/마감재. 데스크톱은 제목 아래, 모바일은 맨 끝 */}
+      {/* 사양 — 모바일 맨 끝, 데스크톱 제목 아래 */}
       {(meta.length > 0 || orderedMaterials.length > 0) && (
-        <dl className="order-5 divide-y divide-sand-200/80 border-y border-sand-200 lg:order-none lg:col-start-1">
+        <dl className="order-5 divide-y divide-sand-200/80 border-y border-sand-200 lg:order-2">
           {meta.map((m) => (
             <SpecRow key={m.label} label={m.label}>
               <span className="font-medium text-ink-900">{m.value}</span>
             </SpecRow>
           ))}
-
           {orderedMaterials.map(([cat, names]) => (
             <SpecRow key={cat} label={cat}>
-              {/* 자재는 줄바꿈으로 흘려 넣는다 — 한 줄씩 쌓으면 세로가 너무 길어진다 */}
               {names.map((n, i) => (
                 <span key={n}>
                   {i > 0 && <span className="text-ink-700/45">, </span>}
@@ -155,9 +117,9 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
         </dl>
       )}
 
-      {/* 공간탭 */}
+      {/* 공간탭 (order-3) */}
       {showTabs && (
-        <div className="no-scrollbar order-3 -mx-5 flex gap-x-5 gap-y-2 overflow-x-auto px-5 text-sm sm:mx-0 sm:flex-wrap sm:px-0 lg:order-none lg:col-start-1">
+        <div className="no-scrollbar order-3 -mx-5 flex gap-x-5 gap-y-2 overflow-x-auto px-5 text-sm sm:mx-0 sm:flex-wrap sm:px-0">
           {rooms.map((r, i) => (
             <button
               key={r.room}
@@ -173,29 +135,52 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
         </div>
       )}
 
-      {/* 썸네일 그리드 */}
-      <div className="order-4 lg:order-none lg:col-start-1">
-        <div className="grid grid-cols-5 gap-2 sm:grid-cols-4 sm:gap-2.5">
-          {items.map((im, i) => (
-            <button
-              key={im.id}
-              type="button"
-              onClick={() => setImgIdx(i)}
-              className={`relative aspect-[4/3] overflow-hidden transition-opacity ${
-                i === imgIdx
-                  ? "ring-2 ring-ink-900 ring-offset-2 ring-offset-sand-50"
-                  : "opacity-55 hover:opacity-100"
-              }`}
-            >
-              <Image
-                src={im.imageUrl}
-                alt={`썸네일 ${i + 1}`}
-                fill
-                sizes="120px"
-                className="object-cover"
-              />
-            </button>
-          ))}
+      {/* 썸네일 필름스트립 — 가로 스크롤 (order-4) */}
+      <div className="no-scrollbar order-4 -mx-5 flex gap-2 overflow-x-auto px-5 sm:mx-0 sm:gap-2.5 sm:px-0">
+        {items.map((im, i) => (
+          <button
+            key={im.id}
+            type="button"
+            onClick={() => setImgIdx(i)}
+            className={`relative aspect-[4/3] w-20 shrink-0 overflow-hidden transition-opacity sm:w-24 md:w-28 ${
+              i === imgIdx
+                ? "ring-2 ring-ink-900 ring-offset-2 ring-offset-sand-50"
+                : "opacity-55 hover:opacity-100"
+            }`}
+          >
+            <Image src={im.imageUrl} alt={`썸네일 ${i + 1}`} fill sizes="120px" className="object-cover" />
+          </button>
+        ))}
+      </div>
+
+      {/* 메인 이미지 — 모바일 제목 바로 아래(order-2), 데스크톱 맨 아래 큼직(order-5) */}
+      <div className="order-2 lg:order-5">
+        {/* 프레임을 이미지 비율에 맞춘다(세로컷 잘림 방지). 높이 상한(MAX_H)으로
+            세로 사진이 화면을 독점하지 않게 하고, 폭을 줄여 비율 유지. */}
+        <div
+          className="relative mx-auto w-full overflow-hidden bg-sand-200"
+          style={{
+            aspectRatio: `${activeW} / ${activeH}`,
+            maxWidth: `calc(${MAX_H} * ${activeW / activeH})`,
+          }}
+        >
+          <Image
+            src={active.imageUrl}
+            alt={`${title} ${imgIdx + 1}`}
+            fill
+            sizes="(max-width: 1024px) 100vw, 1100px"
+            className="object-cover"
+            priority
+          />
+          {items.length > 1 && (
+            <>
+              <NavButton dir="prev" onClick={() => move(-1)} />
+              <NavButton dir="next" onClick={() => move(1)} />
+              <div className="absolute bottom-3 right-3 rounded-full bg-ink-900/55 px-3 py-1 text-xs text-white">
+                {imgIdx + 1} / {items.length}
+              </div>
+            </>
+          )}
         </div>
       </div>
     </div>
