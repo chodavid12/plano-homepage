@@ -87,74 +87,10 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
   };
 
   return (
-    // 릴스퀘어식 — 세로 한 컬럼: 제목·사양·탭·썸네일 필름스트립 → 큰 메인 이미지.
-    // order 로 모바일만 이미지를 위로(제목 바로 아래) 올린다. 데스크톱은 이미지가 맨 아래 큼직하게.
+    // 안도하다식 — 진입은 큰 히어로 이미지 + 제목 오버레이. 이후 공간탭·필름스트립·사양.
     <div className="flex flex-col gap-6">
-      {/* 제목 (order-1) */}
-      <div className="order-1 animate-fade-up">
-        <h1 className="text-2xl tracking-tight text-ink-900 sm:text-3xl md:text-4xl">{title}</h1>
-        {subtitle && <p className="mt-3 text-base font-light text-ink-700/80">{subtitle}</p>}
-      </div>
-
-      {/* 사양 — 모바일 맨 끝, 데스크톱 제목 아래 */}
-      {(meta.length > 0 || orderedMaterials.length > 0) && (
-        <dl className="order-5 divide-y divide-sand-200/80 border-y border-sand-200 lg:order-2">
-          {meta.map((m) => (
-            <SpecRow key={m.label} label={m.label}>
-              <span className="font-medium text-ink-900">{m.value}</span>
-            </SpecRow>
-          ))}
-          {orderedMaterials.map(([cat, names]) => (
-            <SpecRow key={cat} label={cat}>
-              {names.map((n, i) => (
-                <span key={n}>
-                  {i > 0 && <span className="text-ink-700/45">, </span>}
-                  <MaterialName name={n} />
-                </span>
-              ))}
-            </SpecRow>
-          ))}
-        </dl>
-      )}
-
-      {/* 공간탭 (order-3) */}
-      {showTabs && (
-        <div className="no-scrollbar order-3 -mx-5 flex gap-x-5 gap-y-2 overflow-x-auto px-5 text-sm sm:mx-0 sm:flex-wrap sm:px-0">
-          {rooms.map((r, i) => (
-            <button
-              key={r.room}
-              type="button"
-              onClick={() => selectRoom(i)}
-              className={`shrink-0 py-1 text-xs uppercase tracking-[0.12em] transition-colors ${
-                i === roomIdx ? "text-ink-900" : "text-ink-700/45 hover:text-ink-900"
-              }`}
-            >
-              {r.room}
-            </button>
-          ))}
-        </div>
-      )}
-
-      {/* 썸네일 필름스트립 — 가로 스크롤 (order-4) */}
-      <div className="no-scrollbar order-4 -mx-5 flex gap-2 overflow-x-auto px-5 sm:mx-0 sm:gap-2.5 sm:px-0">
-        {items.map((im, i) => (
-          <button
-            key={im.id}
-            type="button"
-            onClick={() => setImgIdx(i)}
-            className={`relative aspect-[4/3] w-20 shrink-0 overflow-hidden transition-opacity sm:w-24 md:w-28 ${
-              i === imgIdx
-                ? "ring-2 ring-ink-900 ring-offset-2 ring-offset-sand-50"
-                : "opacity-55 hover:opacity-100"
-            }`}
-          >
-            <Image src={im.imageUrl} alt={`썸네일 ${i + 1}`} fill sizes="120px" className="object-cover" />
-          </button>
-        ))}
-      </div>
-
-      {/* 메인 이미지 — 모바일 제목 바로 아래(order-2), 데스크톱 맨 아래 큼직(order-5) */}
-      <div className="order-2 lg:order-5">
+      {/* 히어로 — 메인 이미지 크게, 제목을 사진 위에 얹는다 */}
+      <div className="animate-fade-up">
         {/* 프레임을 이미지 비율에 맞춘다(세로컷 잘림 방지). 높이 상한(MAX_H)으로
             세로 사진이 화면을 독점하지 않게 하고, 폭을 줄여 비율 유지. */}
         <div
@@ -172,17 +108,83 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
             className="object-cover"
             priority
           />
+
+          {/* 하단 스크림 + 제목(사진 위 흰 글씨) */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink-900/75 via-ink-900/20 to-transparent px-5 pb-5 pt-24 sm:px-7 sm:pb-7">
+            <h1 className="text-2xl font-medium tracking-tight text-white drop-shadow-md sm:text-3xl md:text-4xl">
+              {title}
+            </h1>
+            {subtitle && <p className="mt-1.5 text-sm font-light text-white/80 sm:text-base">{subtitle}</p>}
+          </div>
+
           {items.length > 1 && (
             <>
               <NavButton dir="prev" onClick={() => move(-1)} />
               <NavButton dir="next" onClick={() => move(1)} />
-              <div className="absolute bottom-3 right-3 rounded-full bg-ink-900/55 px-3 py-1 text-xs text-white">
+              <div className="absolute right-3 top-3 rounded-full bg-ink-900/55 px-3 py-1 text-xs text-white">
                 {imgIdx + 1} / {items.length}
               </div>
             </>
           )}
         </div>
       </div>
+
+      {/* 공간탭 */}
+      {showTabs && (
+        <div className="no-scrollbar -mx-5 flex gap-x-5 gap-y-2 overflow-x-auto px-5 text-sm sm:mx-0 sm:flex-wrap sm:px-0">
+          {rooms.map((r, i) => (
+            <button
+              key={r.room}
+              type="button"
+              onClick={() => selectRoom(i)}
+              className={`shrink-0 py-1 text-xs uppercase tracking-[0.12em] transition-colors ${
+                i === roomIdx ? "text-ink-900" : "text-ink-700/45 hover:text-ink-900"
+              }`}
+            >
+              {r.room}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* 썸네일 필름스트립 — 가로 스크롤 */}
+      <div className="no-scrollbar -mx-5 flex gap-2 overflow-x-auto px-5 sm:mx-0 sm:gap-2.5 sm:px-0">
+        {items.map((im, i) => (
+          <button
+            key={im.id}
+            type="button"
+            onClick={() => setImgIdx(i)}
+            className={`relative aspect-[4/3] w-20 shrink-0 overflow-hidden transition-opacity sm:w-24 md:w-28 ${
+              i === imgIdx
+                ? "ring-2 ring-ink-900 ring-offset-2 ring-offset-sand-50"
+                : "opacity-55 hover:opacity-100"
+            }`}
+          >
+            <Image src={im.imageUrl} alt={`썸네일 ${i + 1}`} fill sizes="120px" className="object-cover" />
+          </button>
+        ))}
+      </div>
+
+      {/* 사양 — 면적/마감재 */}
+      {(meta.length > 0 || orderedMaterials.length > 0) && (
+        <dl className="divide-y divide-sand-200/80 border-y border-sand-200">
+          {meta.map((m) => (
+            <SpecRow key={m.label} label={m.label}>
+              <span className="font-medium text-ink-900">{m.value}</span>
+            </SpecRow>
+          ))}
+          {orderedMaterials.map(([cat, names]) => (
+            <SpecRow key={cat} label={cat}>
+              {names.map((n, i) => (
+                <span key={n}>
+                  {i > 0 && <span className="text-ink-700/45">, </span>}
+                  <MaterialName name={n} />
+                </span>
+              ))}
+            </SpecRow>
+          ))}
+        </dl>
+      )}
     </div>
   );
 }
