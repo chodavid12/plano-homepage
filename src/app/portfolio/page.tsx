@@ -39,7 +39,7 @@ export default async function PortfolioPage({ searchParams }: Props) {
           // 세부 공간별 보기 — 프로젝트가 아니라 사진 갤러리(선택한 공간의 사진 전부)
           <SpaceGallery photos={spacePhotos(filtered, searchParams.room)} />
         ) : (
-          <div className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-2 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
             {filtered.map((p, i) => (
               <div
                 key={p.no}
