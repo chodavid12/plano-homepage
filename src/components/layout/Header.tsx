@@ -17,6 +17,9 @@ export default function Header() {
 
   // 랜딩(스플래시)에서는 헤더 숨김
   const hidden = pathname === "/";
+  // 포트폴리오는 넓게(사진 극대화) — 헤더도 그 폭에 맞춰 로고·nav 를 목록 좌우 끝에 정렬
+  const wide = pathname.startsWith("/portfolio");
+  const frame = wide ? "mx-auto max-w-[1800px] px-3 sm:px-5" : "container-site";
 
   useEffect(() => {
     setOpen(false);
@@ -26,7 +29,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-sand-200 bg-sand-50/90 backdrop-blur">
-      <div className="container-site flex h-[var(--header-h)] items-center justify-between">
+      <div className={`${frame} flex h-[var(--header-h)] items-center justify-between`}>
         <Link href="/" className="text-ink-900 transition-opacity hover:opacity-70">
           <Logo />
         </Link>

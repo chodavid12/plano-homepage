@@ -24,7 +24,8 @@ export default async function PortfolioPage({ searchParams }: Props) {
   const rooms = availableRooms(all);
 
   return (
-    <div className="container-site py-16 md:py-24">
+    // 포트폴리오는 사진이 핵심 → 전용으로 넓게(좌우 여백 최소). 헤더·컨트롤·그리드 같은 폭 정렬.
+    <div className="mx-auto max-w-[1800px] px-3 py-16 sm:px-5 md:py-24">
       <header className="mb-12">
         <p className="overline">Portfolio</p>
         <h1 className="mt-3 text-3xl tracking-tight md:text-4xl">프로젝트</h1>
