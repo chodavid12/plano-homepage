@@ -18,13 +18,12 @@ interface Props {
   materials?: Record<string, string[]>;
 }
 
-// 마감재 표시 순서 (노션 속성 순서와 무관하게 고정)
 const MATERIAL_ORDER = ["마루", "타일", "도배", "필름", "가구재"];
 const AUTOPLAY_MS = 4000; // 히어로 자동 전환 간격
+const HERO_MAX = 5; // 히어로 캐러셀에 쓸 대표 컷 수(나머지는 아래 갤러리)
 
-// 상세 갤러리 — 안도하다식: 자동 캐러셀 히어로 + 프로스티드 정보카드 + 9:16 3열 + 클릭 라이트박스
+// 상세 갤러리 — 데스크톱: 유리카드+9:16 3열 / 모바일: 풀스크린 히어로+세로 스트림. 공통 라이트박스.
 export default function ProjectGallery({ images, title, subtitle, meta, materials }: Props) {
-  // 공간(room) 순서 유지하며 그룹화 ('대표'는 커버/호버용 → 탭에서 제외)
   const rooms = useMemo(() => {
     const visible = images.filter((im) => im.room !== "대표");
     const src = visible.length ? visible : images;
@@ -42,15 +41,12 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
     return grouped;
   }, [images]);
 
-  // 마감재 — 고정 순서로 정렬(노션에 없는 카테고리는 제외)
   const orderedMaterials = useMemo(() => {
     const src = materials || {};
     const known = MATERIAL_ORDER.filter((c) => src[c]?.length).map(
       (c) => [c, src[c]] as [string, string[]],
     );
-    const rest = Object.entries(src).filter(
-      ([c, v]) => !MATERIAL_ORDER.includes(c) && v?.length,
-    );
+    const rest = Object.entries(src).filter(([c, v]) => !MATERIAL_ORDER.includes(c) && v?.length);
     return [...known, ...rest];
   }, [materials]);
 
@@ -61,13 +57,14 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
   const current = rooms[Math.min(roomIdx, rooms.length - 1)];
   const items = current?.items ?? [];
   const total = items.length;
+  const heroCount = Math.min(total, HERO_MAX);
 
-  // 히어로 자동 전환 (사진 2장 이상일 때, 라이트박스 열려있으면 멈춤)
+  // 히어로 자동 전환 (라이트박스 열려있으면 멈춤)
   useEffect(() => {
-    if (total <= 1 || lightbox !== null) return;
-    const t = setInterval(() => setHeroIdx((i) => (i + 1) % total), AUTOPLAY_MS);
+    if (heroCount <= 1 || lightbox !== null) return;
+    const t = setInterval(() => setHeroIdx((i) => (i + 1) % heroCount), AUTOPLAY_MS);
     return () => clearInterval(t);
-  }, [total, lightbox]);
+  }, [heroCount, lightbox]);
 
   const closeLightbox = useCallback(() => setLightbox(null), []);
   const moveLightbox = useCallback(
@@ -75,7 +72,6 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
     [total],
   );
 
-  // 라이트박스 — Esc 닫기 / 좌우 이동 + 배경 스크롤 잠금
   useEffect(() => {
     if (lightbox === null) return;
     const onKey = (e: KeyboardEvent) => {
@@ -96,21 +92,41 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
   }
 
   const showTabs = rooms.length > 1;
-  const hero = items[Math.min(heroIdx, total - 1)];
+  const hero = items[Math.min(heroIdx, heroCount - 1)];
 
   const selectRoom = (i: number) => {
     setRoomIdx(i);
     setHeroIdx(0);
   };
 
+  const FilterButtons = ({ pill }: { pill?: boolean }) =>
+    showTabs ? (
+      <div className={pill ? "flex flex-wrap gap-1.5" : "no-scrollbar flex gap-2 overflow-x-auto"}>
+        {rooms.map((r, i) => (
+          <button
+            key={r.room}
+            type="button"
+            onClick={() => selectRoom(i)}
+            className={`shrink-0 rounded-full px-3.5 py-1.5 text-xs transition-colors ${
+              i === roomIdx
+                ? "bg-ink-900 text-white"
+                : "bg-sand-200/70 text-ink-700 hover:bg-sand-300/70"
+            }`}
+          >
+            {r.room}
+          </button>
+        ))}
+      </div>
+    ) : null;
+
   return (
     <div className="flex flex-col">
-      {/* ── 히어로 : 자동 캐러셀 + 프로스티드 정보 카드 ─────────────── */}
+      {/* ── 히어로 : 모바일 풀스크린 / 데스크톱 82vh + 유리카드 ─────── */}
       <div className="relative">
         <button
           type="button"
           onClick={() => setLightbox(heroIdx)}
-          className="relative block h-[56vh] w-full cursor-zoom-in overflow-hidden bg-ink-900 sm:h-[66vh] lg:h-[82vh]"
+          className="relative mx-[calc(50%-50vw)] block h-[85svh] w-screen cursor-zoom-in overflow-hidden bg-ink-900 lg:mx-0 lg:h-[82vh] lg:w-full"
           aria-label="크게 보기"
         >
           <Image
@@ -122,68 +138,87 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
             sizes="100vw"
             className="animate-fade-in object-cover"
           />
-          {/* 카드 가독성용 스크림(모바일 하단 / 데스크톱 우측) */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-900/40 to-transparent lg:bg-gradient-to-l" />
-          {total > 1 && (
-            <div className="absolute bottom-4 left-4 rounded-full bg-ink-900/55 px-3 py-1 text-xs text-white">
-              {heroIdx + 1} / {total}
-            </div>
-          )}
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-900/65 via-transparent to-ink-900/10 lg:bg-gradient-to-l lg:from-ink-900/30" />
+
+          {/* 모바일 — 제목 오버레이 + 진행 점 */}
+          <div className="absolute inset-x-0 bottom-0 px-5 pb-7 text-left lg:hidden">
+            <p className="text-2xl font-semibold tracking-tight text-white drop-shadow-md">{title}</p>
+            {subtitle && <p className="mt-1 text-sm font-light text-white/80">{subtitle}</p>}
+            {heroCount > 1 && (
+              <div className="mt-4 flex gap-2">
+                {Array.from({ length: heroCount }).map((_, i) => (
+                  <span
+                    key={i}
+                    className={`h-[2px] w-9 rounded-full ${i === heroIdx ? "bg-white" : "bg-white/30"}`}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
         </button>
 
-        {/* 정보 카드 — 모바일 히어로 아래, 데스크톱 우측 오버레이(불투명 유리) */}
-        <div className="relative z-10 -mt-6 mx-3 flex flex-col gap-4 rounded-xl border border-white/50 bg-sand-50/80 p-6 backdrop-blur-md sm:mx-6 lg:absolute lg:right-6 lg:top-6 lg:bottom-6 lg:mx-0 lg:mt-0 lg:w-[360px] lg:overflow-y-auto">
+        {/* 데스크톱 — 유리 정보 카드 */}
+        <div className="hidden lg:absolute lg:right-6 lg:top-6 lg:bottom-6 lg:flex lg:w-[360px] lg:flex-col lg:gap-4 lg:overflow-y-auto lg:rounded-xl lg:border lg:border-white/50 lg:bg-sand-50/80 lg:p-6 lg:backdrop-blur-md">
           <div>
-            <h1 className="text-xl font-semibold tracking-tight text-ink-900 sm:text-2xl">{title}</h1>
+            <h1 className="text-2xl font-semibold tracking-tight text-ink-900">{title}</h1>
             {subtitle && <p className="mt-1 text-sm font-light text-ink-700/80">{subtitle}</p>}
           </div>
-
-          {(meta.length > 0 || orderedMaterials.length > 0) && (
-            <dl className="divide-y divide-sand-300/60 border-y border-sand-300/60">
-              {meta.map((m) => (
-                <SpecRow key={m.label} label={m.label}>
-                  <span className="font-medium text-ink-900">{m.value}</span>
-                </SpecRow>
-              ))}
-              {orderedMaterials.map(([cat, names]) => (
-                <SpecRow key={cat} label={cat}>
-                  {names.map((n, i) => (
-                    <span key={n}>
-                      {i > 0 && <span className="text-ink-700/45">, </span>}
-                      <MaterialName name={n} />
-                    </span>
-                  ))}
-                </SpecRow>
-              ))}
-            </dl>
-          )}
-
+          <Spec meta={meta} materials={orderedMaterials} />
           {showTabs && (
             <div>
               <p className="mb-2 text-[0.7rem] uppercase tracking-[0.15em] text-ink-700/45">공간</p>
-              <div className="flex flex-wrap gap-1.5">
-                {rooms.map((r, i) => (
-                  <button
-                    key={r.room}
-                    type="button"
-                    onClick={() => selectRoom(i)}
-                    className={`rounded-full px-3 py-1 text-xs transition-colors ${
-                      i === roomIdx
-                        ? "bg-ink-900 text-white"
-                        : "bg-sand-200/70 text-ink-700 hover:bg-sand-300/70"
-                    }`}
-                  >
-                    {r.room}
-                  </button>
-                ))}
-              </div>
+              <FilterButtons pill />
             </div>
           )}
         </div>
       </div>
 
-      {/* ── 나머지 사진 : 9:16 세로, 3열 ─────────────────────────── */}
-      <div className="mt-4 grid grid-cols-2 gap-1.5 sm:grid-cols-3 sm:gap-2">
+      {/* ── 모바일 : 공간 필터 바(필터만, 스크롤해도 상단 고정) ──────── */}
+      {showTabs && (
+        <div className="sticky top-[var(--header-h)] z-20 mx-[calc(50%-50vw)] w-screen border-b border-sand-200 bg-sand-50/95 px-4 py-3 backdrop-blur lg:hidden">
+          <FilterButtons />
+        </div>
+      )}
+
+      {/* ── 모바일 : 상세 정보(면적·마감재) 접기 ───────────────────── */}
+      {(meta.length > 0 || orderedMaterials.length > 0) && (
+        <details className="group border-b border-sand-200 py-3 lg:hidden">
+          <summary className="flex cursor-pointer items-center justify-between text-sm text-ink-800 marker:content-none">
+            상세 정보
+            <svg viewBox="0 0 24 24" className="h-4 w-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth={1.6}>
+              <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </summary>
+          <div className="mt-2">
+            <Spec meta={meta} materials={orderedMaterials} />
+          </div>
+        </details>
+      )}
+
+      {/* ── 모바일 : 풀폭 세로 스트림(자연 비율, 상하 스크롤) ────────── */}
+      <div className="mx-[calc(50%-50vw)] mt-2 flex w-screen flex-col gap-1 lg:hidden">
+        {items.map((im, i) => (
+          <button
+            key={im.id}
+            type="button"
+            onClick={() => setLightbox(i)}
+            className="relative block w-full cursor-zoom-in"
+          >
+            <Image
+              src={im.imageUrl}
+              alt={`${title} ${i + 1}`}
+              width={im.width || 1600}
+              height={im.height || 1067}
+              sizes="100vw"
+              loading={i < 2 ? "eager" : "lazy"}
+              className="h-auto w-full"
+            />
+          </button>
+        ))}
+      </div>
+
+      {/* ── 데스크톱 : 9:16 3열 그리드 ───────────────────────────── */}
+      <div className="mt-4 hidden gap-2 lg:grid lg:grid-cols-3">
         {items.map((im, i) => (
           <button
             key={im.id}
@@ -195,7 +230,7 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
               src={im.imageUrl}
               alt={`${title} ${i + 1}`}
               fill
-              sizes="(max-width: 640px) 50vw, 33vw"
+              sizes="33vw"
               loading={i < 6 ? "eager" : "lazy"}
               className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
@@ -203,7 +238,7 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
         ))}
       </div>
 
-      {/* ── 라이트박스(팝업) ──────────────────────────────────── */}
+      {/* ── 라이트박스 ───────────────────────────────────────────── */}
       {lightbox !== null && (
         <div className="fixed inset-0 z-[60] flex flex-col bg-ink-900/95 sm:flex-row">
           <button
@@ -217,7 +252,6 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
             </svg>
           </button>
 
-          {/* 큰 이미지 */}
           <div className="relative flex flex-1 items-center justify-center p-4 sm:p-8">
             <div className="relative h-full w-full">
               <Image
@@ -235,13 +269,11 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
                 <LightNav dir="next" onClick={() => moveLightbox(1)} />
               </>
             )}
-            {/* 공간 라벨 */}
             <span className="absolute bottom-5 left-1/2 -translate-x-1/2 rounded-full bg-white/10 px-4 py-1.5 text-xs tracking-wide text-white">
               {items[lightbox].room} · {lightbox + 1} / {total}
             </span>
           </div>
 
-          {/* 세로 썸네일 스트립 */}
           <div className="no-scrollbar flex shrink-0 gap-1.5 overflow-x-auto p-2 sm:w-24 sm:flex-col sm:overflow-y-auto sm:overflow-x-hidden md:w-28">
             {items.map((im, i) => (
               <button
@@ -262,7 +294,36 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
   );
 }
 
-// 사양 한 줄 — 라벨(면적/마루/타일…) + 값
+// 사양 목록 (면적/마감재) — 데스크톱 카드 · 모바일 접기 공용
+function Spec({
+  meta,
+  materials,
+}: {
+  meta: MetaItem[];
+  materials: [string, string[]][];
+}) {
+  if (meta.length === 0 && materials.length === 0) return null;
+  return (
+    <dl className="divide-y divide-sand-300/60 border-y border-sand-300/60">
+      {meta.map((m) => (
+        <SpecRow key={m.label} label={m.label}>
+          <span className="font-medium text-ink-900">{m.value}</span>
+        </SpecRow>
+      ))}
+      {materials.map(([cat, names]) => (
+        <SpecRow key={cat} label={cat}>
+          {names.map((n, i) => (
+            <span key={n}>
+              {i > 0 && <span className="text-ink-700/45">, </span>}
+              <MaterialName name={n} />
+            </span>
+          ))}
+        </SpecRow>
+      ))}
+    </dl>
+  );
+}
+
 function SpecRow({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="flex gap-3 py-2.5">
@@ -272,7 +333,6 @@ function SpecRow({ label, children }: { label: string; children: React.ReactNode
   );
 }
 
-// 자재명 — "브랜드 |품번| 제품명" → 브랜드 강조 + 나머지 한 단계 눌러
 function MaterialName({ name }: { name: string }) {
   const parts = name.split("|").map((s) => s.trim()).filter(Boolean);
   if (parts.length <= 1) return <span className="font-medium text-ink-900">{name}</span>;
@@ -285,7 +345,6 @@ function MaterialName({ name }: { name: string }) {
   );
 }
 
-// 라이트박스 좌우 이동 버튼
 function LightNav({ dir, onClick }: { dir: "prev" | "next"; onClick: () => void }) {
   const isPrev = dir === "prev";
   return (
