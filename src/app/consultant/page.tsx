@@ -36,7 +36,7 @@ export default function ConsultantPage() {
 
       {/* 상담 신청 — 잡지풍 이미지 밴드(사진 위 스크림 + 흰 텍스트). 노션 폼 연결 */}
       {/* 컨테이너 패딩을 상쇄해 좌우로 넓게(풀블리드 느낌) */}
-      <section className="relative mt-20 -mx-5 overflow-hidden sm:-mx-8 md:mt-24 lg:-mx-12">
+      <section className="relative mt-20 -mx-3 overflow-hidden sm:-mx-5 md:mt-24">
         <Image
           src="/consult.jpg"
           alt=""
