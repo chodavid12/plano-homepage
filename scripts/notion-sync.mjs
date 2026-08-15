@@ -62,11 +62,11 @@ function createdAt(pg) {
 }
 
 function sizeFromTitle(title) {
-  const m = title.match(/(\d+(?:\.\d+)?)\s*평형?/);
+  const m = title.match(/(\d+(?:\.\d+)?)\s*(?:평형|평|py)/i);
   if (!m) return { sizeCategory: "30PY" };
   const n = parseFloat(m[1]);
   const cat = n < 20 ? "10PY" : n < 30 ? "20PY" : n < 40 ? "30PY" : n < 50 ? "40PY" : "50PY~";
-  return { sizeCategory: cat, areaSupply: `${m[1]}평형` };
+  return { sizeCategory: cat, areaSupply: `${m[1]}py` };
 }
 
 // 동시 실행 제한 풀 — 이미지 다운로드/변환은 I/O 대기가 대부분이라 병렬이 크게 빠름
