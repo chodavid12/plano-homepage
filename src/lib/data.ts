@@ -13,6 +13,10 @@ const BLIND_NOS = new Set<number>([
   20, // 거여동우방 43py
   17, // 대림강변타운 24py
   33, // 동작금강KCC 32py (아일랜드 옆 냉장고 현장)
+  51, // 목동 5단지 25py
+  19, // 창전삼성 32py
+  39, // 답십리 두산 32py
+  41, // 신동아리버파크 43py
 ]);
 
 export async function getProjects(): Promise<Project[]> {
