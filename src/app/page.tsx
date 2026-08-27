@@ -27,13 +27,13 @@ export default function HomePage() {
           <div className="flex w-full items-center justify-center gap-2 sm:w-auto sm:flex-wrap sm:gap-4">
             <Link
               href="/portfolio"
-              className="flex-1 rounded-full border border-white/55 px-3 py-3 text-center font-display text-[0.6rem] uppercase tracking-[0.14em] text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:text-ink-900 sm:flex-none sm:px-8 sm:text-[0.7rem] sm:tracking-[0.22em]"
+              className="flex-1 rounded-full border border-white/55 px-3 py-3 text-center font-display text-[0.6rem] uppercase tracking-[0.14em] text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:text-ink-900 sm:w-44 sm:flex-none sm:px-8 sm:text-[0.7rem] sm:tracking-[0.22em]"
             >
               Portfolio
             </Link>
             <Link
               href="/consultant"
-              className="flex-1 rounded-full border border-white/55 px-3 py-3 text-center font-display text-[0.6rem] uppercase tracking-[0.14em] text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:text-ink-900 sm:flex-none sm:px-8 sm:text-[0.7rem] sm:tracking-[0.22em]"
+              className="flex-1 rounded-full border border-white/55 px-3 py-3 text-center font-display text-[0.6rem] uppercase tracking-[0.14em] text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:text-ink-900 sm:w-44 sm:flex-none sm:px-8 sm:text-[0.7rem] sm:tracking-[0.22em]"
             >
               Consultant
             </Link>
