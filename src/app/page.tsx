@@ -18,22 +18,22 @@ export default function HomePage() {
 
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
         <BlurFade delay={0.2}>
-          <h1 className="whitespace-nowrap pl-[0.22em] font-wordmark text-[1.7rem] font-normal leading-none tracking-[0.22em] text-white drop-shadow-md sm:text-4xl md:text-6xl">
+          <h1 className="whitespace-nowrap pl-[0.22em] font-wordmark text-[2.05rem] font-normal leading-none tracking-[0.2em] text-white drop-shadow-md sm:text-4xl sm:tracking-[0.22em] md:text-6xl">
             PLANO DESIGN
           </h1>
         </BlurFade>
 
         <BlurFade delay={0.45} className="mt-7">
-          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+          <div className="flex w-full items-center justify-center gap-2 sm:w-auto sm:flex-wrap sm:gap-4">
             <Link
               href="/portfolio"
-              className="rounded-full border border-white/55 px-8 py-3 font-display text-[0.7rem] uppercase tracking-[0.22em] text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:text-ink-900"
+              className="flex-1 rounded-full border border-white/55 px-3 py-3 text-center font-display text-[0.6rem] uppercase tracking-[0.14em] text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:text-ink-900 sm:flex-none sm:px-8 sm:text-[0.7rem] sm:tracking-[0.22em]"
             >
               Portfolio
             </Link>
             <Link
               href="/consultant"
-              className="rounded-full border border-white/55 px-8 py-3 font-display text-[0.7rem] uppercase tracking-[0.22em] text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:text-ink-900"
+              className="flex-1 rounded-full border border-white/55 px-3 py-3 text-center font-display text-[0.6rem] uppercase tracking-[0.14em] text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:text-ink-900 sm:flex-none sm:px-8 sm:text-[0.7rem] sm:tracking-[0.22em]"
             >
               Consultant
             </Link>
