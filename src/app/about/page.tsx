@@ -159,8 +159,8 @@ export default function AboutPage() {
             className="container-site scroll-mt-24 border-b border-sand-200 py-20 last:border-b-0 md:py-28"
           >
             <div
-              className={`grid gap-10 lg:gap-20 ${
-                flipped ? "lg:grid-cols-[1.15fr_0.85fr]" : "lg:grid-cols-[0.85fr_1.15fr]"
+              className={`grid gap-8 lg:gap-12 ${
+                flipped ? "lg:grid-cols-[1fr_0.9fr]" : "lg:grid-cols-[0.9fr_1fr]"
               }`}
             >
               {/* 번호 · 이미지 (스크롤 중 고정) — flipped 면 데스크톱에서 우측 */}
@@ -189,35 +189,41 @@ export default function AboutPage() {
                 </BlurFade>
               </div>
 
-              {/* 제목 · 본문 · 결론 — flipped 면 데스크톱에서 좌측 */}
-              <div className={`lg:pt-3 ${flipped ? "lg:order-1" : "lg:order-2"}`}>
-                <BlurFade delay={0.1} inView>
-                  <p className="overline mb-3">{p.keyword}</p>
-                  <h2 className="text-[1.75rem] font-semibold leading-snug tracking-tight text-ink-900 md:text-[2.15rem]">
-                    {p.title}
-                  </h2>
-                </BlurFade>
-
-                <div className="mt-8 max-w-[46ch] space-y-6 text-[1rem] font-light leading-[1.9] text-ink-800/85 md:mt-10 md:text-[1.06rem]">
-                  {p.paragraphs.map((para, j) => (
-                    <BlurFade key={j} delay={0.16 + j * 0.07} inView>
-                      <p>
-                        <RichText text={para} />
-                      </p>
-                    </BlurFade>
-                  ))}
-                </div>
-
-                {p.highlight && (
-                  <BlurFade delay={0.3} inView>
-                    {/* 결론 — 본문과 다른 무게로 떨어뜨린다 */}
-                    <figure className="mt-12 max-w-[42ch] border-t border-wood-400/50 pt-7 md:mt-14">
-                      <blockquote className="text-[1.15rem] font-medium leading-[1.65] tracking-tight text-ink-900 md:text-[1.35rem]">
-                        {p.highlight}
-                      </blockquote>
-                    </figure>
+              {/* 제목 · 본문 · 결론 — 텍스트 블록을 이미지 쪽으로 붙이고 세로 가운데 정렬 */}
+              <div
+                className={`flex flex-col justify-center ${
+                  flipped ? "lg:order-1 lg:items-end" : "lg:order-2 lg:items-start"
+                }`}
+              >
+                <div className="w-full lg:max-w-[32rem]">
+                  <BlurFade delay={0.1} inView>
+                    <p className="overline mb-3">{p.keyword}</p>
+                    <h2 className="text-[1.75rem] font-semibold leading-snug tracking-tight text-ink-900 md:text-[2.15rem]">
+                      {p.title}
+                    </h2>
                   </BlurFade>
-                )}
+
+                  <div className="mt-8 space-y-6 text-[1rem] font-light leading-[1.9] text-ink-800/85 md:mt-10 md:text-[1.06rem]">
+                    {p.paragraphs.map((para, j) => (
+                      <BlurFade key={j} delay={0.16 + j * 0.07} inView>
+                        <p>
+                          <RichText text={para} />
+                        </p>
+                      </BlurFade>
+                    ))}
+                  </div>
+
+                  {p.highlight && (
+                    <BlurFade delay={0.3} inView>
+                      {/* 결론 — 본문과 다른 무게로 떨어뜨린다 */}
+                      <figure className="mt-12 border-t border-wood-400/50 pt-7 md:mt-14">
+                        <blockquote className="text-[1.15rem] font-medium leading-[1.65] tracking-tight text-ink-900 md:text-[1.35rem]">
+                          {p.highlight}
+                        </blockquote>
+                      </figure>
+                    </BlurFade>
+                  )}
+                </div>
               </div>
             </div>
           </section>
