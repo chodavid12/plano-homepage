@@ -65,7 +65,7 @@ const SUMMARY: IndexItem[] = [
     keyword: "Livable",
     title: "오래 살아도 편안하게",
     line: "형태보다 먼저, 생활을 봅니다.",
-    image: "/portfolio/r1.webp",
+    image: "/portfolio/r4.webp",
   },
   {
     no: "02",
