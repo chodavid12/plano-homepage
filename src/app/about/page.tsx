@@ -158,9 +158,7 @@ export default function AboutPage() {
 
       {/* ── 본문 — 좌측 레일 고정 / 우측 텍스트 스크롤 ──────────────── */}
       <div className="border-t border-sand-200 bg-sand-100/40">
-        {PRINCIPLES.map((p, i) => {
-          // 이미지는 모두 좌측. 02(홀수)만 글을 오른쪽 끝으로 밀고 우측 정렬해 리듬을 깬다.
-          const flipped = i % 2 === 1;
+        {PRINCIPLES.map((p) => {
           return (
           <section
             key={p.no}
@@ -194,13 +192,9 @@ export default function AboutPage() {
                 </BlurFade>
               </div>
 
-              {/* 제목 · 본문 · 결론 — 항상 우측. 02(flipped)는 블록을 오른쪽 끝으로 + 우측 정렬 */}
-              <div
-                className={`flex flex-col justify-center lg:order-2 ${
-                  flipped ? "lg:items-end" : "lg:items-start"
-                }`}
-              >
-                <div className={`w-full lg:max-w-[32rem] ${flipped ? "lg:text-right break-keep" : ""}`}>
+              {/* 제목 · 본문 · 결론 — 이미지 좌측 / 글 우측, 좌측 정렬 */}
+              <div className="flex flex-col justify-center lg:order-2 lg:items-start">
+                <div className="w-full lg:max-w-[32rem]">
                   <BlurFade delay={0.1} inView>
                     <p className="overline mb-3">{p.keyword}</p>
                     <h2 className="text-[1.75rem] font-semibold leading-snug tracking-tight text-ink-900 md:text-[2.15rem]">
