@@ -158,16 +158,22 @@ export default function AboutPage() {
 
       {/* ── 본문 — 좌측 레일 고정 / 우측 텍스트 스크롤 ──────────────── */}
       <div className="border-t border-sand-200 bg-sand-100/40">
-        {PRINCIPLES.map((p) => {
+        {PRINCIPLES.map((p, i) => {
+          // 02(홀수)만 사진을 오른쪽으로, 글은 왼쪽에서 우측 정렬 → 글이 이미지에 붙는다.
+          const flipped = i % 2 === 1;
           return (
           <section
             key={p.no}
             id={`principle-${p.no}`}
             className="container-site scroll-mt-24 border-b border-sand-200 py-20 last:border-b-0 md:py-28"
           >
-            <div className="grid gap-8 lg:grid-cols-[0.9fr_1fr] lg:gap-12">
-              {/* 번호 · 이미지 (스크롤 중 고정) — 항상 좌측 */}
-              <div className="lg:sticky lg:top-28 lg:order-1 lg:self-start">
+            <div
+              className={`grid gap-8 lg:gap-12 ${
+                flipped ? "lg:grid-cols-[1fr_0.9fr]" : "lg:grid-cols-[0.9fr_1fr]"
+              }`}
+            >
+              {/* 번호 · 이미지 (스크롤 중 고정) — 02(flipped)은 우측 */}
+              <div className={`lg:sticky lg:top-28 lg:self-start ${flipped ? "lg:order-2" : "lg:order-1"}`}>
                 <BlurFade inView>
                   <div className="flex items-center gap-5">
                     <span
@@ -192,9 +198,13 @@ export default function AboutPage() {
                 </BlurFade>
               </div>
 
-              {/* 제목 · 본문 · 결론 — 이미지 좌측 / 글 우측, 좌측 정렬 */}
-              <div className="flex flex-col justify-center lg:order-2 lg:items-start">
-                <div className="w-full lg:max-w-[32rem]">
+              {/* 제목 · 본문 · 결론 — 기본은 우측·좌측정렬 / 02 은 좌측에서 우측정렬 */}
+              <div
+                className={`flex flex-col justify-center ${
+                  flipped ? "lg:order-1 lg:items-end" : "lg:order-2 lg:items-start"
+                }`}
+              >
+                <div className={`w-full lg:max-w-[32rem] ${flipped ? "lg:text-right break-keep" : ""}`}>
                   <BlurFade delay={0.1} inView>
                     <p className="overline mb-3">{p.keyword}</p>
                     <h2 className="text-[1.75rem] font-semibold leading-snug tracking-tight text-ink-900 md:text-[2.15rem]">
