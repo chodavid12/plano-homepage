@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export interface IndexItem {
   no: string;
+  keyword?: string; // 영문 키워드 (Livable/Worth/Detail)
   title: string;
   line: string;
   image: string;
@@ -41,6 +42,15 @@ export default function PhilosophyIndex({ items }: { items: IndexItem[] }) {
                 </span>
 
                 <span className="min-w-0 flex-1">
+                  {it.keyword && (
+                    <span
+                      className={`mb-2 block font-display text-[0.7rem] uppercase tracking-[0.24em] transition-colors duration-300 ${
+                        on ? "text-wood-500" : "text-ink-700/40"
+                      }`}
+                    >
+                      {it.keyword}
+                    </span>
+                  )}
                   <span
                     className={`block text-xl font-semibold tracking-tight transition-colors duration-300 md:text-[1.6rem] ${
                       on ? "text-ink-900" : "text-ink-800/70"

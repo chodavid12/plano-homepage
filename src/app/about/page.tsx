@@ -7,11 +7,12 @@ import PhilosophyIndex, { type IndexItem } from "@/components/about/PhilosophyIn
 export const metadata: Metadata = {
   title: "ABOUT",
   description:
-    "PLANO의 경영철학 — 실용성 이후에 심미성, 비용 이상의 결과물, 현장에서 지는 책임.",
+    "플라노디자인이 지켜온 세 가지 기준 — Livable(오래 살아도 편안하게), Worth(비용보다 나은 결과), Detail(보이지 않는 곳까지).",
 };
 
 interface Principle {
   no: string;
+  keyword: string; // 영문 키워드 (Livable/Worth/Detail)
   title: string;
   image: string;
   paragraphs: string[]; // **...** 구간은 강조 처리
@@ -21,34 +22,36 @@ interface Principle {
 const PRINCIPLES: Principle[] = [
   {
     no: "01",
-    title: "실용성 이후에 심미성",
+    keyword: "Livable",
+    title: "오래 살아도 편안하게",
     image: "/portfolio/r1.webp",
     paragraphs: [
-      "PLANO는 **Modern & Natural**을 기반으로 작업합니다. 형태보다 먼저, 생활에서의 사용성과 유지 가능성을 기준으로 공간을 판단합니다.",
-      "디자인을 결정할 때 항상 같은 질문에서 출발합니다. 시간이 지나도 불편하지 않을지, 일상의 사용 속에서 무리가 없을지, 오래 유지할 수 있는 선택인지에 대해 고민합니다.",
-      "집은 보여지는 공간이 아니라, 살아가는 공간입니다. 심미성은 실용성이 갖춰진 이후에 의미를 갖는다고 생각합니다.",
+      "동선은 자연스러운지, 손이 닿는 곳은 편안한지, 시간이 지나도 무리가 없는지.",
+      "집은 보여지는 공간이 아니라 살아가는 공간입니다. **Modern & Natural**의 담백함은 오래 살아도 질리지 않는 선택에서 시작됩니다.",
     ],
-    highlight: "PLANO는 사용을 전제로 한 균형 있는 디자인을 지향합니다.",
+    highlight: "아름다움은 편안함 위에서 오래 머뭅니다.",
   },
   {
     no: "02",
-    title: "비용 이상의 결과물",
+    keyword: "Worth",
+    title: "비용보다 나은 결과",
     image: "/portfolio/r2.webp",
     paragraphs: [
-      "예산의 크기보다 중요한 것은 그 안에서 어떤 선택을 하고, 어디에 집중하느냐 입니다.",
-      "**불필요한 비용을 줄이고, 결과에 직접 영향을 주는 부분에 예산을 사용합니다.** 지불한 비용에 합당한 결과를 만드는 것을 기준으로 합니다.",
+      "중요한 것은 예산의 크기가 아니라 그 쓰임입니다.",
+      "**결과에 닿지 않는 비용은 줄이고, 매일 머무는 곳에 정성을 모읍니다.** 바닥, 주방, 욕실, 그리고 빛.",
     ],
+    highlight: "같은 예산이라도, 결과는 달라질 수 있습니다.",
   },
   {
     no: "03",
-    title: "현장에서 지는 책임",
+    keyword: "Detail",
+    title: "보이지 않는 곳까지",
     image: "/portfolio/r3.webp",
     paragraphs: [
-      "현장에서의 선택이 곧 결과라고 생각합니다. 자재와 부자재는 보이지 않는 부분까지 기준을 적용하며, 필요하다면 비용이 더 들더라도 숙련된 인력을 투입합니다.",
-      "단가를 낮추는 선택보다 완성도와 안정성을 지키는 판단이 현장에서의 책임이라고 보기 때문입니다.",
+      "완성은 현장에서 결정됩니다. 벽 안쪽, 바닥 아래. 마감 후에는 누구도 보지 못할 곳까지 같은 기준을 적용합니다.",
+      "필요하다면 비용이 더 들더라도 숙련된 손을 선택합니다.",
     ],
-    highlight:
-      "PLANO는 공정 전반을 현장의 기준으로 관리하며 마무리 이후까지 고려한 시공을 이어갑니다.",
+    highlight: "좋은 인테리어는 보이지 않는 디테일에서 완성됩니다.",
   },
 ];
 
@@ -56,20 +59,23 @@ const PRINCIPLES: Principle[] = [
 const SUMMARY: IndexItem[] = [
   {
     no: "01",
-    title: "실용성 이후에 심미성",
-    line: "사용성과 유지 가능성을 먼저, 심미성은 그 다음입니다.",
+    keyword: "Livable",
+    title: "오래 살아도 편안하게",
+    line: "형태보다 먼저, 생활을 봅니다.",
     image: "/portfolio/r1.webp",
   },
   {
     no: "02",
-    title: "비용 이상의 결과물",
-    line: "결과에 직접 영향을 주는 곳에 예산을 집중합니다.",
+    keyword: "Worth",
+    title: "비용보다 나은 결과",
+    line: "예산은 결과가 달라지는 곳에.",
     image: "/portfolio/r2.webp",
   },
   {
     no: "03",
-    title: "현장에서 지는 책임",
-    line: "보이지 않는 부분까지, 마무리 이후까지 책임집니다.",
+    keyword: "Detail",
+    title: "보이지 않는 곳까지",
+    line: "벽 안쪽, 바닥 아래, 그리고 끝난 뒤까지.",
     image: "/portfolio/r3.webp",
   },
 ];
@@ -109,11 +115,18 @@ export default function AboutPage() {
         </BlurFade>
 
         <BlurFade delay={0.15}>
-          <h1 className="relative mt-7 max-w-4xl text-[1.9rem] font-semibold leading-[1.38] tracking-tight text-ink-900 sm:text-[2.5rem] md:text-[3.15rem] md:leading-[1.3]">
-            <span className="text-wood-500">PLANO의 경영철학</span>은
+          <h1 className="relative mt-7 max-w-4xl text-[2.1rem] font-semibold leading-[1.3] tracking-tight text-ink-900 sm:text-[2.7rem] md:text-[3.3rem] md:leading-[1.22]">
+            살아갈수록,
             <br />
-            아래 3가지 키워드로 정리됩니다.
+            <span className="text-wood-500">편안한 집.</span>
           </h1>
+        </BlurFade>
+
+        <BlurFade delay={0.24}>
+          <p className="mt-8 max-w-xl text-[1rem] font-light leading-[1.9] text-ink-800/80 md:text-[1.06rem]">
+            10년, 대부분의 공간은 먼저 살아본 분들의 소개로 이어졌습니다.
+            플라노디자인이 지켜온 세 가지 기준입니다.
+          </p>
         </BlurFade>
 
         {/* 얇은 우드 룰 — 선언과 목차를 가르는 유일한 장치 */}
@@ -179,6 +192,7 @@ export default function AboutPage() {
               {/* 제목 · 본문 · 결론 — flipped 면 데스크톱에서 좌측 */}
               <div className={`lg:pt-3 ${flipped ? "lg:order-1" : "lg:order-2"}`}>
                 <BlurFade delay={0.1} inView>
+                  <p className="overline mb-3">{p.keyword}</p>
                   <h2 className="text-[1.75rem] font-semibold leading-snug tracking-tight text-ink-900 md:text-[2.15rem]">
                     {p.title}
                   </h2>
@@ -216,7 +230,9 @@ export default function AboutPage() {
         <BlurFade inView>
           <div className="flex flex-col items-start gap-8 sm:flex-row sm:items-center sm:justify-between">
             <p className="max-w-md text-[1.35rem] font-light leading-snug tracking-tight text-ink-900 md:text-[1.7rem]">
-              PLANO와 함께 공간을 계획해 보세요.
+              일상에 꼭 맞는 공간을,
+              <br className="hidden sm:block" />
+              PLANO와 함께 계획해 보세요.
             </p>
             <Link href="/consultant" className="btn btn-dark min-w-[200px] shrink-0">
               상담 신청
