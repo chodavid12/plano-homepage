@@ -105,7 +105,7 @@ function RichText({ text }: { text: string }) {
 
 export default function AboutPage() {
   return (
-    <div>
+    <div className="about-shell">
       {/* ── 오프닝 — 여백으로 시작하는 선언 ───────────────────────── */}
       <section className="container-site relative pt-24 md:pt-36">
         {/* 워터마크 심볼 — 헤드라인 뒤로 흐르게 */}
