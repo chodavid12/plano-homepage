@@ -9,6 +9,7 @@ export interface IndexItem {
   title: string;
   line: string;
   image: string;
+  focus?: string; // 크롭 위치(object-position) — 기본 center
 }
 
 /**
@@ -110,7 +111,7 @@ export default function PhilosophyIndex({ items }: { items: IndexItem[] }) {
               alt={it.title}
               fill
               sizes="45vw"
-              className={`object-cover transition-[opacity,transform] duration-[900ms] ease-out ${
+              className={`object-cover ${it.focus ?? ""} transition-[opacity,transform] duration-[900ms] ease-out ${
                 i === active ? "scale-100 opacity-100" : "scale-105 opacity-0"
               }`}
             />

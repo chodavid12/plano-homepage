@@ -15,6 +15,7 @@ interface Principle {
   keyword: string; // 영문 키워드 (Livable/Worth/Detail)
   title: string;
   image: string;
+  focus?: string; // 크롭 위치(object-position) — 기본 center, 예: "object-[20%_center]"
   paragraphs: string[]; // **...** 구간은 강조 처리
   highlight?: string; // 핵심 결론 — 액센트 콜아웃
 }
@@ -49,6 +50,7 @@ const PRINCIPLES: Principle[] = [
     keyword: "Detail",
     title: "보이지 않는 곳까지",
     image: "/portfolio/r3.webp",
+    focus: "object-[20%_center]", // 창가 펜던트 조명이 다 보이게 왼쪽으로
     paragraphs: [
       "완성은 현장에서 결정됩니다. 벽 안쪽, 바닥 아래. 마감 후에는 누구도 보지 못할 곳까지 같은 기준을 적용합니다. 필요하다면 비용이 더 들더라도 숙련된 손을 선택합니다.",
       "현장은 대표 또는 관리자가 직접 살핍니다. 공정마다 현장 사진을 단톡방으로 공유해, 멀리 계셔도 집이 만들어지는 과정을 함께 보실 수 있습니다.",
@@ -80,6 +82,7 @@ const SUMMARY: IndexItem[] = [
     title: "보이지 않는 곳까지",
     line: "벽 안쪽, 바닥 아래, 그리고 끝난 뒤까지.",
     image: "/portfolio/r3.webp",
+    focus: "object-[20%_center]",
   },
 ];
 
@@ -195,7 +198,7 @@ export default function AboutPage() {
                       alt={p.title}
                       fill
                       sizes="(max-width: 1024px) 100vw, 40vw"
-                      className="object-cover"
+                      className={`object-cover ${p.focus ?? ""}`}
                     />
                     <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-ink-900/5" />
                   </div>
