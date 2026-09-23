@@ -130,7 +130,7 @@ export default function AboutPage() {
         <BlurFade delay={0.24}>
           <div className="mt-8 max-w-5xl space-y-5 break-keep text-[1rem] font-light leading-[1.9] text-ink-800/80 md:text-[1.06rem]">
             <p>
-              플라노디자인은 서울 마포와 흑석에서 주거 공간의 설계부터 시공까지 직접 맡는 인테리어 스튜디오입니다.
+              플라노디자인은 서울 흑석과 마포에서 주거 공간의 설계부터 시공까지 직접 맡는 인테리어 스튜디오입니다.
               <br />
               지난 15년, 대부분의 공간은 먼저 살아본 분들의 소개로 이어졌습니다.
             </p>
