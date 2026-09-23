@@ -54,9 +54,12 @@
     @apply mx-auto w-full max-w-[1800px] px-3 sm:px-5;
   }
 
-  /* About 는 텍스트 위주라 좌우 여백을 넉넉히 — 편집물처럼 폭도 조금 좁힌다.
-     (전역 .container-site 는 포트폴리오 사진 극대화용이라 건드리지 않는다) */
-  .about-shell .container-site {
+  /* 좌우 여백 넉넉 + 폭 살짝 좁힘 — 편집물처럼. 전역 .container-site(사진 극대화용,
+     좁은 여백)와 구분해, 필요한 페이지에만 스코프/모디파이어로 적용한다.
+     · About: 루트 .about-shell 하위 모든 .container-site
+     · Portfolio 등: 같은 요소에 .container-gutter 를 함께 부여 */
+  .about-shell .container-site,
+  .container-site.container-gutter {
     @apply max-w-[1440px] px-5 sm:px-10 lg:px-16 xl:px-24;
   }
 

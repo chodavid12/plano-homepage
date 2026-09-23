@@ -24,7 +24,7 @@ export default async function PortfolioPage({ searchParams }: Props) {
   const rooms = availableRooms(all);
 
   return (
-    <div className="container-site py-16 md:py-24">
+    <div className="container-site container-gutter py-16 md:py-24">
       <header className="mb-12">
         <p className="overline">Portfolio</p>
         <h1 className="mt-3 text-3xl tracking-tight md:text-4xl">프로젝트</h1>
