@@ -121,9 +121,9 @@ export default function AboutPage() {
 
         <BlurFade delay={0.15}>
           <h1 className="relative mt-7 max-w-4xl text-[2.1rem] font-semibold leading-[1.3] tracking-tight text-ink-900 sm:text-[2.7rem] md:text-[3.3rem] md:leading-[1.22]">
-            당신의 하루를
+            좋은 집엔
             <br />
-            <span className="text-wood-500">짓습니다.</span>
+            <span className="text-wood-500">이유</span>가 있습니다.
           </h1>
         </BlurFade>
 
