@@ -121,14 +121,21 @@ export default function AboutPage() {
         </BlurFade>
 
         <BlurFade delay={0.15}>
-          <div className="relative mt-7 max-w-4xl break-keep">
-            {/* 메인 글 — 스튜디오 소개를 헤드라인 무게로 */}
-            <h1 className="text-[1.5rem] font-semibold leading-[1.5] tracking-tight text-ink-900 sm:text-[1.9rem] md:text-[2.2rem] md:leading-[1.45]">
+          <h1 className="relative mt-7 max-w-4xl text-[2.1rem] font-semibold leading-[1.3] tracking-tight text-ink-900 sm:text-[2.7rem] md:text-[3.3rem] md:leading-[1.22]">
+            당신의 하루를
+            <br />
+            <span className="text-wood-500">짓습니다.</span>
+          </h1>
+        </BlurFade>
+
+        <BlurFade delay={0.24}>
+          <div className="mt-8 max-w-5xl space-y-5 break-keep text-[1rem] font-light leading-[1.9] text-ink-800/80 md:text-[1.06rem]">
+            <p>
               플라노디자인은 서울 마포와 흑석에서 주거 공간의 설계부터 시공까지 직접 맡는 인테리어 스튜디오입니다.
               <br />
-              지난 <span className="text-wood-500">15년</span>, 대부분의 공간은 먼저 살아본 분들의 소개로 이어졌습니다.
-            </h1>
-            <p className="mt-8 text-[1.05rem] font-light leading-[1.8] text-ink-800/75 md:mt-10 md:text-[1.25rem] md:leading-[1.75]">
+              지난 15년, 대부분의 공간은 먼저 살아본 분들의 소개로 이어졌습니다.
+            </p>
+            <p>
               한 건의 공사를 마치는 것이 아니라
               <br />
               오래 살 집과 오래갈 관계를 만드는 일.
