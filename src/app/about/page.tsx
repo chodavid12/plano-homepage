@@ -175,9 +175,7 @@ export default function AboutPage() {
             className="container-site scroll-mt-24 border-b border-sand-200 py-20 last:border-b-0 md:py-28"
           >
             <div
-              className={`grid gap-10 lg:gap-20 xl:gap-28 ${
-                flipped ? "lg:grid-cols-[1fr_0.9fr]" : "lg:grid-cols-[0.9fr_1fr]"
-              }`}
+              className="grid gap-10 lg:grid-cols-2 lg:gap-20 xl:gap-28"
             >
               {/* 번호 · 이미지 (스크롤 중 고정) — 02(flipped)은 우측 */}
               <div className={`lg:sticky lg:top-28 lg:self-start ${flipped ? "lg:order-2" : "lg:order-1"}`}>
