@@ -34,3 +34,9 @@ next-env.d.ts
 # 포트폴리오 원본 사진(8GB+, 마스터) — 커밋 금지. 사이트엔 public/portfolio/의 webp만 사용
 포트폴리오/
 scratchpad/
+
+# 루트에 임시로 떨군 원본 사진 (사이트 이미지는 public/ 에만)
+/*.jpg
+/*.jpeg
+/*.png
+/*.heic

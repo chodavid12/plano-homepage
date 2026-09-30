@@ -7,15 +7,17 @@
 #   bash scripts/sync-deploy.sh --dry      # 미리보기만 (다운로드/커밋 없음)
 #   bash scripts/sync-deploy.sh --no-push  # 커밋까지만 (배포 안 함)
 #   bash scripts/sync-deploy.sh --force    # 증분 무시하고 전체 재다운로드
+#   bash scripts/sync-deploy.sh --yes      # 비공개 전환이 5건 초과여도 진행
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-DRY=0; NOPUSH=0; FORCE=""
+DRY=0; NOPUSH=0; FORCE=""; YES=""
 for a in "$@"; do
   case "$a" in
     --dry) DRY=1 ;;
     --no-push) NOPUSH=1 ;;
     --force) FORCE="--force" ;;
+    --yes) YES="--yes" ;;
   esac
 done
 
@@ -29,11 +31,11 @@ if [ "$DRY" = "1" ]; then
 fi
 
 # ── 2. 동기화 (변경분만 다운로드 · 다운로드 시 이미지 치수도 기록) ──
-node --env-file-if-exists=.env.local scripts/notion-sync.mjs $FORCE 2>&1 | tee /tmp/plano-sync.log
+node --env-file-if-exists=.env.local scripts/notion-sync.mjs $FORCE $YES 2>&1 | tee /tmp/plano-sync.log
 SUMMARY=$(grep '현장 (재사용' /tmp/plano-sync.log | tail -1 | sed 's/ → .*//; s/^✓ //' || true)
 
 # ── 3. 변경 없으면 종료 ──────────────────────────────────────────
-if git diff --quiet && git diff --cached --quiet; then
+if [ -z "$(git status --porcelain -- src/lib/seed.ts public/portfolio scripts/.no-map.json)" ]; then
   echo "✓ 노션 변경 없음 — 배포할 것 없음."
   exit 0
 fi
@@ -45,7 +47,8 @@ if ! npm run build > /tmp/plano-build.log 2>&1; then
 fi
 
 # ── 5. 시크릿·대용량 스테이징 차단 ───────────────────────────────
-git add -A
+# 동기화 산출물만 스테이징 — 루트에 떨군 원본 사진 등 잡파일 섞임 방지
+git add -A src/lib/seed.ts public/portfolio scripts/.materials-cache.json scripts/.no-map.json
 LEAK=$(git diff --cached --name-only | grep -c '\.env\|포트폴리오/' || true)
 [ "$LEAK" = "0" ] || { echo "✗ 민감/대용량 파일 스테이징 감지 — 중단"; git reset -q; exit 1; }
 
@@ -54,7 +57,7 @@ git commit -q -m "sync: 노션 포트폴리오 최신 반영 ($(date +%Y-%m-%d))
 
 ${SUMMARY:-변경 반영}
 
-Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>"
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 
 if [ "$NOPUSH" = "1" ]; then
   echo "✓ 커밋 완료 (푸시 생략). ${SUMMARY}"
@@ -62,5 +65,6 @@ if [ "$NOPUSH" = "1" ]; then
 fi
 
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
+git pull -q --rebase --autostash origin "$BRANCH" # 다른 세션/PC 가 먼저 푸시했어도 합쳐서 올림
 git push -q origin "$BRANCH"
 echo "✓ 동기화 → 빌드 → 배포 완료 · ${SUMMARY} · branch=${BRANCH} · Vercel 1~2분 후 반영."

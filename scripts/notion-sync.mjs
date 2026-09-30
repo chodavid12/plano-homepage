@@ -19,6 +19,12 @@ const MAXW = 1600, Q = 72;
 const roomCap = (r, hasRooms) => (r === "대표" ? (hasRooms ? 3 : 12) : 6);
 const DRY = process.argv.includes("--dry");
 const FORCE = process.argv.includes("--force"); // 증분 무시하고 전체 재다운로드
+const YES = process.argv.includes("--yes"); // 대량 비공개 안전장치 통과
+// 공개 여부 = 노션 '공홈 업로드' 체크박스. 해제하면 다음 동기화 때 사이트·이미지에서 빠진다.
+const PUBLISH_PROP = "공홈 업로드";
+const MAX_REMOVE = 5; // 한 번에 이보다 많이 빠지면 --yes 없이는 중단 (체크 실수 방지)
+// pageId → no 영구 기록. 비공개로 seed 에서 빠졌다가 다시 체크돼도 같은 URL 로 복귀.
+const NO_MAP = path.join(ROOT, "scripts", ".no-map.json");
 
 const ROOMS = ["대표", "거실", "주방", "현관", "욕실", "침실", "드레스룸", "발코니", "서재", "복도", "기타"];
 
@@ -126,14 +132,26 @@ function readPrevSeed() {
 }
 
 async function main() {
-  let rows = await queryAll();
-  rows = rows
+  const all = (await queryAll())
     .map((pg) => ({ pg, title: titleOf(pg), created: createdAt(pg) }))
-    .filter((r) => r.title)
+    .filter((r) => r.title);
+  const rows = all
+    .filter((r) => r.pg.properties?.[PUBLISH_PROP]?.checkbox === true)
     .sort((a, b) => new Date(b.created) - new Date(a.created)); // 생성일시 내림차순 = 표시 순서
   const prev = readPrevSeed();
-  let maxNo = Math.max(0, ...[...prev.values()].map((p) => p.no || 0));
-  console.log(`포트폴리오 DB ${rows.length}행 · 이전 seed ${prev.size}개${FORCE ? " (--force: 전체 재다운로드)" : ""}`);
+  const noMap = fs.existsSync(NO_MAP) ? JSON.parse(fs.readFileSync(NO_MAP, "utf8")) : {};
+  for (const [id, p] of prev) if (p.no && !(id in noMap)) noMap[id] = p.no; // 기존 seed 번호 이관
+  let maxNo = Math.max(0, ...Object.values(noMap));
+  console.log(`포트폴리오 DB ${all.length}행 · 공개 체크 ${rows.length} · 비공개 ${all.length - rows.length} · 이전 seed ${prev.size}개${FORCE ? " (--force: 전체 재다운로드)" : ""}`);
+
+  // 안전장치 — 사이트에서 빠질 현장이 많으면 목록만 보여주고 중단
+  const pub = new Set(rows.map((r) => r.pg.id));
+  const removed = [...prev.values()].filter((p) => !pub.has(p.notionPageId));
+  if (removed.length) console.log(`비공개 전환 ${removed.length}건: ${removed.map((p) => `p${p.no} ${p.title}`).join(" · ")}`);
+  if (removed.length > MAX_REMOVE && !YES && !DRY) {
+    console.log(`✗ ${removed.length}건이 한꺼번에 사이트에서 빠집니다 — 의도한 것이면 --yes 로 다시 실행.`);
+    process.exit(2);
+  }
 
   // ── 마감재 이름 해석 (캐시에 없는 자재만 조회) ──────────────────────
   const matCache = loadMatCache();
@@ -172,7 +190,7 @@ async function main() {
     const old = prev.get(pg.id);
     const lastEdited = pg.last_edited_time;
     // no 는 노션 page 에 고정 — 재동기화해도 URL 안 바뀜
-    const no = old?.no ?? maxNo + 1;
+    const no = noMap[pg.id] ?? maxNo + 1;
     const dir = path.join(OUT, `p${no}`);
 
     // 증분 — 노션에서 수정 안 됐고 이미지가 그대로면 통째로 재사용 (다운로드 0)
@@ -185,7 +203,7 @@ async function main() {
 
     const seq = collect(await blocksOf(pg.id));
     if (seq.length === 0) { console.log(`skip(0장)  ${title.slice(0, 40)}`); continue; }
-    if (!old) maxNo = no; // 신규 현장 번호 확정
+    if (!(pg.id in noMap)) { noMap[pg.id] = no; maxNo = no; } // 신규 현장 번호 확정
     const rooms = [...new Set(seq.map((s) => s.room))].join(",");
     console.log(`p${no}  ${String(created).slice(0, 10)}  ${seq.length}장 [${rooms}]  ${title.slice(0, 38)}`);
     if (DRY) continue;
@@ -235,7 +253,9 @@ async function main() {
 
   if (DRY) { console.log(`\n[DRY] 재사용 ${reused} · 다운로드 대상 ${rows.length - reused}개.`); return; }
 
-  // 노션에서 사라진 현장 디렉토리 정리
+  fs.writeFileSync(NO_MAP, JSON.stringify(noMap, null, 0), "utf8");
+
+  // 노션에서 사라졌거나 비공개 전환된 현장 디렉토리 정리 (이미지 직접 URL 노출도 차단)
   const keep = new Set(projects.map((p) => `p${p.no}`));
   let pruned = 0;
   if (fs.existsSync(OUT)) {
