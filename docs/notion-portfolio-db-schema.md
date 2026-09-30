@@ -1,3 +1,5 @@
+> **기록용 문서 (초기 기획 시점).** Supabase·`/api/sync`·`홈페이지 노출` 등은 현행과 다르다. 현행 구조는 [CLAUDE.md](../CLAUDE.md)·[architecture.md](architecture.md) 참고.
+
 # Notion DB 구성 가이드 (팀용)
 
 사이트와 자동 동기화되는 Notion 데이터베이스를 만드는 방법. 이 명세대로 속성을 만들면 사이트가 그대로 읽어간다.

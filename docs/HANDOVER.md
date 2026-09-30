@@ -1,3 +1,5 @@
+> **기록용 문서 (초기 기획 시점).** Supabase·`/api/sync`·`홈페이지 노출` 등은 현행과 다르다. 현행 구조는 [CLAUDE.md](../CLAUDE.md)·[architecture.md](architecture.md) 참고.
+
 # PLANO 홈페이지 — 인수인계서
 
 > 작성 2026-06-24 · 대상: 로컬에서 이어서 개발하는 분(또는 본인)

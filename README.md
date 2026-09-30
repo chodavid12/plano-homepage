@@ -1,87 +1,38 @@
-# PLANO Homepage
+# PLANO DESIGN 홈페이지
 
-플라노디자인(PLANO DESIGN) 공식 홈페이지 — 인테리어 스튜디오의 포트폴리오/상담 사이트.
-포트폴리오 콘텐츠는 **Notion에서 관리 → 사이트가 자동 동기화**되는 구조다.
+플라노디자인 공식 홈페이지 — [planodesign.kr](https://planodesign.kr)
 
-Next.js(App Router) + Tailwind + Supabase + Notion 기반으로 구현되어 있으며,
-**Notion/Supabase 미연동 상태에서도 시드 데이터로 전체 UI가 동작**한다.
+Next.js 14 (App Router) · TypeScript · Tailwind · Vercel. 포트폴리오 원본은 노션 **포트폴리오 DB**.
 
-## 로컬 실행
+## 실행
 
 ```bash
 npm install
-npm run dev            # http://localhost:3000 (기본: 시드 데이터)
+npm run dev      # http://localhost:3000
+npm run build
 ```
 
-- 환경변수는 `.env.example`를 복사해 `.env.local`로 설정한다.
-- `DATA_SOURCE`:
-  - `auto`(기본) — Supabase 설정 시 Supabase, 아니면 시드
-  - `seed` — 항상 시드 데이터
-  - `supabase` — 항상 Supabase
+런타임 환경변수는 없다. 노션 동기화에만 `.env.local` 의 `NOTION_TOKEN` 이 필요하다(`.env.example` 참고).
 
-## 동기화 (Notion → Supabase)
+## 포트폴리오 반영
+
+1. 노션 포트폴리오 DB 에서 현장 페이지 작성 — 본문에 공간 헤딩(대표/거실/주방/…) 아래로 사진
+2. 공개할 현장만 **`공홈 업로드`** 체크 (해제하면 사이트에서 내려감)
+3. 동기화 + 배포
 
 ```bash
-# Supabase 스키마 적용: supabase/migrations/0001_init.sql
-npm run sync           # 노출 ✓ 행을 동기화 (이미지는 Supabase Storage로 캐싱)
-npm run sync -- --force  # 이미지 전체 재업로드
+bash scripts/sync-deploy.sh          # 또는 Claude Code 에서 /notion-sync
+bash scripts/sync-deploy.sh --dry    # 미리보기
 ```
 
-- 운영: `vercel.json`의 Vercel Cron이 30분마다 `/api/sync` 호출
-- 즉시 반영: Notion 자동화/버튼 → `/api/sync?secret=...` 또는 `/api/revalidate?secret=...`
+자세한 흐름·주의사항은 [CLAUDE.md](CLAUDE.md), 구조도는 [docs/architecture.md](docs/architecture.md).
 
-## 디렉터리
+## 구조
 
 ```
-src/app/            라우트 (메인·about·portfolio·consultant·api)
-src/components/      UI 컴포넌트 (layout / portfolio / consultant)
-src/lib/            data·supabase·notion·sync·seed·filter·rooms·types
-supabase/migrations 스키마 SQL
-scripts/sync.ts     동기화 CLI
+src/app/            / · /about · /about-v1 · /portfolio · /portfolio/[no] · /consultant
+src/components/     layout · portfolio · about · consultant · ui
+src/lib/            data(읽기) · seed(자동 생성) · types
+scripts/            notion-sync.mjs(동기화) · sync-deploy.sh(원스텝 배포)
+public/portfolio/   p<no>/*.webp (동기화 산출물)
 ```
-
-## 핵심 개념
-
-- **Notion = 콘텐츠 원본(source of truth)** — 팀이 노션 DB에서 포트폴리오를 관리한다.
-- **체크박스 `홈페이지 노출 ✓` 인 행만 동기화** — 노션 전체가 아니라 노출 체크된 프로젝트만 사이트로 나간다.
-- **Supabase = 동기화 캐시** — 노션 이미지 URL은 약 1시간 후 만료되므로, 이미지를 Supabase Storage로 복사해 안정적인 URL로 제공한다.
-- **사이트는 Supabase만 읽는다** — 런타임에 노션을 직접 호출하지 않아 빠르고 안정적이다.
-- **상담 폼 = 커스텀 폼 → Notion API** — 사이트의 브랜드 톤 폼 제출 시 기존 노션 상담 응답 DB에 행을 생성한다.
-
-## 기술 스택
-
-| 영역 | 선택 |
-|---|---|
-| 프레임워크 | Next.js (App Router, TypeScript) |
-| 스타일 | Tailwind CSS |
-| 데이터/스토리지 | Supabase (Postgres + Storage) |
-| CMS 원본 | Notion (`@notionhq/client`) |
-| 호스팅 | Vercel (+ Vercel Cron) |
-
-## 사이트 구성 (GNB = ABOUT · PORTFOLIO · CONSULTANT)
-
-| 경로 | 설명 |
-|---|---|
-| `/` | 메인 — 풀스크린 스플래시(로고 + PORTFOLIO / CONSULTANT 버튼) |
-| `/about` | ABOUT — 회사소개 |
-| `/portfolio` | PORTFOLIO — 목록(평형 필터·검색·프로젝트/공간별 보기) |
-| `/portfolio/[no]` | 포트폴리오 상세(메타·공간별 탭·이미지 캐러셀) |
-| `/consultant` | CONSULTANT — 상담신청(커스텀 폼 → Notion API) |
-
-## 문서
-
-| 문서 | 내용 |
-|---|---|
-| [`docs/기획안.md`](docs/기획안.md) | 기획안 전문 — 홈페이지 구성(IA) + 기술서 |
-| [`docs/notion-portfolio-db-schema.md`](docs/notion-portfolio-db-schema.md) | 팀이 그대로 만들 수 있는 Notion DB 속성 명세 |
-| [`docs/architecture.md`](docs/architecture.md) | 동기화 파이프라인 다이어그램 + Supabase 스키마 |
-
-## 후속 구현 로드맵
-
-- **P0** 스캐폴딩: Next.js + TS + Tailwind, 디자인 토큰, Layout/Header/Footer
-- **P1** Supabase: 스키마 + Storage 버킷 + RLS
-- **P2** 동기화: `/api/sync`(Notion → Supabase) + 이미지 파이프라인 + Vercel Cron + 온디맨드 revalidate
-- **P3** 포트폴리오 목록: 탭 / 평형 필터 / 검색 / 그리드
-- **P4** 포트폴리오 상세: 메타 / 공간 탭 / 캐러셀 / 이전·다음
-- **P5** 메인(스플래시) + ABOUT + 상담 커스텀 폼(`/api/consult` → Notion API)
-- **P6** SEO / 성능 / 반응형 마감 → Vercel 배포
