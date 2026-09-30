@@ -17,7 +17,7 @@ Next.js 14 (App Router) · TypeScript · Tailwind. 도메인 `planodesign.kr`(�
 - 한 번에 5건 넘게 비공개로 빠지면 동기화가 중단된다 → 의도한 것이면 `--yes`.
 - `src/lib/seed.ts` 는 **자동 생성. 직접 수정 금지.** `src/lib/data.ts` 는 seed 를 읽기만 하고 **캐시하지 않는다**(`unstable_cache` 는 배포 간 복원돼 새 seed 가 안 나옴, commit 4cda816).
 - API 라우트·Supabase·환경변수 런타임 의존 없음. 상담은 노션 폼 링크.
-- 노션 행 수정(체크 변경 포함)은 `last_edited_time` 을 바꿔 그 현장 이미지를 다시 받는다 — 대량 체크 변경 뒤 동기화는 오래 걸린다.
+- 증분은 **사진 단위**: 이미지마다 `key`(노션 파일 경로, 서명 쿼리 제외)를 seed 에 기록 → 페이지가 바뀌어도 같은 사진은 재사용, 새/교체 사진만 받는다. 파일명은 key 해시.
 
 ### 동기화 → 배포
 
@@ -32,7 +32,8 @@ bash scripts/sync-deploy.sh --yes      # 비공개 전환 5건 초과 허용
 ```
 
 - 스크립트는 `seed.ts`·`public/portfolio`·`scripts/.materials-cache.json`·`scripts/.no-map.json` 만 커밋한다.
-- 증분 판단은 `notionLastEditedAt`. 병목은 대역폭(노션 원본 장당 수 MB), 동시성 10.
+- 변경 없는 현장은 `notionLastEditedAt` 으로 통째 건너뛴다. 평소 전체 실행 20초 안팎, 병목은 새 사진 다운로드(원본 장당 수 MB, 동시성 10).
+- 검증 빌드는 `.next-verify`(`NEXT_DIST_DIR`)에 해서 dev 서버의 `.next` 와 분리되고 캐시가 유지된다.
 - **마감재**(마루/타일/도배/필름/가구재)는 rollup 이 자재 페이지 id 를 주므로 이름을 따로 조회해 `.materials-cache.json` 에 캐시.
 
 ## 하지 말 것
@@ -46,7 +47,7 @@ bash scripts/sync-deploy.sh --yes      # 비공개 전환 5건 초과 허용
 
 - **Desktop 이 iCloud 동기화 대상.** 지운 파일이 원본 mtime 그대로 부활하거나, 세션 중 폴더 접근이 `Operation not permitted` 로 막힐 수 있다. 빌드가 없어진 심볼로 깨지면 `git status` 로 부활 파일부터 의심.
 - **git 이 `Xcode license` 메시지로 실패** → 사용자가 `sudo xcodebuild -license accept` 실행해야 함(대신 못 함).
-- dev 서버 실행 중 `npm run build` 금지(`.next` 오염) → 멈추고 `rm -rf .next`.
+- dev 서버 실행 중 기본 `npm run build` 금지(`.next` 오염) → 필요하면 `NEXT_DIST_DIR=.next-verify npm run build`.
 - seed 갱신 후 dev 재시작만으론 부족할 때 → `rm -rf .next`. tailwind 토큰/애니메이션 추가도 dev 재시작 필요.
 - macOS 파일명은 **NFD** — 한글 정규식 매칭 전 `.normalize("NFC")`.
 - `globals.css` 가 `h1,h2,h3` 에 `text-ink-900` 강제 → **어두운 배경 위 헤딩엔 `text-white` 명시**.
@@ -58,5 +59,7 @@ bash scripts/sync-deploy.sh --yes      # 비공개 전환 5건 초과 허용
 `.container-site` = `max-w-[1800px] px-3 sm:px-5`(사진 극대화용 좁은 여백). 유틸 `.overline` / `.btn`.
 
 ## 라우트
+
+`/portfolio` 는 정적 페이지 — 필터(`?view·size·q·room`)는 `PortfolioBrowser` 가 브라우저에서 처리. 서버에서 `searchParams` 를 읽으면 동적 렌더로 돌아가니 금지.
 
 `/` · `/about`(v2 현행) · `/about-v1`(보관, noindex) · `/portfolio` · `/portfolio/[no]` · `/consultant`
