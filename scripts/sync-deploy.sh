@@ -40,9 +40,8 @@ if [ -z "$(git status --porcelain -- src/lib/seed.ts public/portfolio scripts/.n
   exit 0
 fi
 
-# ── 4. 빌드 검증 (.next 오염 방지) ───────────────────────────────
-rm -rf .next
-if ! npm run build > /tmp/plano-build.log 2>&1; then
+# ── 4. 빌드 검증 — 전용 폴더(.next-verify)라 dev 서버와 충돌 없고, 캐시가 남아 두 번째부터 빠르다 ──
+if ! NEXT_DIST_DIR=.next-verify npm run build > /tmp/plano-build.log 2>&1; then
   echo "✗ 빌드 실패 — 커밋 중단:"; tail -25 /tmp/plano-build.log; exit 1
 fi
 

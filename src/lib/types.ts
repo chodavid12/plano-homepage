@@ -9,6 +9,8 @@ export interface ProjectImage {
   /** 변환된 webp 의 실제 치수 — 갤러리에서 원본 비율대로 표시(세로/가로 혼재) */
   width?: number;
   height?: number;
+  /** 노션 파일 경로(서명 제외) — 동기화가 사진 단위 재사용 판단에 쓴다 */
+  key?: string;
   sortOrder: number;
 }
 

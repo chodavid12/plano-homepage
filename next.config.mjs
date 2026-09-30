@@ -7,6 +7,8 @@ const nextConfig = {
   // (remotePatterns/dangerouslyAllowSVG 는 열지 않는다 — 최적화기를 외부 URL 프록시로
   //  악용당할 수 있어서다. GHSA-9g9p-9gw9-jx7f. unoptimized 는 그 위험과 무관하다.)
   images: { unoptimized: true },
+  // 배포 스크립트의 검증 빌드는 .next-verify 에 한다 — 실행 중인 dev 서버의 .next 를 건드리지 않고 빌드 캐시도 유지.
+  distDir: process.env.NEXT_DIST_DIR || ".next",
 };
 
 export default nextConfig;

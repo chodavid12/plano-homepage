@@ -5,6 +5,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
+import { createHash } from "node:crypto";
 import { Client } from "@notionhq/client";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -112,7 +113,9 @@ function collect(blocks) {
     cnt[room] = cnt[room] || 0;
     if (cnt[room] >= roomCap(room, hasRooms)) continue;
     cnt[room]++;
-    out.push({ room, url: u });
+    // key = 서명 쿼리를 뺀 파일 경로 — 업로드마다 고유하고 URL 재서명에도 안 바뀐다(사진 단위 증분 기준)
+    const { host, pathname } = new URL(u);
+    out.push({ room, url: u, key: host + pathname });
   }
   return out;
 }
@@ -185,6 +188,8 @@ async function main() {
   const projects = [];
   let reused = 0;
   let fetched = 0;
+  let downloaded = 0; // 실제로 받은 사진 장수
+  let migrated = 0; // 사진 키를 새로 붙인 옛 현장 수(1회성)
 
   for (const { pg, title, created } of rows) {
     const old = prev.get(pg.id);
@@ -196,7 +201,14 @@ async function main() {
     // 증분 — 노션에서 수정 안 됐고 이미지가 그대로면 통째로 재사용 (다운로드 0)
     if (!FORCE && old?.notionLastEditedAt === lastEdited && old.images?.length && fs.existsSync(dir)) {
       // 이미지는 재사용하되 마감재는 매번 갱신 — 자재 수정은 이미지 재다운로드가 필요 없다
-      projects.push({ ...old, materials: materialsOf(pg), sortOrder: projects.length });
+      let images = old.images;
+      // 1회 이관 — 사진 키가 없는 옛 seed 면 블록 목록만 조회해 순서(sortOrder)대로 키를 붙인다(다운로드 없음)
+      if (images.some((im) => !im.key)) {
+        const seqOld = collect(await blocksOf(pg.id));
+        images = images.map((im) => ({ ...im, key: im.key ?? seqOld[im.sortOrder]?.key }));
+        migrated++;
+      }
+      projects.push({ ...old, images, materials: materialsOf(pg), sortOrder: projects.length });
       reused++;
       continue;
     }
@@ -208,33 +220,45 @@ async function main() {
     console.log(`p${no}  ${String(created).slice(0, 10)}  ${seq.length}장 [${rooms}]  ${title.slice(0, 38)}`);
     if (DRY) continue;
 
-    fs.rmSync(dir, { recursive: true, force: true }); // 변경분은 기존 이미지 비우고 새로
     fs.mkdirSync(dir, { recursive: true });
+    // 사진 단위 증분 — 페이지가 바뀌어도(체크박스·제목 수정 등) 같은 사진(key)은 기존 webp 를 재사용하고
+    // 새로 추가·교체된 사진만 받는다. 파일명은 key 해시라 순서가 바뀌어도 재다운로드 없음.
+    const have = new Map();
+    if (!FORCE) {
+      for (const im of old?.images ?? []) {
+        if (im.key && fs.existsSync(path.join(ROOT, "public", im.imageUrl))) have.set(im.key, im);
+      }
+    }
+    const urlOf = new Map(seq.map((s) => [s.key, s.url]));
+    const need = [...urlOf.keys()].filter((k) => !have.has(k));
+    const got = new Map();
     // 다운로드+변환을 동시 실행 (I/O 대기 병렬화 → 순차 대비 ~10배)
-    const settled = await mapLimit(seq, CONCURRENCY, async (s, i) => {
-      const name = String(i + 1).padStart(2, "0") + ".webp";
+    await mapLimit(need, CONCURRENCY, async (k) => {
+      const name = createHash("sha1").update(k).digest("hex").slice(0, 12) + ".webp";
       try {
-        const res = await fetch(s.url, { signal: AbortSignal.timeout(20000) });
-        if (!res.ok) return null;
+        const res = await fetch(urlOf.get(k), { signal: AbortSignal.timeout(20000) });
+        if (!res.ok) return;
         // 변환 결과의 실제 치수를 기록 — 갤러리에서 원본 비율대로 보여주기 위함(세로컷 잘림 방지)
         const info = await sharp(Buffer.from(await res.arrayBuffer()))
           .rotate()
           .resize({ width: MAXW, withoutEnlargement: true })
           .webp({ quality: Q })
           .toFile(path.join(dir, name));
-        return {
-          id: `${no}-${i + 1}`,
-          room: s.room,
-          imageUrl: `/portfolio/p${no}/${name}`,
-          width: info.width,
-          height: info.height,
-          sortOrder: i,
-        };
+        got.set(k, { imageUrl: `/portfolio/p${no}/${name}`, width: info.width, height: info.height });
       } catch {
-        return null; // 실패분은 건너뜀 (순서/이름은 원래 인덱스 유지)
+        // 실패분은 건너뜀
       }
     });
-    const images = settled.filter(Boolean);
+    downloaded += got.size;
+    const images = seq
+      .map((s, i) => {
+        const src = have.get(s.key) ?? got.get(s.key);
+        return src && { id: `${no}-${i + 1}`, key: s.key, room: s.room, imageUrl: src.imageUrl, width: src.width, height: src.height, sortOrder: i };
+      })
+      .filter(Boolean);
+    // 페이지에서 빠진 사진 파일 정리
+    const used = new Set(images.map((im) => path.basename(im.imageUrl)));
+    for (const f of fs.readdirSync(dir)) if (!used.has(f)) fs.rmSync(path.join(dir, f), { force: true });
     if (!images.length) { fs.rmSync(dir, { recursive: true, force: true }); continue; }
     fetched++;
     projects.push({
@@ -251,7 +275,7 @@ async function main() {
     });
   }
 
-  if (DRY) { console.log(`\n[DRY] 재사용 ${reused} · 다운로드 대상 ${rows.length - reused}개.`); return; }
+  if (DRY) { console.log(`\n[DRY] 재사용 ${reused} · 변경 현장 ${rows.length - reused}개 (새 사진만 받음).`); return; }
 
   fs.writeFileSync(NO_MAP, JSON.stringify(noMap, null, 0), "utf8");
 
@@ -269,7 +293,7 @@ async function main() {
 
   const header = `import type { Project } from "./types";\n\n// ⚠️ AUTO-GENERATED — scripts/notion-sync.mjs (노션 포트폴리오 DB). 직접 수정 금지.\n// no = 노션 page 고정 id(URL 안정) · sortOrder = 생성일시 내림차순 표시순서\n\nexport const SEED_PROJECTS: Project[] = `;
   fs.writeFileSync(path.join(ROOT, "src", "lib", "seed.ts"), header + JSON.stringify(projects, null, 2) + ";\n", "utf8");
-  console.log(`\n✓ ${projects.length}개 현장 (재사용 ${reused} · 새로받음 ${fetched} · 정리 ${pruned}) → src/lib/seed.ts`);
+  console.log(`\n✓ ${projects.length}개 현장 (재사용 ${reused} · 갱신 ${fetched} · 정리 ${pruned}) · 사진 다운로드 ${downloaded}장${migrated ? ` · 키 이관 ${migrated}` : ""} → src/lib/seed.ts`);
 }
 
 main().catch((e) => { console.error("✗", e.message); process.exit(1); });
