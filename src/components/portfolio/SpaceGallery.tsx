@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import type { SpacePhoto } from "@/lib/filter";
+import { currentUrl, pendingRestore, saveCount, savedCount } from "@/lib/list-memory";
 
 const BATCH = 30; // 한 번에 렌더할 사진 수 (스크롤하면 자동 추가)
 
@@ -20,10 +21,27 @@ export default function SpaceGallery({ photos }: { photos: SpacePhoto[] }) {
     setVisible((v) => (v < state.current.total ? Math.min(v + BATCH, state.current.total) : v));
   }, []);
 
-  // 필터가 바뀌어 목록이 갱신되면 처음부터 다시
+  // 상세를 보고 돌아왔으면 그때 불러와 있던 만큼 다시 펼친다 — 그래야 위치를 이어서 복원할 높이가 생긴다.
+  // (그리기 전에 맞추려고 layout effect. 위치 복원 자체는 ListMemory 가 한다)
+  useLayoutEffect(() => {
+    if (!pendingRestore()) return;
+    const n = savedCount(currentUrl());
+    if (n) setVisible(Math.min(n, photos.length));
+    // 마운트 시 한 번만
+  }, []);
+
+  // 필터가 바뀌어 목록이 갱신되면 처음부터 다시 (첫 마운트는 제외 — 위의 복원을 덮지 않도록)
+  const firstPhotos = useRef(photos);
   useEffect(() => {
+    if (photos === firstPhotos.current) return;
+    firstPhotos.current = photos;
     setVisible(BATCH);
   }, [photos]);
+
+  // 불러온 개수 기억
+  useEffect(() => {
+    saveCount(currentUrl(), visible);
+  }, [visible]);
 
   // 자동 로드 — 옵저버/리스너를 한 번만 구독하고 배치마다 재구독하지 않는다.
   // IntersectionObserver(우선) + 스크롤 이벤트(보강, 환경에 따라 IO 미발동 대비).

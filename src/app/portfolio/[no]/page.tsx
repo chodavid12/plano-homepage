@@ -68,9 +68,8 @@ export default async function ProjectDetailPage({ params }: { params: { no: stri
         <Link href={`/portfolio/${next.no}`} className="btn btn-ghost" title={next.title}>
           다음
         </Link>
-        <Link href="/portfolio" className="btn btn-ghost">
-          목록보기
-        </Link>
+        {/* 목록보기도 보던 위치로 이어서 — 상단 "목록으로"와 같은 동작 */}
+        <BackLink className="btn btn-ghost" label="목록보기" arrow={false} />
       </nav>
     </article>
   );
