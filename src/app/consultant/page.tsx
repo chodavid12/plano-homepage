@@ -3,7 +3,7 @@ import Image from "next/image";
 import ProcessStepper from "@/components/consultant/ProcessStepper";
 
 const CONSULT_FORM_URL =
-  "https://copper-curtain-f8f.notion.site/1f2b42808b588041a20de7f53366e88d?pvs=105";
+  "https://planodesign.notion.site/1f2b42808b588041a20de7f53366e88d?pvs=105";
 
 // 지점 — 네이버 플레이스 공유 링크(naver.me 단축)
 const BRANCHES = [
