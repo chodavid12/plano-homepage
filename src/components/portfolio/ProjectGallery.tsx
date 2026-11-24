@@ -57,7 +57,10 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
   const current = rooms[Math.min(roomIdx, rooms.length - 1)];
   const items = current?.items ?? [];
   const total = items.length;
-  const heroCount = Math.min(total, HERO_MAX);
+  // 히어로 — 첫 탭(전체)에선 노션 '메인'(대표) 컷을 그대로 쓴다. 공간 탭을 고르면 그 공간 사진.
+  const covers = useMemo(() => images.filter((im) => im.room === "대표"), [images]);
+  const heroList = (roomIdx === 0 && covers.length ? covers : items).slice(0, HERO_MAX);
+  const heroCount = heroList.length;
 
   // 히어로 자동 전환 (라이트박스 열려있으면 멈춤)
   useEffect(() => {
@@ -92,7 +95,9 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
   }
 
   const showTabs = rooms.length > 1;
-  const hero = items[Math.min(heroIdx, heroCount - 1)];
+  const hero = heroList[Math.min(heroIdx, heroCount - 1)];
+  // 대표 컷은 보통 공간 사진과 같은 파일 → 라이트박스는 그 위치에서 연다(없으면 처음부터)
+  const heroInItems = Math.max(0, items.findIndex((im) => im.imageUrl === hero.imageUrl));
 
   const selectRoom = (i: number) => {
     setRoomIdx(i);
@@ -125,7 +130,7 @@ export default function ProjectGallery({ images, title, subtitle, meta, material
       <div className="relative">
         <button
           type="button"
-          onClick={() => setLightbox(heroIdx)}
+          onClick={() => setLightbox(heroInItems)}
           className="relative mx-[calc(50%-50vw)] block h-[85svh] w-screen cursor-zoom-in overflow-hidden bg-ink-900 lg:mx-0 lg:h-[82vh] lg:w-full"
           aria-label="크게 보기"
         >
