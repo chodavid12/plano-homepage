@@ -7,7 +7,7 @@ export const SEED_PROJECTS: Project[] = [
   {
     "no": 66,
     "notionPageId": "3f3b4280-8b58-80af-8fab-cff6058bd541",
-    "notionLastEditedAt": "2026-11-18T14:25:00.000Z",
+    "notionLastEditedAt": "2026-11-26T04:17:00.000Z",
     "title": "금호삼성래미안 24py",
     "apartment": "금호삼성래미안 24py",
     "sizeCategory": "20PY",
@@ -58,47 +58,56 @@ export const SEED_PROJECTS: Project[] = [
       },
       {
         "id": "66-3",
-        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/cf57b100-335c-4967-a310-f379b4df7687/ITM_1121.jpg",
+        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/6910c59a-cad2-4df3-adf3-6666f53c9a50/KakaoTalk_Photo_2026-11-16-12-04-19_001.jpeg",
         "room": "현관",
-        "imageUrl": "/portfolio/p66/b812a1dc670f.webp",
+        "imageUrl": "/portfolio/p66/7433d2335d9b.webp",
         "width": 1600,
         "height": 2400,
         "sortOrder": 2
       },
       {
         "id": "66-4",
-        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/eafe4df5-3ee9-4cc9-a71d-cfd862fe78a2/ITM_1122.jpg",
+        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/1651fe05-983d-4b5c-8b16-6ff956f663e4/KakaoTalk_Photo_2026-11-16-12-04-20_002.jpeg",
         "room": "현관",
-        "imageUrl": "/portfolio/p66/78daa63b97b7.webp",
+        "imageUrl": "/portfolio/p66/a163bb95e5f8.webp",
         "width": 1600,
         "height": 2400,
         "sortOrder": 3
       },
       {
-        "id": "66-6",
-        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/f76ddc1c-a988-4948-9b0a-1c0dc4c72fb4/ITM_1127.jpg",
+        "id": "66-5",
+        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/6b8bc234-7ef8-47e4-be64-f22134bd7858/KakaoTalk_Photo_2026-11-16-12-04-20_003.jpeg",
         "room": "현관",
-        "imageUrl": "/portfolio/p66/91432b878931.webp",
+        "imageUrl": "/portfolio/p66/597976671fc1.webp",
         "width": 1600,
         "height": 2400,
+        "sortOrder": 4
+      },
+      {
+        "id": "66-6",
+        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/39fe2cfb-62d8-444a-9f76-a5bf91d34147/KakaoTalk_Photo_2026-11-16-12-04-20_004.jpeg",
+        "room": "현관",
+        "imageUrl": "/portfolio/p66/5e0916699922.webp",
+        "width": 1600,
+        "height": 1067,
         "sortOrder": 5
       },
       {
         "id": "66-7",
-        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/d6be181b-9c6f-4911-b28b-eb20f74d936d/ITM_1129.jpg",
+        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/c0955c71-7f4f-4720-8d0e-288b8878eff7/KakaoTalk_Photo_2026-11-16-12-04-20_005.jpeg",
         "room": "현관",
-        "imageUrl": "/portfolio/p66/90503360da9f.webp",
+        "imageUrl": "/portfolio/p66/7d4263bc2883.webp",
         "width": 1600,
-        "height": 2400,
+        "height": 1067,
         "sortOrder": 6
       },
       {
         "id": "66-8",
-        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/0074554f-0703-4023-9067-4aad9b3e75d4/ITM_1085.jpg",
+        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/6cec3d06-7aed-400f-b433-181ab61cca79/ITM_1125.jpg",
         "room": "현관",
-        "imageUrl": "/portfolio/p66/853665e2dea9.webp",
+        "imageUrl": "/portfolio/p66/0ee3e78c41e7.webp",
         "width": 1600,
-        "height": 1067,
+        "height": 2400,
         "sortOrder": 7
       },
       {
@@ -118,6 +127,15 @@ export const SEED_PROJECTS: Project[] = [
         "width": 1600,
         "height": 1067,
         "sortOrder": 9
+      },
+      {
+        "id": "66-11",
+        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/80d8b622-dd40-4033-8c2f-9c01c45d634d/ITM_1090.jpg",
+        "room": "거실",
+        "imageUrl": "/portfolio/p66/4a81a069571d.webp",
+        "width": 1600,
+        "height": 1067,
+        "sortOrder": 10
       },
       {
         "id": "66-12",
@@ -165,6 +183,15 @@ export const SEED_PROJECTS: Project[] = [
         "sortOrder": 15
       },
       {
+        "id": "66-17",
+        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/43d1b974-37a1-45e3-8f1e-ab51b4228a0b/ITM_1108.jpg",
+        "room": "주방",
+        "imageUrl": "/portfolio/p66/8a549c1686dd.webp",
+        "width": 1600,
+        "height": 1067,
+        "sortOrder": 16
+      },
+      {
         "id": "66-18",
         "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/a514fc3e-7183-40b8-b074-3751f3c9f651/ITM_1110.jpg",
         "room": "주방",
@@ -172,6 +199,24 @@ export const SEED_PROJECTS: Project[] = [
         "width": 1600,
         "height": 1067,
         "sortOrder": 17
+      },
+      {
+        "id": "66-19",
+        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/80f38036-7e92-4f4c-a6e0-06ff6a5aa61e/ITM_1112.jpg",
+        "room": "주방",
+        "imageUrl": "/portfolio/p66/92b919682bbf.webp",
+        "width": 1600,
+        "height": 1067,
+        "sortOrder": 18
+      },
+      {
+        "id": "66-20",
+        "key": "prod-files-secure.s3.us-west-2.amazonaws.com/3b576024-14b6-41d4-a374-babcdbbe785b/ab688717-df17-4577-b8c8-cae4a662ce62/ITM_1114.jpg",
+        "room": "주방",
+        "imageUrl": "/portfolio/p66/9b33bec4bfbb.webp",
+        "width": 1600,
+        "height": 1067,
+        "sortOrder": 19
       },
       {
         "id": "66-21",
